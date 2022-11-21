@@ -2,7 +2,7 @@ import { html } from 'lit-element'
 import rdf from '../rdf-ext.js'
 import { entity } from '../model.js'
 import { Entity } from './Entity.js'
-import { NamedGraphSummary } from './NamedGraphSummary.js'
+import { Metadata } from './Metadata.js'
 import { entityBuilder } from '../builder/entityBuilder.js'
 
 function EntityList (cf, options) {
@@ -33,7 +33,7 @@ function ResourceDescription (cf, options) {
     return html`
         <div>
           ${EntityList(cf, options)}
-          ${NamedGraphSummary(cf, options)}
+          ${Metadata(cf, options)}
           ${Debug(cf, options)}
         </div>
     `
@@ -41,7 +41,7 @@ function ResourceDescription (cf, options) {
 
   return html`
       ${EntityList(cf, options)}
-      ${NamedGraphSummary(cf, options)}
+      ${Metadata(cf, options)}
   `
 }
 
@@ -52,7 +52,7 @@ function Debug (cf, options) {
         <tr>
             <td>${quad.subject.value}</td>
             <td>${quad.predicate.value}</td>
-            <td>[${quad.object.termType}]${quad.object.value}</td>
+            <td>[${quad.object.termType}] ${quad.object.value}</td>
         </tr>`)
   }
 

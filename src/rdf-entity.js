@@ -132,6 +132,14 @@ export class RdfEntity extends LitElement {
       -webkit-line-clamp: 1;
       -webkit-box-orient: vertical;
     }
+    
+    .metadata h3 {
+      color: var(--color-grey);
+    }
+
+    .metadata .entry .value {
+      color: var(--color-grey);
+    }
   `
 
   constructor () {
