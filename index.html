@@ -28,19 +28,20 @@
 
       let demo = document.getElementById('demo')
 
-      demo.pointer = pointer
-
       demo.options = {
-        compactMode: true,
+        groupValuesByProperty: true,
+        groupPropertiesByValue: true,
         embedBlanks: true,
         technicalCues: true,
         preferredLanguages: ['en', 'fr', 'de', 'it', 'pl'],
-        highLightLanguage: 'pl',
-        embedNamed: false,
+        highLightLanguage: 'en',
+        embedNamed: true,
         embedLists: true,
         debug: false,
         maxLevel: 3,
       }
+
+      demo.pointer = pointer
 
     </script>
 </head>

@@ -3,7 +3,8 @@ import { Empty, ResourceDescription } from './components/ResourceDescription.js'
 import rdf from './rdf-ext.js'
 
 const DEFAULTS = {
-  compactMode: true,
+  groupValuesByProperty: true,
+  groupPropertiesByValue: true,
   embedBlanks: true,
   technicalCues: true,
   preferredLanguages: ['en', 'fr', 'de', 'it'],
@@ -152,16 +153,12 @@ export class RdfEntity extends LitElement {
   }
 
   set pointer (pointer) {
-    this._pointer = pointer
-    this.requestUpdate()
-  }
-
-  get options () {
-    return this._options
+    const { dataset, term } = pointer
+    this._pointer = rdf.clownface({ dataset, term })
   }
 
   set options (options) {
-    this._options = options
+    this._options = { ...options }
     this.requestUpdate()
   }
 
