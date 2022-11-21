@@ -1,14 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script type="module">
+      import 'api-viewer-element'
+    </script>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Clownface viewer</title>
-    <script type="module" src="/src/rdf-clownface-viewer.js"></script>
+    <title>RDF entity demo</title>
+    <script type="module" src="/src/rdf-entity.js"></script>
 
+    <script type="module">
+      import { ns } from './src/namespaces.js'
+      import rdf from './src/rdf-ext.js'
+
+      const pointer = rdf.clownface({ dataset: rdf.dataset(), factory: rdf }).
+        node(ns.ex.Person).
+        addOut(ns.schema.address, ns.ex.anAddress, address => {
+          address.addOut(ns.rdf.type, ns.schema.PostalAddress).
+            addOut(ns.schema.streetAddress, rdf.literal('3 Teewah Close')).
+            addOut(ns.schema.postalCode, rdf.literal('4879')).
+            addOut(ns.schema.email, rdf.literal('bob@example1.com')).
+            addOut(ns.schema.email, rdf.literal('bob@example2.com')).
+            addOut(ns.rdfs.label, rdf.literal('Bob\'s Address'))
+        }).
+        addOut(ns.schema.description, rdf.literal('Hello')).
+        addOut(ns.schema.description, rdf.literal('cześć', 'pl'))
+
+      let demo = document.getElementById('demo')
+
+      demo.pointer = pointer
+
+      demo.options = {
+        compactMode: true,
+        embedBlanks: true,
+        technicalCues: true,
+        preferredLanguages: ['en', 'fr', 'de', 'it', 'pl'],
+        highLightLanguage: 'pl',
+        embedNamed: false,
+        embedLists: true,
+        debug: false,
+        maxLevel: 3,
+      }
+
+    </script>
 </head>
 <body>
-    <rdf-clownface-viewer/>
+    <rdf-entity id="demo"/>
 </body>
 </html>
 

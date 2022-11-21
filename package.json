@@ -6,9 +6,9 @@
     "type": "git",
     "url": "git+https://github.com/zazuko/rdf-entity-webcomponent.git"
   },
-  "main": "dist/rdf-clownface-viewer.es.js",
+  "main": "dist/rdf-entity.es.js",
   "exports": {
-    ".": "./dist/rdf-clownface-viewer.es.js"
+    ".": "./dist/rdf-entity.es.js"
   },
   "files": [
     "dist"
@@ -16,6 +16,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "updateManifest": "cem analyze --globs \"src/rdf-entity.js\"",
     "test": "standard && c8 --reporter=lcov --reporter=text mocha"
   },
   "author": "Zazuko",
@@ -33,6 +34,7 @@
     "lit-element": "^3.2.2"
   },
   "devDependencies": {
+    "@custom-elements-manifest/analyzer": "^0.6.6",
     "c8": "^7.12.0",
     "chai": "^4.3.6",
     "chai-json-schema": "^1.5.1",

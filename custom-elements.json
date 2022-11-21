@@ -1,0 +1,78 @@
+{
+  "schemaVersion": "1.0.0",
+  "readme": "",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "src/rdf-entity.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "RdfEntity",
+          "members": [
+            {
+              "kind": "field",
+              "name": "styles",
+              "static": true,
+              "default": "css`\n    :host {\n      --color-primary: #ffb15e;\n      --color-primary-light: #ffe38d;\n      --color-secondary: #ff441c;\n      --color-secondary-dark: #c30000;\n      --color-text-on-primary: #000000;\n      --color-text-on-secondary: #000000;\n      --color-black: #000000;\n      --color-grey: #4f4f4f;\n      --color-white: #ffffff;\n      --color-darker-white: #fcfcfc;\n      --color-light-grey: #e5e5e5;\n    }\n\n    .entities {\n      display: flex;\n      flex-direction: column;\n      gap: 20px;\n    }\n\n    .entity {\n      display: flex;\n      flex-direction: column;\n      border: 1px solid var(--color-grey);\n    }\n\n    .header {\n      padding-left: 10px;\n      background-color: var(--color-primary-light);\n    }\n\n    .header a {\n      color: var(--color-text-on-primary);\n    }\n\n    .rows {\n      display: flex;\n      flex-direction: column;\n    }\n\n    .rows > :nth-child(1n) {\n      border-top: 1px solid var(--color-light-grey);\n    }\n\n    .rows > :nth-child(2n) {\n      border-top: 1px solid var(--color-light-grey);\n      background: rgba(0, 0, 0, 0.05);\n    }\n\n    .rows .row {\n      display: flex;\n      flex-direction: row;\n      justify-content: space-around;\n    }\n\n    .row > :nth-child(1) {\n      align-self: flex-start;\n      width: 20%;\n      margin-top: 1rem;\n      margin-left: auto;\n      margin-right: 1rem;\n    }\n\n    .row > :nth-child(2) {\n      width: 80%;\n      margin-left: 1rem;\n      margin-right: auto;\n    }\n\n    ul {\n      display: flex;\n      flex-direction: column;\n      list-style: none;\n      gap: 5px;\n\n      justify-content: center;\n      padding-left: 5px;\n    }\n\n    div .bringDown {\n      color: var(--color-grey);\n    }\n\n    .vocab {\n      color: var(--color-secondary);\n      font-size: 0.7rem;\n    }\n\n    .vocab::after {\n      content: ':';\n    }\n\n    .language {\n      color: var(--color-secondary);\n      font-size: 0.7rem;\n      margin-left: 4px;\n    }\n\n    .datatype {\n      color: var(--color-secondary);\n      font-size: 0.5rem;\n      margin-left: 4px;\n    }\n\n    .BlankNode {\n      font-size: 10px;\n    }\n\n    .BlankNode a {\n      color: var(--color-grey);\n      overflow: hidden;\n      display: -webkit-box;\n      -webkit-line-clamp: 1;\n      -webkit-box-orient: vertical;\n    }\n  `"
+            },
+            {
+              "kind": "field",
+              "name": "properties",
+              "static": true
+            },
+            {
+              "kind": "field",
+              "name": "pointer"
+            },
+            {
+              "kind": "field",
+              "name": "options"
+            },
+            {
+              "kind": "method",
+              "name": "render"
+            },
+            {
+              "kind": "field",
+              "name": "_pointer"
+            },
+            {
+              "kind": "field",
+              "name": "_options",
+              "default": "{\n  compactMode: true,\n  embedBlanks: true,\n  technicalCues: true,\n  preferredLanguages: ['en', 'fr', 'de', 'it'],\n  highLightLanguage: 'en',\n  embedNamed: false,\n  embedLists: true,\n  debug: false,\n  maxLevel: 3, // externalLabels: labels.cf,\n}",
+              "type": {
+                "text": "object"
+              }
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit-element"
+          },
+          "tagName": "rdf-entity",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "RdfEntity",
+          "declaration": {
+            "name": "RdfEntity",
+            "module": "src/rdf-entity.js"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "rdf-entity",
+          "declaration": {
+            "name": "RdfEntity",
+            "module": "src/rdf-entity.js"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -31,9 +31,11 @@ function EntityList (cf, options) {
 function ResourceDescription (cf, options) {
   if (options.debug) {
     return html`
-        ${EntityList(cf, options)}
-        ${NamedGraphSummary(cf, options)}
-        ${Debug(cf, options)}
+        <div>
+          ${EntityList(cf, options)}
+          ${NamedGraphSummary(cf, options)}
+          ${Debug(cf, options)}
+        </div>
     `
   }
 
@@ -61,4 +63,12 @@ function Debug (cf, options) {
   `
 }
 
-export { ResourceDescription }
+function Empty (cf, options) {
+  return html`
+      <div>
+          No quads
+      </div>
+  `
+}
+
+export { ResourceDescription, Empty }

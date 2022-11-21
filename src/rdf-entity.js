@@ -1,11 +1,21 @@
-import { data } from './demo/data.js'
-
 import { LitElement, css } from 'lit-element'
-import { ResourceDescription } from './components/ResourceDescription.js'
+import { Empty, ResourceDescription } from './components/ResourceDescription.js'
+import rdf from './rdf-ext.js'
 
-export class ClownfaceViewer extends LitElement {
+const DEFAULTS = {
+  compactMode: true,
+  embedBlanks: true,
+  technicalCues: true,
+  preferredLanguages: ['en', 'fr', 'de', 'it'],
+  highLightLanguage: 'en',
+  embedNamed: false,
+  embedLists: true,
+  debug: false,
+  maxLevel: 3 // externalLabels: labels.cf,
+}
+
+export class RdfEntity extends LitElement {
   static styles = css`
-
     :host {
       --color-primary: #ffb15e;
       --color-primary-light: #ffe38d;
@@ -121,34 +131,47 @@ export class ClownfaceViewer extends LitElement {
       -webkit-line-clamp: 1;
       -webkit-box-orient: vertical;
     }
-
   `
+
+  constructor () {
+    super()
+    this._pointer = rdf.clownface({ dataset: rdf.dataset() })
+    this._options = DEFAULTS
+    this.attachShadow({ mode: 'open' })
+  }
 
   static get properties () {
     return {
-      /**
-       * The pointer.
-       * @type {Object}
-       */
-      pointer: { type: Object }
+      pointer: { type: Object, attribute: false, required: true },
+      options: { type: Object, attribute: false, required: false }
     }
+  }
+
+  get pointer () {
+    return this._pointer
+  }
+
+  set pointer (pointer) {
+    this._pointer = pointer
+    this.requestUpdate()
+  }
+
+  get options () {
+    return this._options
+  }
+
+  set options (options) {
+    this._options = options
+    this.requestUpdate()
   }
 
   render () {
-    const DEFAULTS = {
-      compactMode: true,
-      embedBlanks: true,
-      technicalCues: true,
-      preferredLanguages: ['en', 'fr', 'de', 'it'],
-      highLightLanguage: 'en',
-      embedNamed: false,
-      embedLists: true,
-      debug: false,
-      maxLevel: 3 // externalLabels: labels.cf,
+    if (this._pointer.dataset.size) {
+      return ResourceDescription(this._pointer, this._options)
+    } else {
+      return Empty(this._pointer, this._options)
     }
-
-    return ResourceDescription(data, DEFAULTS)
   }
 }
 
-window.customElements.define('rdf-clownface-viewer', ClownfaceViewer)
+window.customElements.define('rdf-entity', RdfEntity)

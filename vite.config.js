@@ -4,7 +4,7 @@ import { defineConfig } from 'vite'
 export default defineConfig({
   build: {
     lib: {
-      entry: 'src/rdf-clownface-viewer.js',
+      entry: 'src/rdf-entity.js',
       formats: ['es']
     },
     rollupOptions: {
