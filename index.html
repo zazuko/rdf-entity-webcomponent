@@ -26,6 +26,15 @@
         addOut(ns.schema.description, rdf.literal('Hello')).
         addOut(ns.schema.description, rdf.literal('cześć', 'pl'))
 
+      // Just adding a namedGraph for demo purposes
+
+      const namedGraph = ns.ex.namedGraph
+      function setNamedGraph (dataset) {
+        return rdf.dataset([...[...dataset].map(quad => rdf.quad(quad.subject,quad.predicate,quad.object, namedGraph))])
+      }
+
+      const demoPointer = rdf.clownface({ dataset:setNamedGraph(pointer.dataset) , term: pointer.term })
+
       let demo = document.getElementById('demo')
 
       demo.options = {
@@ -41,7 +50,7 @@
         maxLevel: 3,
       }
 
-      demo.pointer = pointer
+      demo.pointer = demoPointer
 
     </script>
 </head>

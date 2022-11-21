@@ -74,14 +74,15 @@ export class RdfEntity extends LitElement {
 
     .row > :nth-child(1) {
       align-self: flex-start;
-      width: 20%;
+      width: 35%;
       margin-top: 1rem;
       margin-left: auto;
       margin-right: 1rem;
     }
 
     .row > :nth-child(2) {
-      width: 80%;
+      wrap-option: wrap;
+      width: 65%;
       margin-left: 1rem;
       margin-right: auto;
     }
@@ -91,7 +92,6 @@ export class RdfEntity extends LitElement {
       flex-direction: column;
       list-style: none;
       gap: 5px;
-
       justify-content: center;
       padding-left: 5px;
     }
