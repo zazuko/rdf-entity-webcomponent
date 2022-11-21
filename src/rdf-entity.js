@@ -132,6 +132,14 @@ export class RdfEntity extends LitElement {
       -webkit-line-clamp: 1;
       -webkit-box-orient: vertical;
     }
+
+    .metadata h3 {
+      color: var(--color-grey);
+    }
+
+    .metadata {
+      border: var(--color-grey) solid 1px;
+    }
   `
 
   constructor () {
@@ -155,6 +163,10 @@ export class RdfEntity extends LitElement {
   set pointer (pointer) {
     const { dataset, term } = pointer
     this._pointer = rdf.clownface({ dataset, term })
+  }
+
+  get options () {
+    return this._options
   }
 
   set options (options) {
