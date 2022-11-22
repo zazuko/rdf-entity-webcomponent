@@ -1,38 +1,39 @@
 import { html } from 'lit-element'
 import { namedCounts } from '../model.js'
+import { ns } from '../namespaces.js'
+import { splitIfVocab } from '../builder/utils.js'
 
-function maybeLink (key) {
-  if (key.constructor.name === 'DefaultGraph') {
+function getLiteralString (literal) {
+  const langChunk = ns.rdf.langString.equals(literal.datatype)
+    ? `@${literal.language}`
+    : ''
+  const xsdChunk = ns.xsd.string.equals(literal.datatype) ? `^^${shrink(
+    literal.datatype.value)}` : ''
+  return `"${literal.value}"${langChunk}${xsdChunk}`
+}
+
+function shrink (urlStr) {
+  const { vocab, string } = splitIfVocab(urlStr)
+  return vocab ? `${vocab}:${string}` : `${string}`
+}
+
+function renderTerm (term) {
+
+  if (term.termType === 'Literal') {
+    return html`${getLiteralString(term)}`
+  }
+
+  if (term.constructor.name === 'DefaultGraph') {
     return html`Default graph`
   }
 
-  if (key.termType === 'Literal') {
-    return html`${key.value}`
+  if (term.termType === 'NamedNode') {
+    return html`<a href="${term.value}">${shrink(term.value)}</a>`
   }
 
-  return key.termType === 'NamedNode'
-    ? html`<a
-          href="${key.value}">${key.value}</a>`
-    : html`${key}`
+  return html`${term}`
 }
 
-function Debug (cf, options) {
-  const list = []
-  for (const quad of cf.dataset) {
-    list.push(html`
-        <tr>
-            <td>${maybeLink(quad.subject)}</td>
-            <td>${maybeLink(quad.predicate)}</td>
-            <td>[${quad.object.termType}] ${maybeLink(quad.object)}</td>
-        </tr>`)
-  }
-
-  return html`
-      <table class="debug">
-          ${list}
-      </table>
-  `
-}
 
 function Metadata (cf, options) {
   const counts = namedCounts(cf, options)
@@ -40,8 +41,8 @@ function Metadata (cf, options) {
   for (const [key, value] of counts.entries()) {
     list.push(html`
         <tr>
-            <td>${maybeLink(key)}</td>
-            <td>${maybeLink(value)} quads</td>
+            <td>${renderTerm(key)}</td>
+            <td>${renderTerm(value)} quads</td>
         </tr>`)
   }
 
@@ -49,8 +50,8 @@ function Metadata (cf, options) {
     for (const [key, value] of Object.entries(options.metadata)) {
       list.push(html`
           <tr>
-              <td>${maybeLink(key)}</td>
-              <td>${maybeLink(value)}</td>
+              <td>${renderTerm(key)}</td>
+              <td>${renderTerm(value)}</td>
           </tr>`)
     }
   }
@@ -65,4 +66,4 @@ function Metadata (cf, options) {
   `
 }
 
-export { Metadata, Debug }
+export { Metadata, renderTerm }

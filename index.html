@@ -14,7 +14,7 @@
 
       const pointer = rdf.clownface({ dataset: rdf.dataset(), factory: rdf }).
         node(ns.ex.Person).
-        addOut(ns.schema.address, ns.ex.anAddress, address => {
+        addOut(ns.schema.address, ns.ex.address, address => {
           address.addOut(ns.rdf.type, ns.schema.PostalAddress).
             addOut(ns.schema.streetAddress, rdf.literal('3 Teewah Close')).
             addOut(ns.schema.postalCode, rdf.literal('4879')).
@@ -26,12 +26,10 @@
         addOut(ns.schema.description, rdf.literal('cześć', 'pl'))
 
       // Just adding a namedGraph for demo purposes
-
       const namedGraph = ns.ex.namedGraph
       function setNamedGraph (dataset) {
         return rdf.dataset([...[...dataset].map(quad => rdf.quad(quad.subject,quad.predicate,quad.object, namedGraph))])
       }
-
       const demoPointer = rdf.clownface({ dataset:setNamedGraph(pointer.dataset) , term: pointer.term })
 
       let demo = document.getElementById('demo')
@@ -49,8 +47,8 @@
         maxLevel: 3,
         metadata: {
           'SPARQL endpoint:': rdf.namedNode('http://example.org/sparql'),
-          'Title':'A title'
-        }
+          'Title': 'A title',
+        },
       }
 
       demo.pointer = demoPointer
