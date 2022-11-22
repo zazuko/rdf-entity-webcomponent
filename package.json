@@ -1,21 +1,14 @@
 {
   "name": "rdf-entity-webcomponent",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zazuko/rdf-entity-webcomponent.git"
   },
-  "main": "dist/rdf-entity.es.js",
-  "exports": {
-    ".": "./dist/rdf-entity.es.js"
-  },
-  "files": [
-    "dist"
-  ],
+  "main": "index.js",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
     "updateManifest": "cem analyze --globs \"src/rdf-entity.js\"",
     "test": "standard && c8 --reporter=lcov --reporter=text mocha"
   },
@@ -30,6 +23,7 @@
     "@rdfjs/namespace": "^2.0.0",
     "@rdfjs/term-map": "^2.0.0",
     "@rdfjs/term-set": "^2.0.1",
+    "@tpluscode/rdf-ns-builders": "^2.0.1",
     "clownface": "^1.4.0",
     "lit-element": "^3.2.2"
   },

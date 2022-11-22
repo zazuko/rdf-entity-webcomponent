@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script type="module">
-      import 'api-viewer-element'
-    </script>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>RDF entity demo</title>
@@ -12,6 +9,8 @@
     <script type="module">
       import { ns } from './src/namespaces.js'
       import rdf from './src/rdf-ext.js'
+
+      ns.ex = rdf.namespace('http://example.org/')
 
       const pointer = rdf.clownface({ dataset: rdf.dataset(), factory: rdf }).
         node(ns.ex.Person).
