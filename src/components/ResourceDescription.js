@@ -7,13 +7,13 @@ import { Debug } from './Debug.js'
 import { entityBuilder } from '../builder/entityBuilder.js'
 
 function EntityList (cf, options) {
-  const builder = entityBuilder(cf).
-    embedNamed(options.embedNamed).
-    embedBlanks(options.embedBlanks).
-    embedLists(options.embedLists).
-    groupValuesByProperty(options.groupValuesByProperty).
-    groupPropertiesByValue(options.groupPropertiesByValue).
-    maxLevel(options.maxLevel)
+  const builder = entityBuilder(cf)
+    .embedNamed(options.embedNamed)
+    .embedBlanks(options.embedBlanks)
+    .embedLists(options.embedLists)
+    .groupValuesByProperty(options.groupValuesByProperty)
+    .groupPropertiesByValue(options.groupPropertiesByValue)
+    .maxLevel(options.maxLevel)
     .withExternalLabels(options.externalLabels)
     .withPreferredLanguages(options.preferredLanguages)
 

@@ -8,8 +8,10 @@ function getLiteralString (literal) {
   const langChunk = ns.rdf.langString.equals(literal.datatype)
     ? `@${literal.language}`
     : ''
-  const xsdChunk = ns.xsd.string.equals(literal.datatype) ? `^^${shrink(
-    literal.datatype.value)}` : ''
+  const xsdChunk = ns.xsd.string.equals(literal.datatype)
+    ? `^^${shrink(
+    literal.datatype.value)}`
+    : ''
   return `"${literal.value}"${langChunk}${xsdChunk}`
 }
 
@@ -19,7 +21,6 @@ function shrink (urlStr) {
 }
 
 function renderTerm (term) {
-
   if (term.termType === 'Literal') {
     return html`${getLiteralString(term)}`
   }
@@ -70,7 +71,6 @@ function Metadata (cf, options) {
   } else {
     return html``
   }
-
 }
 
 export { Metadata, renderTerm }
