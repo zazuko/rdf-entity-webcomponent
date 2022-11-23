@@ -2,6 +2,7 @@ import { html } from 'lit-element'
 import { namedCounts } from '../model.js'
 import { ns } from '../namespaces.js'
 import { splitIfVocab } from '../builder/utils.js'
+import rdf from '../rdf-ext.js'
 
 function getLiteralString (literal) {
   const langChunk = ns.rdf.langString.equals(literal.datatype)
@@ -34,9 +35,10 @@ function renderTerm (term) {
   return html`${term}`
 }
 
-
 function Metadata (cf, options) {
-  const counts = namedCounts(cf, options)
+  const counts = options.showNamedGraphs
+    ? namedCounts(cf, options)
+    : rdf.termMap()
   const list = []
   for (const [key, value] of counts.entries()) {
     list.push(html`
@@ -56,14 +58,19 @@ function Metadata (cf, options) {
     }
   }
 
-  return html`
-      <div class="metadata">
-          <h3>Metadata</h3>
-          <table>
-              ${list}
-          </table>
-      </div>
-  `
+  if (list.length) {
+    return html`
+        <div class="metadata">
+            <h3>Metadata</h3>
+            <table>
+                ${list}
+            </table>
+        </div>
+    `
+  } else {
+    return html``
+  }
+
 }
 
 export { Metadata, renderTerm }

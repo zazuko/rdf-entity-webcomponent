@@ -46,12 +46,9 @@ function ResourceDescription (cf, options) {
   `
 }
 
-function Empty (cf, options) {
+function Empty (message) {
   return html`
-      <div>
-          No quads
-      </div>
-  `
+      <div>${message}</div>`
 }
 
 export { ResourceDescription, Empty }

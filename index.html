@@ -23,34 +23,32 @@
             addOut(ns.rdfs.label, rdf.literal('Bob\'s Address'))
         }).
         addOut(ns.schema.description, rdf.literal('Hello')).
-        addOut(ns.schema.description, rdf.literal('cześć', 'pl'))
+        addOut(ns.schema.description, rdf.literal('cześć', 'pl')).
+        addOut(ns.rdfs.label, rdf.literal('Robert', 'fr')).
+        addOut(ns.rdfs.label, rdf.literal('Bob', 'en'))
 
       // Just adding a namedGraph for demo purposes
       const namedGraph = ns.ex.namedGraph
+
       function setNamedGraph (dataset) {
-        return rdf.dataset([...[...dataset].map(quad => rdf.quad(quad.subject,quad.predicate,quad.object, namedGraph))])
+        return rdf.dataset(
+          [...[...dataset].map(quad => rdf.quad(quad.subject, quad.predicate, quad.object, namedGraph))])
       }
-      const demoPointer = rdf.clownface({ dataset:setNamedGraph(pointer.dataset) , term: pointer.term })
+
+      const demoPointer = rdf.clownface({ dataset: setNamedGraph(pointer.dataset), term: pointer.term })
 
       let demo = document.getElementById('demo')
 
-      demo.options = {
-        groupValuesByProperty: true,
-        groupPropertiesByValue: true,
-        embedBlanks: true,
-        technicalCues: true,
-        preferredLanguages: ['en', 'fr', 'de', 'it', 'pl'],
-        highLightLanguage: 'en',
-        embedNamed: true,
-        embedLists: true,
-        debug: false,
-        maxLevel: 3,
-        metadata: {
-          'SPARQL endpoint:': rdf.namedNode('http://example.org/sparql'),
-          'Title': 'A title',
-        },
+      demo.technicalCues = true
+      demo.compactMode = true
+      demo.preferredLanguages = ['en', 'fr', 'de', 'it', 'pl']
+      demo.embedNamed = true
+      demo.maxLevel = 3
+      demo.showNamedGraphs = true
+      demo.metadata = {
+        'SPARQL endpoint:': rdf.namedNode('http://example.org/sparql'),
+        'Some': 'Value',
       }
-
       demo.pointer = demoPointer
 
     </script>

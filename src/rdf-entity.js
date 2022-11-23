@@ -2,18 +2,7 @@ import { LitElement, css } from 'lit-element'
 import { Empty, ResourceDescription } from './components/ResourceDescription.js'
 import rdf from './rdf-ext.js'
 
-const DEFAULTS = {
-  groupValuesByProperty: true,
-  groupPropertiesByValue: true,
-  embedBlanks: true,
-  technicalCues: true,
-  preferredLanguages: ['en', 'fr', 'de', 'it'],
-  highLightLanguage: 'en',
-  embedNamed: false,
-  embedLists: true,
-  debug: false,
-  maxLevel: 3 // externalLabels: labels.cf,
-}
+import { DEFAULT_BUILDER_OPTIONS, getBuilderOptions } from './options.js'
 
 export class RdfEntity extends LitElement {
   static styles = css`
@@ -141,18 +130,27 @@ export class RdfEntity extends LitElement {
       border: var(--color-grey) solid 1px;
     }
   `
-
   constructor () {
     super()
     this._pointer = rdf.clownface({ dataset: rdf.dataset() })
-    this._options = DEFAULTS
+
+    for (const [key, value] of Object.entries(DEFAULT_BUILDER_OPTIONS)) {
+      this[key] = value
+    }
+
     this.attachShadow({ mode: 'open' })
   }
 
   static get properties () {
     return {
       pointer: { type: Object, attribute: false, required: true },
-      options: { type: Object, attribute: false, required: false }
+      technicalCues: { type: Boolean, property: false, required: false },
+      compactMode: { type: Boolean, property: false, required: false },
+      preferredLanguages: { type: Array, property: false, required: false },
+      embedNamed: { type: Boolean, property: false, required: false },
+      maxLevel: { type: Number, property: false, required: false },
+      showNamedGraphs: { type: Boolean, property: false, required: false },
+      metadata: { type: Object, property: false, required: false }
     }
   }
 
@@ -161,24 +159,17 @@ export class RdfEntity extends LitElement {
   }
 
   set pointer (pointer) {
-    const { dataset, term } = pointer
-    this._pointer = rdf.clownface({ dataset, term })
-  }
-
-  get options () {
-    return this._options
-  }
-
-  set options (options) {
-    this._options = { ...options }
+    this._pointer = pointer
     this.requestUpdate()
   }
 
   render () {
-    if (this._pointer.dataset.size) {
-      return ResourceDescription(this._pointer, this._options)
+    if (!this._pointer || !this._pointer.dataset) {
+      return Empty('requires a Graph pointer')
+    } else if (!this._pointer.dataset.size) {
+      return Empty('No quads')
     } else {
-      return Empty(this._pointer, this._options)
+      return ResourceDescription(this._pointer, getBuilderOptions(this))
     }
   }
 }
