@@ -1,8 +1,9 @@
 function getBuilderOptions (webComponent) {
+  console.log('webComponent.debug', webComponent.debug)
   return {
-    technicalCues: webComponent.technicalCues ?? true,
-    groupValuesByProperty: webComponent.compactMode ?? true,
-    groupPropertiesByValue: webComponent.compactMode ?? true,
+    technicalCues: webComponent.technicalCues ?? false,
+    groupValuesByProperty: webComponent.compactMode ?? false,
+    groupPropertiesByValue: webComponent.compactMode ?? false,
     preferredLanguages: webComponent.preferredLanguages ??
       ['en', 'fr', 'de', 'it'],
     highLightLanguage: undefined,
@@ -12,7 +13,7 @@ function getBuilderOptions (webComponent) {
     maxLevel: webComponent.maxLevel ?? 3,
     showNamedGraphs: webComponent.showNamedGraphs ?? false,
     metadata: webComponent.metadata,
-    debug: false
+    debug: webComponent.debug ?? false
   }
 }
 

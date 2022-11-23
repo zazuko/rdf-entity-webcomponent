@@ -10,51 +10,47 @@
       import { ns } from './src/namespaces.js'
       import rdf from './src/rdf-ext.js'
 
-      ns.ex = rdf.namespace('http://example.org/')
-
-      const pointer = rdf.clownface({ dataset: rdf.dataset(), factory: rdf }).
-        node(ns.ex.Person).
-        addOut(ns.schema.address, ns.ex.address, address => {
-          address.addOut(ns.rdf.type, ns.schema.PostalAddress).
-            addOut(ns.schema.streetAddress, rdf.literal('3 Teewah Close')).
-            addOut(ns.schema.postalCode, rdf.literal('4879')).
-            addOut(ns.schema.email, rdf.literal('bob@example1.com')).
-            addOut(ns.schema.email, rdf.literal('bob@example2.com')).
-            addOut(ns.rdfs.label, rdf.literal('Bob\'s Address'))
-        }).
-        addOut(ns.schema.description, rdf.literal('Hello')).
-        addOut(ns.schema.description, rdf.literal('cześć', 'pl')).
-        addOut(ns.rdfs.label, rdf.literal('Robert', 'fr')).
-        addOut(ns.rdfs.label, rdf.literal('Bob', 'en'))
-
-      // Just adding a namedGraph for demo purposes
-      const namedGraph = ns.ex.namedGraph
-
-      function setNamedGraph (dataset) {
-        return rdf.dataset(
-          [...[...dataset].map(quad => rdf.quad(quad.subject, quad.predicate, quad.object, namedGraph))])
+      function examplePointer () {
+        ns.ex = rdf.namespace('http://example.org/')
+        return rdf.clownface({ dataset: rdf.dataset(), factory: rdf }).
+          node(ns.ex.WhiteRabbit).
+          addOut(ns.schema.address, ns.ex.address, address => {
+            address.addOut(ns.rdf.type, ns.schema.PostalAddress).
+              addOut(ns.schema.streetAddress, rdf.literal('5 Wonderland Street')).
+              addOut(ns.schema.postalCode, rdf.literal('4879')).
+              addOut(ns.schema.email, rdf.literal('white@wonderland.com')).
+              addOut(ns.schema.email, rdf.literal('rabbit@hotmailz.com')).
+              addOut(ns.schema.name, rdf.literal('Postal address'))
+          }).
+          addOut(ns.foaf.img, rdf.namedNode('https://miro.medium.com/max/720/1*HZazTjGg9EBSOoz34IN-tA.jpeg')).
+          addOut(ns.rdfs.label, rdf.literal('Conejo blanco', 'es')).
+          addOut(ns.rdfs.label, rdf.literal('White rabbit', 'en')).
+          addOut(ns.foaf.knows, ns.ex.Alice, alice => {
+            alice.addOut(ns.rdf.type, ns.ex.Person).
+              addOut(ns.schema.name, rdf.literal('Alice')).
+              addOut(ns.foaf.img, rdf.namedNode('https://miro.medium.com/max/1100/1*xupcHn3b0jEFPkjvuH5Pbw.jpeg'))
+          })
       }
 
-      const demoPointer = rdf.clownface({ dataset: setNamedGraph(pointer.dataset), term: pointer.term })
-
+      const demoPointer = examplePointer()
       let demo = document.getElementById('demo')
-
-      demo.technicalCues = true
-      demo.compactMode = true
-      demo.preferredLanguages = ['en', 'fr', 'de', 'it', 'pl']
-      demo.embedNamed = true
       demo.maxLevel = 3
       demo.showNamedGraphs = true
+      demo.preferredLanguages = ['en', 'fr', 'de', 'it', 'pl']
       demo.metadata = {
         'SPARQL endpoint:': rdf.namedNode('http://example.org/sparql'),
-        'Some': 'Value',
+        'arbitrary': 'value',
       }
       demo.pointer = demoPointer
 
     </script>
 </head>
 <body>
-    <rdf-entity id="demo"/>
+<rdf-entity id="demo"
+            compact-mode
+            technical-cues
+            embed-named
+            !debug></rdf-entity>
 </body>
 </html>
 

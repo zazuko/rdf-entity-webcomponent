@@ -144,13 +144,14 @@ export class RdfEntity extends LitElement {
   static get properties () {
     return {
       pointer: { type: Object, attribute: false, required: true },
-      technicalCues: { type: Boolean, property: false, required: false },
-      compactMode: { type: Boolean, property: false, required: false },
-      preferredLanguages: { type: Array, property: false, required: false },
-      embedNamed: { type: Boolean, property: false, required: false },
-      maxLevel: { type: Number, property: false, required: false },
-      showNamedGraphs: { type: Boolean, property: false, required: false },
-      metadata: { type: Object, property: false, required: false }
+      technicalCues: { type: Boolean, attribute: 'technical-cues', required: false },
+      compactMode: { type: Boolean, attribute: 'compact-mode', required: false },
+      preferredLanguages: { type: Array, attribute: 'preferred-languages', required: false },
+      embedNamed: { type: Boolean, attribute: 'embed-named', required: false },
+      maxLevel: { type: Number, attribute: 'max-level', required: false },
+      showNamedGraphs: { type: Boolean, attribute: 'show-named-graphs', required: false },
+      metadata: { type: Object, attribute: 'metadata', required: false },
+      debug: { type: Boolean, attribute: 'debug', required: false }
     }
   }
 
@@ -165,7 +166,7 @@ export class RdfEntity extends LitElement {
 
   render () {
     if (!this._pointer || !this._pointer.dataset) {
-      return Empty('requires a Graph pointer')
+      return Empty('requires a Clownface pointer')
     } else if (!this._pointer.dataset.size) {
       return Empty('No quads')
     } else {
