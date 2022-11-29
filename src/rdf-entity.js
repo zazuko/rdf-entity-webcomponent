@@ -147,8 +147,8 @@ export class RdfEntity extends LitElement {
       technicalCues: { type: Boolean, attribute: 'technical-cues', required: false },
       compactMode: { type: Boolean, attribute: 'compact-mode', required: false },
       preferredLanguages: { type: Array, attribute: 'preferred-languages', required: false },
-      embedNamed: { type: Boolean, attribute: 'embed-named', required: false },
-      embedBlanks: { type: Boolean, attribute: 'embed-blanks', required: false },
+      embedNamedNodes: { type: Boolean, attribute: 'embed-named-nodes', required: false },
+      embedBlankNodes: { type: Boolean, attribute: 'embed-blank-nodes', required: false },
 
       maxLevel: { type: Number, attribute: 'max-level', required: false },
       namedGraphs: { type: Boolean, attribute: 'named-graphs', required: false },

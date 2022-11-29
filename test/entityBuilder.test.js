@@ -267,8 +267,8 @@ describe('ignore property', () => {
       const cf = toClownface(turtle, term)
 
       const options = {
-        embedNamed: true,
-        embedBlanks: true,
+        embedNamedNodes: true,
+        embedBlankNodes: true,
         ignoreProperties: rdf.termSet(
           [rdf.namedNode('http://www.w3.org/2000/01/rdf-schema#label')])
       }
@@ -290,8 +290,8 @@ describe('no grouping by value or property', () => {
       const options = {
         groupValuesByProperty: false,
         groupPropertiesByValue: false,
-        embedNamed: true,
-        embedBlanks: true
+        embedNamedNodes: true,
+        embedBlankNodes: true
       }
 
       const result = createEntity(cf, options)
@@ -313,7 +313,7 @@ it('do not repeat with compactMode false', function () {
 
   const options = {
     embedLists: true,
-    embedNamed: true,
+    embedNamedNodes: true,
     groupValuesByProperty: true,
     groupPropertiesByValue: true,
     externalLabels: rdf.clownface({ dataset: rdf.dataset() }),
@@ -336,7 +336,7 @@ it('do not repeat with compactMode true', function () {
 
   const options = {
     embedLists: false,
-    embedNamed: true,
+    embedNamedNodes: true,
     groupValuesByProperty: false,
     groupPropertiesByValue: false,
     externalLabels: rdf.clownface({ dataset: rdf.dataset() }),
