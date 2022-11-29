@@ -1,5 +1,4 @@
 function getBuilderOptions (webComponent) {
-
   const preferredLanguages = webComponent.preferredLanguages ??
     ['en', 'fr', 'de', 'it']
   const highLightLanguage = preferredLanguages.length > 0
