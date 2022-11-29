@@ -22,10 +22,10 @@ function canEmbed (options, context) {
 
 function shouldEmbed (options, context) {
   return term => {
-    if (term.termType === 'NamedNode' && !options.embedNamed) {
+    if (term.termType === 'NamedNode' && !options.embedNamedNodes) {
       return false
     }
-    if (term.termType === 'BlankNode' && !options.embedBlanks) {
+    if (term.termType === 'BlankNode' && !options.embedBlankNodes) {
       return false
     }
     return !(options.maxLevel && (context.level >= options.maxLevel))
@@ -104,8 +104,8 @@ function createEntityWithContext (cf, options, context) {
     groupValuesByProperty: true,
     groupPropertiesByValue: true,
     embedLists: true,
-    embedNamed: false,
-    embedBlanks: true,
+    embedNamedNodes: false,
+    embedBlankNodes: true,
     maxLevel: undefined,
     preferredLanguages: ['en'],
     renderAs: (cf, options, context) => {
