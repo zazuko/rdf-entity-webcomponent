@@ -35,6 +35,6 @@ See the [example](./index.html) for details
 | `preferredLanguages` | `preferred-languages` |           | `Array`     | ['en', 'fr', 'de', 'it'] | A list of the languages to show in the labels, ordered by priority |
 | `embedNamed`         | `embed-named`         |           | `Boolean`   | false                    | Recursively embeds any named entity positioned as an object        |
 | `maxLevel`           | `max-level`           |           | `Number`    | 3                        | The maximum depth of the trees                                     |
-| `showNamedGraphs`    | `show-named-graphs`   |           | `Boolean`   | false                    | Display stats about named graphs and counts                        |
+| `namedGraphs`        | `named-graphs`        |           | `Boolean`   | false                    | Display stats about named graphs and counts                        |
 | `metadata`           | `metadata`            |           | `Object`    | undefined                | Additional values to display in the section `metadata`             |
 | `debug`              | `debug`               |           | `Boolean`   | false                    | Displays the current triples for debugging                         |
