@@ -1,4 +1,4 @@
-import { html } from 'lit-element'
+import { html } from 'lit'
 
 function Term (entity, options, context, renderedAsRoot) {
   if (renderedAsRoot) {

@@ -1,4 +1,4 @@
-import { html } from 'lit-element'
+import { html } from 'lit'
 import rdf from '../rdf-ext.js'
 import { entity } from '../model.js'
 import { Entity } from './Entity.js'

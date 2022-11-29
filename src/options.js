@@ -1,12 +1,17 @@
 function getBuilderOptions (webComponent) {
-  console.log('webComponent.debug', webComponent.debug)
+
+  const preferredLanguages = webComponent.preferredLanguages ??
+    ['en', 'fr', 'de', 'it']
+  const highLightLanguage = preferredLanguages.length > 0
+    ? preferredLanguages[0]
+    : undefined
+
   return {
     technicalCues: webComponent.technicalCues ?? false,
     groupValuesByProperty: webComponent.compactMode ?? false,
     groupPropertiesByValue: webComponent.compactMode ?? false,
-    preferredLanguages: webComponent.preferredLanguages ??
-      ['en', 'fr', 'de', 'it'],
-    highLightLanguage: undefined,
+    preferredLanguages,
+    highLightLanguage,
     embedBlanks: true,
     embedLists: true,
     embedNamed: webComponent.embedNamed ?? false,

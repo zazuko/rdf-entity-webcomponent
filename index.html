@@ -35,7 +35,6 @@
       const demoPointer = examplePointer()
       let demo = document.getElementById('demo')
       demo.maxLevel = 3
-      demo.showNamedGraphs = true
       demo.preferredLanguages = ['en', 'fr', 'de', 'it', 'pl']
       demo.metadata = {
         'SPARQL endpoint:': rdf.namedNode('http://example.org/sparql'),
@@ -47,8 +46,8 @@
 </head>
 <body>
 <rdf-entity id="demo"
+            showNamedGraphs
             compact-mode
-            technical-cues
             embed-named
             !debug></rdf-entity>
 </body>

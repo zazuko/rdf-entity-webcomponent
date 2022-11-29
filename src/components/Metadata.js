@@ -1,4 +1,4 @@
-import { html } from 'lit-element'
+import { html } from 'lit'
 import { namedCounts } from '../model.js'
 import { ns } from '../namespaces.js'
 import { splitIfVocab } from '../builder/utils.js'

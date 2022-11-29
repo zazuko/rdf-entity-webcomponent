@@ -1,4 +1,4 @@
-import { html } from 'lit-element'
+import { html } from 'lit'
 import { renderTerm } from './Metadata.js'
 
 function Debug (cf, options) {
