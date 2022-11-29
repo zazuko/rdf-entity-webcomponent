@@ -17,7 +17,7 @@ function getBuilderOptions (webComponent) {
     preferredLanguages,
     highlightLanguage,
     embedLists: true,
-    embedNamed: boolean(webComponent.embedNamed, false),
+    embedNamedNodes: boolean(webComponent.embedNamedNodes, false),
     embedBlankNodes: boolean(webComponent.embedBlankNodes, false),
     maxLevel: webComponent.maxLevel ?? 3,
     metadata: webComponent.metadata,

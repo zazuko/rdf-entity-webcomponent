@@ -22,7 +22,7 @@ function canEmbed (options, context) {
 
 function shouldEmbed (options, context) {
   return term => {
-    if (term.termType === 'NamedNode' && !options.embedNamed) {
+    if (term.termType === 'NamedNode' && !options.embedNamedNodes) {
       return false
     }
     if (term.termType === 'BlankNode' && !options.embedBlankNodes) {
@@ -104,7 +104,7 @@ function createEntityWithContext (cf, options, context) {
     groupValuesByProperty: true,
     groupPropertiesByValue: true,
     embedLists: true,
-    embedNamed: false,
+    embedNamedNodes: false,
     embedBlankNodes: true,
     maxLevel: undefined,
     preferredLanguages: ['en'],
