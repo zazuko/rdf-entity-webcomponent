@@ -151,7 +151,7 @@ export class RdfEntity extends LitElement {
       embedBlankNodes: { type: Boolean, attribute: 'embed-blank-nodes', required: false },
       highlightLanguage: { type: Boolean, attribute: 'highlight-language', required: false },
       maxLevel: { type: Number, attribute: 'max-level', required: false },
-      namedGraphs: { type: Boolean, attribute: 'named-graphs', required: false },
+      showNamedGraphs: { type: Boolean, attribute: 'show-named-graphs', required: false },
       metadata: { type: Object, attribute: 'metadata', required: false },
       debug: { type: Boolean, attribute: 'debug', required: false }
     }
