@@ -18,7 +18,7 @@ function getBuilderOptions (webComponent) {
     highLightLanguage,
     embedLists: true,
     embedNamed: boolean(webComponent.embedNamed, false),
-    embedBlanks: boolean(webComponent.embedBlanks, false),
+    embedBlankNodes: boolean(webComponent.embedBlankNodes, false),
     maxLevel: webComponent.maxLevel ?? 3,
     metadata: webComponent.metadata,
     debug: boolean(webComponent.debug, false),

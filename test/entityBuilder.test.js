@@ -268,7 +268,7 @@ describe('ignore property', () => {
 
       const options = {
         embedNamed: true,
-        embedBlanks: true,
+        embedBlankNodes: true,
         ignoreProperties: rdf.termSet(
           [rdf.namedNode('http://www.w3.org/2000/01/rdf-schema#label')])
       }
@@ -291,7 +291,7 @@ describe('no grouping by value or property', () => {
         groupValuesByProperty: false,
         groupPropertiesByValue: false,
         embedNamed: true,
-        embedBlanks: true
+        embedBlankNodes: true
       }
 
       const result = createEntity(cf, options)

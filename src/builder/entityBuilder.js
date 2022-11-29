@@ -25,7 +25,7 @@ function shouldEmbed (options, context) {
     if (term.termType === 'NamedNode' && !options.embedNamed) {
       return false
     }
-    if (term.termType === 'BlankNode' && !options.embedBlanks) {
+    if (term.termType === 'BlankNode' && !options.embedBlankNodes) {
       return false
     }
     return !(options.maxLevel && (context.level >= options.maxLevel))
@@ -105,7 +105,7 @@ function createEntityWithContext (cf, options, context) {
     groupPropertiesByValue: true,
     embedLists: true,
     embedNamed: false,
-    embedBlanks: true,
+    embedBlankNodes: true,
     maxLevel: undefined,
     preferredLanguages: ['en'],
     renderAs: (cf, options, context) => {
