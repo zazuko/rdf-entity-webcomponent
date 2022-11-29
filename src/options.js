@@ -1,23 +1,32 @@
+function boolean (value, defaultValue) {
+  if (value === undefined) {
+    return defaultValue
+  } else {
+    return !!value
+  }
+}
+
 function getBuilderOptions (webComponent) {
   const preferredLanguages = webComponent.preferredLanguages ??
     ['en', 'fr', 'de', 'it']
   const highLightLanguage = preferredLanguages.length > 0
     ? preferredLanguages[0]
     : undefined
-
   return {
-    technicalCues: webComponent.technicalCues ?? false,
-    groupValuesByProperty: webComponent.compactMode ?? false,
-    groupPropertiesByValue: webComponent.compactMode ?? false,
+    technicalCues: boolean(webComponent.technicalCues, false),
     preferredLanguages,
     highLightLanguage,
-    embedBlanks: true,
     embedLists: true,
-    embedNamed: webComponent.embedNamed ?? false,
+    embedNamed: boolean(webComponent.embedNamed, false),
+    embedBlanks: boolean(webComponent.embedBlanks, false),
     maxLevel: webComponent.maxLevel ?? 3,
-    showNamedGraphs: webComponent.showNamedGraphs ?? false,
     metadata: webComponent.metadata,
-    debug: webComponent.debug ?? false
+    debug: boolean(webComponent.debug, false),
+
+    // The following are shortcuts and do not correspond to the exact options of the builder
+    groupValuesByProperty: boolean(webComponent.compactMode, false),
+    groupPropertiesByValue: boolean(webComponent.compactMode, false),
+    showNamedGraphs: boolean(webComponent.namedGraphs, false)
   }
 }
 
