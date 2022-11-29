@@ -6,8 +6,7 @@ import { expect } from 'expect'
 import toMatchSnapshot from 'expect-mocha-snapshot'
 import { describe, it } from 'mocha'
 import rdf from '../src/rdf-ext.js'
-import { entityBuilder } from '../src/builder/entityBuilder.js'
-import { entity } from '../src/model.js'
+import { createEntity } from '../src/builder/entityBuilder.js'
 import { toQuads } from './support/serialization.js'
 
 expect.extend({ toMatchSnapshot })
@@ -91,13 +90,13 @@ const entitySchema = {
 
 describe('entityBuilder', () => {
   it('should be a function', () => {
-    assert.equal(typeof entityBuilder, 'function')
+    assert.equal(typeof createEntity, 'function')
   })
 
   it('should create a model', () => {
     const data = '<a> <b> <c>.'
     const cf = toClownface(data, rdf.namedNode('a'))
-    const result = entityBuilder(cf).build()
+    const result = createEntity(cf)
 
     assert.jsonSchema(result, entitySchema)
   })
@@ -105,7 +104,7 @@ describe('entityBuilder', () => {
   it('embeds blank nodes', () => {
     const data = '<a> <a> [ <a> [ <a> [ <a> [ <a> <a> ] ] ] ] .'
     const cf = toClownface(data, rdf.namedNode('a'))
-    const result = entityBuilder(cf).build()
+    const result = createEntity(cf)
 
     assert.jsonSchema(result, entitySchema)
   })
@@ -114,7 +113,7 @@ describe('entityBuilder', () => {
     const data = '_:a <a> [ <b> _:a] .'
     const cf = toClownface(data, rdf.blankNode('_:a'))
 
-    const result = entityBuilder(cf).build()
+    const result = createEntity(cf)
     assert.jsonSchema(result, entitySchema)
   })
 })
@@ -253,7 +252,7 @@ describe('default', () => {
   for (const [testName, [turtle, term]] of Object.entries(battery)) {
     it(testName, function () {
       const cf = toClownface(turtle, term)
-      const result = entityBuilder(cf).build()
+      const result = createEntity(cf)
 
       expect([turtle, term, result]).toMatchSnapshot(this)
 
@@ -266,11 +265,15 @@ describe('ignore property', () => {
   for (const [testName, [turtle, term]] of Object.entries(battery)) {
     it(testName, function () {
       const cf = toClownface(turtle, term)
-      const result = entityBuilder(cf)
-        .embedNamed(true)
-        .embedBlanks(true)
-        .withIgnoreProperties([rdf.namedNode('http://www.w3.org/2000/01/rdf-schema#label')])
-        .build()
+
+      const options = {
+        embedNamed: true,
+        embedBlanks: true,
+        ignoreProperties: rdf.termSet(
+          [rdf.namedNode('http://www.w3.org/2000/01/rdf-schema#label')])
+      }
+
+      const result = createEntity(cf, options)
 
       expect([turtle, term, result]).toMatchSnapshot(this)
 
@@ -283,12 +286,15 @@ describe('no grouping by value or property', () => {
   for (const [testName, [turtle, term]] of Object.entries(battery)) {
     it(testName, function () {
       const cf = toClownface(turtle, term)
-      const result = entityBuilder(cf)
-        .groupValuesByProperty(false)
-        .groupPropertiesByValue(false)
-        .embedNamed(true)
-        .embedBlanks(true)
-        .build()
+
+      const options = {
+        groupValuesByProperty: false,
+        groupPropertiesByValue: false,
+        embedNamed: true,
+        embedBlanks: true
+      }
+
+      const result = createEntity(cf, options)
 
       expect([turtle, term, result]).toMatchSnapshot(this)
 
@@ -305,16 +311,16 @@ it('do not repeat with compactMode false', function () {
 `
   const cf = toClownface(data, rdf.namedNode('a'))
 
-  const compactMode = false
+  const options = {
+    embedLists: true,
+    embedNamed: true,
+    groupValuesByProperty: true,
+    groupPropertiesByValue: true,
+    externalLabels: rdf.clownface({ dataset: rdf.dataset() }),
+    preferredLanguages: ['de', 'fr', 'it', 'en']
+  }
 
-  const builder = entityBuilder(cf)
-    .embedLists(compactMode)
-    .groupValuesByProperty(compactMode)
-    .groupPropertiesByValue(compactMode)
-    .withExternalLabels(rdf.clownface({ dataset: rdf.dataset() }))
-    .withPreferredLanguages(['de', 'fr', 'it', 'en'])
-
-  const result = entity(cf, builder)
+  const result = createEntity(cf, options)
 
   expect(result).toMatchSnapshot(this)
 })
@@ -328,16 +334,15 @@ it('do not repeat with compactMode true', function () {
 
   const cf = toClownface(data, rdf.namedNode('a'))
 
-  const compactMode = false
-
-  const builder = entityBuilder(cf)
-    .embedLists(compactMode)
-    .groupValuesByProperty(compactMode)
-    .groupPropertiesByValue(compactMode)
-    .withExternalLabels(rdf.clownface({ dataset: rdf.dataset() }))
-    .withPreferredLanguages(['de', 'fr', 'it', 'en'])
-
-  const result = entity(cf, builder)
+  const options = {
+    embedLists: false,
+    embedNamed: true,
+    groupValuesByProperty: false,
+    groupPropertiesByValue: false,
+    externalLabels: rdf.clownface({ dataset: rdf.dataset() }),
+    preferredLanguages: ['de', 'fr', 'it', 'en']
+  }
+  const result = createEntity(cf, options)
 
   expect(result).toMatchSnapshot(this)
 })
@@ -349,11 +354,10 @@ it('fetch languages', function () {
 `
   const cf = toClownface(data, rdf.namedNode('a'))
 
-  const builder = entityBuilder(cf)
-    .withExternalLabels(rdf.clownface({ dataset: rdf.dataset() }))
-    .withPreferredLanguages(['de', 'fr', 'it', 'en'])
-
-  const result = entity(cf, builder)
-
+  const options = {
+    externalLabels: rdf.clownface({ dataset: rdf.dataset() }),
+    preferredLanguages: ['de', 'fr', 'it', 'en']
+  }
+  const result = createEntity(cf, options)
   expect(result).toMatchSnapshot(this)
 })
