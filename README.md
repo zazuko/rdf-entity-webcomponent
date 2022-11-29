@@ -33,8 +33,10 @@ See the [example](./index.html) for details
 | `technicalCues`      | `technical-cues`      |           | `Boolean`   | false                    | Display information such as languages or datatypes                 |
 | `compactMode`        | `compact-mode`        |           | `Boolean`   | false                    | Group repeated properties or values for a compact visualization    |
 | `preferredLanguages` | `preferred-languages` |           | `Array`     | ['en', 'fr', 'de', 'it'] | A list of the languages to show in the labels, ordered by priority |
-| `embedNamed`         | `embed-named`         |           | `Boolean`   | false                    | Recursively embeds any named entity positioned as an object        |
+| `embedBlankNodes`    | `embed-named-nodes`   |           | `Boolean`   | false                    | Recursively embeds any blank node positioned as an object          |
+| `embedNamedNodes`    | `embed-blank-nodes`   |           | `Boolean`   | false                    | Recursively embeds any named entity positioned as an object        |
+| `highlightLanguage`  | `highlight-language`  |           | `Boolean`   | false                    | Highlights literals matching prefered language                     |
 | `maxLevel`           | `max-level`           |           | `Number`    | 3                        | The maximum depth of the trees                                     |
 | `namedGraphs`        | `named-graphs`        |           | `Boolean`   | false                    | Display stats about named graphs and counts                        |
-| `metadata`           | `metadata`            |           | `Object`    | undefined                | Additional values to display in the section `metadata`             |
+| `metadata`           | `metadata`            |           | `Object`    | undefined                | Additional values to display in the     section `metadata`         |
 | `debug`              | `debug`               |           | `Boolean`   | false                    | Displays the current triples for debugging                         |

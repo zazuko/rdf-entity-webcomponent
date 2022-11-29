@@ -149,7 +149,7 @@ export class RdfEntity extends LitElement {
       preferredLanguages: { type: Array, attribute: 'preferred-languages', required: false },
       embedNamed: { type: Boolean, attribute: 'embed-named', required: false },
       embedBlanks: { type: Boolean, attribute: 'embed-blanks', required: false },
-
+      highlightLanguage: { type: Boolean, attribute: 'highlight-language', required: false },
       maxLevel: { type: Number, attribute: 'max-level', required: false },
       namedGraphs: { type: Boolean, attribute: 'named-graphs', required: false },
       metadata: { type: Object, attribute: 'metadata', required: false },

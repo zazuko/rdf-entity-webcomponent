@@ -9,13 +9,13 @@ function boolean (value, defaultValue) {
 function getBuilderOptions (webComponent) {
   const preferredLanguages = webComponent.preferredLanguages ??
     ['en', 'fr', 'de', 'it']
-  const highLightLanguage = preferredLanguages.length > 0
+  const highlightLanguage = preferredLanguages.length > 0
     ? preferredLanguages[0]
     : undefined
   return {
     technicalCues: boolean(webComponent.technicalCues, false),
     preferredLanguages,
-    highLightLanguage,
+    highlightLanguage,
     embedLists: true,
     embedNamed: boolean(webComponent.embedNamed, false),
     embedBlanks: boolean(webComponent.embedBlanks, false),
