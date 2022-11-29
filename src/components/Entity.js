@@ -48,8 +48,8 @@ function TermWithCues (entity, options, context, renderedAsRoot) {
     spans.push(html`<span class="datatype">${entity.label.datatype.vocab}:${entity.label.datatype.string}</span>`)
   }
 
-  if (options?.highLightLanguage && entity.label.language) {
-    const isHighLight = entity.label.language === options.highLightLanguage
+  if (options?.highlightLanguage && entity.label.language) {
+    const isHighLight = entity.label.language === options.highlightLanguage
     return isHighLight
       ? html`
         <div>${spans}</div>`
