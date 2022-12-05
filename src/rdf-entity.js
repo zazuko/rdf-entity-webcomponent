@@ -32,9 +32,29 @@ export class RdfEntity extends LitElement {
       border: 1px solid var(--color-grey);
     }
 
+    .main-header {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 30px;
+    }
+    
+    .main-header h2{
+      font-size: 32px;
+      text-align: center;
+    }
+
+    .main-header a{
+      font-size: 18px;
+      color: var(--color-black);
+      text-transform: uppercase;
+      text-align: center;
+    }
+    
     .header {
+      font-size: 18px;
       padding-left: 10px;
-      background-color: var(--color-primary-light);
+      border-bottom: 1px dashed var(--color-grey);
+      //background-color: var(--color-primary);
     }
 
     .header a {
@@ -66,7 +86,7 @@ export class RdfEntity extends LitElement {
       width: 35%;
       word-break: break-all;
       margin-top: 1rem;
-      margin-left: auto;
+      margin-left: 1%;
       margin-right: 1rem;
     }
 
@@ -92,7 +112,7 @@ export class RdfEntity extends LitElement {
     }
 
     .vocab {
-      color: var(--color-secondary);
+      color: var(--color-text-on-secondary);
       font-size: 0.7rem;
     }
 
@@ -101,13 +121,13 @@ export class RdfEntity extends LitElement {
     }
 
     .language {
-      color: var(--color-secondary);
+      color: var(--color-text-on-secondary);
       font-size: 0.7rem;
       margin-left: 4px;
     }
 
     .datatype {
-      color: var(--color-secondary);
+      color: var(--color-text-on-secondary);
       font-size: 0.5rem;
       margin-left: 4px;
     }
@@ -124,12 +144,27 @@ export class RdfEntity extends LitElement {
       -webkit-box-orient: vertical;
     }
 
+    .metadata {
+      border: var(--color-grey) solid 1px;
+    }
+
     .metadata h3 {
+      text-align: center;
       color: var(--color-grey);
     }
 
-    .metadata {
-      border: var(--color-grey) solid 1px;
+    .metadata table {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .img-container {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .img-container img {
+      max-width: 100%;
     }
   `
   constructor () {
