@@ -1,14 +1,8 @@
 import { html } from 'lit'
 
-function Term (entity, options, context, renderedAsRoot) {
-  if (renderedAsRoot) {
-    const url = entity.term.termType === 'BlankNode' ? '' : entity.term.value
-
-    return html`<a href="${url}" id="${entity.term.value}" title=" ${entity.term.value}">${entity.label.string ? entity.label.string : entity.term.value}</a>`
-  }
-
+function Term (entity, options, context) {
   if (entity.renderAs === 'Image') {
-    return html`<img alt="${entity.term.value}" src="${entity.term.value}">`
+    return html`<div class="img-container"><img alt="${entity.term.value}" src="${entity.term.value}"></div>`
   }
 
   function resolveUrl () {
@@ -24,28 +18,37 @@ function Term (entity, options, context, renderedAsRoot) {
   const url = resolveUrl()
 
   if (entity.term.termType === 'NamedNode') {
-    return html`<a href="${url}" title="${entity.term.value}">${entity.label.string ? entity.label.string : entity.term.value}</a>`
+    return html`<a href="${url}"
+                   title="${entity.term.value}">${entity.label.string
+            ? entity.label.string
+            : entity.term.value}</a>`
   }
 
   if (entity.term.termType === 'BlankNode') {
-    return html`<a href="${url}" title="${entity.term.value}">${entity.label.string ? entity.label.string : entity.term.value}</a>`
+    return html`<a href="${url}"
+                   title="${entity.term.value}">${entity.label.string
+            ? entity.label.string
+            : entity.term.value}</a>`
   }
 
-  return html`<span>${entity.label.string ? entity.label.string : entity.term.value}</span>`
+  return html`<span>${entity.label.string
+          ? entity.label.string
+          : entity.term.value}</span>`
 }
 
-function TermWithCues (entity, options, context, renderedAsRoot) {
+function TermWithCues (entity, options, context) {
   const spans = []
   if (entity.label.vocab && options?.technicalCues) {
     spans.push(html`<span class="vocab">${entity.label.vocab}</span>`)
   }
-  spans.push(Term(entity, options, context, renderedAsRoot))
+  spans.push(Term(entity, options, context))
 
   if (entity.label.language && options?.technicalCues) {
     spans.push(html`<span class="language">${entity.label.language}</span>`)
   }
   if (entity.label.datatype && options?.technicalCues) {
-    spans.push(html`<span class="datatype">${entity.label.datatype.vocab}:${entity.label.datatype.string}</span>`)
+    spans.push(html`<span class="datatype">${entity.label.datatype.vocab}
+        :${entity.label.datatype.string}</span>`)
   }
 
   if (options?.highlightLanguage && entity.label.language) {
@@ -84,21 +87,38 @@ function Row (row, options, context) {
       </div>`
 }
 
+function RootHeader (entity) {
+  const url = entity.term.termType === 'BlankNode' ? '' : entity.term.value
+  return html`
+      <div class="main-header">
+          <h2>${entity.label.string
+                  ? entity.label.string
+                  : entity.term.value}</h2>
+          <a href="${url}" id="${entity.term.value}"
+             title=" ${entity.term.value}">${entity.term.value}</a>
+      </div>
+  `
+}
+
 function Entity (item, options, context, renderedAsRoot) {
   const rows = item.rows ? item.rows.map(row => Row(row, options, context)) : []
 
-  const term = TermWithCues(item, options, context, renderedAsRoot)
+  const header = renderedAsRoot
+    ? RootHeader(item)
+    : html`
+      <div class="header ${item.term.termType}"><h3>
+          ${TermWithCues(item, options, context)}</h3></div>`
 
   if (item.rows) {
     return html`
         <div class="entity">
-            <div class="header ${item.term.termType}"><h3>${term}</h3></div>
+            ${header}
             <div class="rows">
                 ${rows}
             </div>
         </div>`
   } else {
-    return term
+    return TermWithCues(item, options, context)
   }
 }
 
