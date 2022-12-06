@@ -80,7 +80,6 @@ function Row (row, options, context) {
 }
 
 function RootHeader (entity) {
-
   if (entity.term.termType === 'BlankNode') {
     return html`
         <div class="main-header">
@@ -112,7 +111,7 @@ function Entity (item, options, context, renderedAsRoot) {
 
   if (item.rows) {
     return html`
-        <div class="entity ${renderedAsRoot?'entity-root':''}">
+        <div class="entity ${renderedAsRoot ? 'entity-root' : ''}">
             ${header}
             <div class="rows">
                 ${rows}
