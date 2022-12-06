@@ -32,6 +32,10 @@ export class RdfEntity extends LitElement {
       border: 1px solid var(--color-grey);
     }
 
+    .entity-root {
+      border: 1px solid var(--color-grey);
+    }
+
     .main-header {
       margin-left: auto;
       margin-right: auto;

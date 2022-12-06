@@ -112,7 +112,7 @@ function Entity (item, options, context, renderedAsRoot) {
 
   if (item.rows) {
     return html`
-        <div class="entity">
+        <div class="entity ${renderedAsRoot?'entity-root':''}">
             ${header}
             <div class="rows">
                 ${rows}
