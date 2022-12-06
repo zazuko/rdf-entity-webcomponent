@@ -35,10 +35,12 @@ export class RdfEntity extends LitElement {
     .main-header {
       margin-left: auto;
       margin-right: auto;
-      margin-bottom: 30px;
+      margin-bottom: 15px;
     }
     
     .main-header h2{
+      margin-top: 15px;
+      margin-bottom: 15px;
       font-size: 32px;
       text-align: center;
     }

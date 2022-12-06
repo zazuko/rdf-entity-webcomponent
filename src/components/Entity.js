@@ -80,13 +80,22 @@ function Row (row, options, context) {
 }
 
 function RootHeader (entity) {
-  const url = entity.term.termType === 'BlankNode' ? '' : entity.term.value
+
+  if (entity.term.termType === 'BlankNode') {
+    return html`
+        <div class="main-header">
+            <h3>${entity.label.string
+                ? entity.label.string
+                : entity.term.value}</h3>
+        </div>`
+  }
+
   return html`
       <div class="main-header">
           <h2>${entity.label.string
                   ? entity.label.string
                   : entity.term.value}</h2>
-          <a href="${url}" id="${entity.term.value}"
+          <a href="${entity.term.value}" id="${entity.term.value}"
              title=" ${entity.term.value}">${entity.term.value}</a>
       </div>
   `
