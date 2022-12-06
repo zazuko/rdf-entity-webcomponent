@@ -15,16 +15,8 @@ function Term (entity, options, context) {
     return entity.term.value
   }
 
-  const url = resolveUrl()
-
   if (entity.term.termType === 'NamedNode') {
-    return html`<a href="${url}"
-                   title="${entity.term.value}">${entity.label.string
-            ? entity.label.string
-            : entity.term.value}</a>`
-  }
-
-  if (entity.term.termType === 'BlankNode') {
+    const url = resolveUrl()
     return html`<a href="${url}"
                    title="${entity.term.value}">${entity.label.string
             ? entity.label.string
