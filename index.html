@@ -22,6 +22,7 @@
               addOut(ns.schema.email, rdf.literal('rabbit@hotmailz.com')).
               addOut(ns.schema.name, rdf.literal('Postal address'))
           }).
+
           addOut(ns.foaf.img, rdf.namedNode('https://miro.medium.com/max/720/1*HZazTjGg9EBSOoz34IN-tA.jpeg')).
           addOut(ns.rdfs.label, rdf.literal('Conejo blanco', 'es')).
           addOut(ns.rdfs.label, rdf.literal('White rabbit', 'en')).
@@ -29,7 +30,10 @@
             alice.addOut(ns.rdf.type, ns.ex.Person).
               addOut(ns.schema.name, rdf.literal('Alice')).
               addOut(ns.foaf.img, rdf.namedNode('https://miro.medium.com/max/1100/1*xupcHn3b0jEFPkjvuH5Pbw.jpeg'))
-          })
+          }).addList(ns.ex.schedule,[
+            ns.ex.wakingUp,
+            ns.ex.drinkTea
+          ])
       }
 
       const demoPointer = examplePointer()
@@ -48,6 +52,7 @@
 <rdf-entity id="demo"
             technical-cues
             show-named-graphs
+            embed-lists
             compact-mode
             embed-blank-nodes
             embed-named-nodes

@@ -35,6 +35,7 @@ See the [example](./index.html) for details
 | `preferredLanguages` | `preferred-languages` |           | `Array`     | ['en', 'fr', 'de', 'it'] | A list of the languages to show in the labels, ordered by priority |
 | `embedBlankNodes`    | `embed-named-nodes`   |           | `Boolean`   | false                    | Recursively embeds any blank node positioned as an object          |
 | `embedNamedNodes`    | `embed-blank-nodes`   |           | `Boolean`   | false                    | Recursively embeds any named entity positioned as an object        |
+| `embedLists`         | `embed-lists`         |           | `Boolean`   | false                    | Display rdf-lists as ordered lists                                 |
 | `highlightLanguage`  | `highlight-language`  |           | `Boolean`   | false                    | Highlights literals matching prefered language                     |
 | `maxLevel`           | `max-level`           |           | `Number`    | 3                        | The maximum depth of the trees                                     |
 | `showNamedGraphs`    | `show-named-graphs`   |           | `Boolean`   | false                    | Display stats about named graphs and counts                        |
