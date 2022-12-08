@@ -1,19 +1,8 @@
 import { html } from 'lit'
 import { namedCounts } from '../model.js'
-import { ns } from '../namespaces.js'
 import { splitIfVocab } from '../builder/utils.js'
 import rdf from '../rdf-ext.js'
-
-function getLiteralString (literal) {
-  const langChunk = ns.rdf.langString.equals(literal.datatype)
-    ? `@${literal.language}`
-    : ''
-  const xsdChunk = ns.xsd.string.equals(literal.datatype)
-    ? `^^${shrink(
-    literal.datatype.value)}`
-    : ''
-  return `"${literal.value}"${langChunk}${xsdChunk}`
-}
+import toNT from '@rdfjs/to-ntriples'
 
 function shrink (urlStr) {
   const { vocab, string } = splitIfVocab(urlStr)
@@ -21,18 +10,18 @@ function shrink (urlStr) {
 }
 
 function renderTerm (term) {
-  if (term.termType === 'Literal') {
-    return html`${getLiteralString(term)}`
-  }
-
-  if (term.constructor.name === 'DefaultGraph') {
-    return html`Default graph`
-  }
-
   if (term.termType === 'NamedNode') {
     return html`<a href="${term.value}">${shrink(term.value)}</a>`
   }
-
+  if (term.constructor.name === 'DefaultGraph') {
+    return html`Default graph`
+  }
+  if (term.termType) {
+    return html`${toNT(term)}`
+  }
+  if (term.value) {
+    return html`${term.value}`
+  }
   return html`${term}`
 }
 

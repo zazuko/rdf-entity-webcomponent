@@ -48,9 +48,18 @@ function getRows (cf, options, context) {
             cf => cf.term)
         : cf.out(property).terms
 
+      if (renderAsList) {
+        // If visualization is as list, do not show the auxiliary blank nodes.
+        [...cf.out(property).list()].map(cf => cf.in(ns.rdf.first).term)
+          .forEach(term => {
+            context.visited.add(term)
+          })
+      }
+
       const values = terms.map(term => {
         const isCanEmbed = canEmbed(options, childContext)(term)
         const isShouldEmbed = shouldEmbed(options, childContext)(term)
+
         if (isCanEmbed && isShouldEmbed) {
           return getEntity(cf.node(term), options, childContext).entity
         } else if (isCanEmbed && !isShouldEmbed) {
@@ -132,8 +141,7 @@ function createEntityWithContext (cf, options, context) {
 }
 
 function createEntity (cf, options, context) {
-  return createEntityWithContext(cf, options || {},
-    context || {}).entity
+  return createEntityWithContext(cf, options || {}, context || {}).entity
 }
 
 export { createEntity, createEntityWithContext }

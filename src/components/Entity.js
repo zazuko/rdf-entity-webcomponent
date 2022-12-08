@@ -65,7 +65,7 @@ function Row (row, options, context) {
   const valuesList = row.renderAs === 'List'
     ? html`
       <ol>${row.values.map(value => html`
-          <li>${TermWithCues(value, options, context)}</li>`)}
+          <li>${Entity(value, options, context)}</li>`)}
       </ol>`
     : html`
       <ul>${row.values.map(value => html`

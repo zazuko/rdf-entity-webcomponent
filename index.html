@@ -12,7 +12,7 @@
 
       function examplePointer () {
         ns.ex = rdf.namespace('http://example.org/')
-        return rdf.clownface({ dataset: rdf.dataset(), factory: rdf }).
+        const result = rdf.clownface({ dataset: rdf.dataset(), factory: rdf }).
           node(ns.ex.WhiteRabbit).
           addOut(ns.schema.address, ns.ex.address, address => {
             address.addOut(ns.rdf.type, ns.schema.PostalAddress).
@@ -32,8 +32,12 @@
               addOut(ns.foaf.img, rdf.namedNode('https://miro.medium.com/max/1100/1*xupcHn3b0jEFPkjvuH5Pbw.jpeg'))
           }).addList(ns.ex.schedule,[
             ns.ex.wakingUp,
-            ns.ex.drinkTea
+            ns.ex.drinkTea,
           ])
+        result.node(ns.ex.drinkTea)
+            .addOut(ns.schema.name, rdf.literal('Drink tea'))
+            .addOut(ns.ex.when, rdf.literal('During the morning'))
+        return result
       }
 
       const demoPointer = examplePointer()
@@ -52,12 +56,12 @@
 <rdf-entity id="demo"
             technical-cues
             show-named-graphs
-            embed-lists
             compact-mode
+            embed-lists
             embed-blank-nodes
             embed-named-nodes
             highlight-language
-            !debug></rdf-entity>
+            debug></rdf-entity>
 </body>
 </html>
 

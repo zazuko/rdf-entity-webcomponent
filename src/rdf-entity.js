@@ -113,6 +113,14 @@ export class RdfEntity extends LitElement {
       padding-left: 5px;
     }
 
+    ol {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      justify-content: center;
+      padding-left: 5px;
+    }
+
     div .bringDown {
       color: var(--color-grey);
     }
