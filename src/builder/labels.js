@@ -2,11 +2,11 @@ import { splitIfVocab } from './utils.js'
 
 function getWithLang (cf, options) {
   for (const lang of options.preferredLanguages) {
-    const term = cf.out(options.labelProperties, { language: lang }).term
-    if (term) {
-      const language = term.language
+    const terms = cf.out(options.labelProperties, { language: lang }).terms
+    if (terms.length) {
+      const language = terms[0].language
       return {
-        ...(language && { language }), string: term.value
+        ...(language && { language }), string: terms[0].value
       }
     }
   }
@@ -14,11 +14,11 @@ function getWithLang (cf, options) {
 }
 
 function getWithoutLang (cf, options) {
-  const term = cf.out(options.labelProperties).term
-  if (term) {
-    const language = term.language
+  const terms = cf.out(options.labelProperties).terms
+  if (terms.length) {
+    const language = terms[0].language
     return {
-      ...(language && { language }), string: term.value
+      ...(language && { language }), string: terms[0].value
     }
   }
   return undefined

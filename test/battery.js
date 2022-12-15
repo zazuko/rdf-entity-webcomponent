@@ -127,6 +127,11 @@ const battery = {
 <a> <b> <c> .
 <a> <http://www.w3.org/2004/02/skos/core#prefLabel> "skos a" .
 <a> <http://www.w3.org/2004/02/skos/core#prefLabel> "prefered"@en .
+`, rdf.namedNode('a')],
+  languagesMultiple: [
+    `
+<a> <http://www.w3.org/2004/02/skos/core#prefLabel> "first" .
+<a> <http://www.w3.org/2004/02/skos/core#prefLabel> "second" .
 `, rdf.namedNode('a')]
 }
 

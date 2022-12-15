@@ -10,9 +10,9 @@ import {
 
 expect.extend({ toMatchSnapshot })
 
-describe('default', () => {
+describe('ResourceDescription', () => {
   for (const [testName, [turtle, term]] of Object.entries(battery)) {
-    it(testName, function () {
+    it(`HTML ${testName}`, function () {
       const cf = toClownface(turtle, term)
 
       const resourceWebComponent = ResourceDescription(cf, {})
