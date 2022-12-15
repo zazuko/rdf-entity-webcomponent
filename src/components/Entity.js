@@ -2,30 +2,28 @@ import { html } from 'lit'
 
 function Term (entity, options, context) {
   if (entity.renderAs === 'Image') {
-    return html`<div class="img-container"><img alt="${entity.term.value}" src="${entity.term.value}"></div>`
+    return html`
+        <div class="img-container"><img alt="${entity.term.value}"
+                                        src="${entity.term.value}"></div>`
+  }
+
+  if (entity.term.termType === 'Literal') {
+    return html`${entity.label.string}`
   }
 
   function resolveUrl () {
     if (options?.urlRewrite && options.urlRewrite(entity)) {
       return options.urlRewrite(entity)
     }
-    if (context.primaryNodes.has(entity.term)) {
-      return `#${entity.term.value}`
+    if (context.anchorFor.has(entity.term)) {
+      return `#${context.anchorFor.get(entity.term)}`
     }
     return entity.term.value
   }
 
-  if (entity.term.termType === 'NamedNode') {
-    const url = resolveUrl()
-    return html`<a href="${url}"
-                   title="${entity.term.value}">${entity.label.string
-            ? entity.label.string
-            : entity.term.value}</a>`
-  }
-
-  return html`<span>${entity.label.string
-          ? entity.label.string
-          : entity.term.value}</span>`
+  const url = resolveUrl()
+  return html`<a href="${url}"
+                 title="${entity.term.value}">${entity.label.string}</a>`
 }
 
 function TermWithCues (entity, options, context) {
@@ -80,38 +78,45 @@ function Row (row, options, context) {
 }
 
 function RootHeader (entity) {
-  if (entity.term.termType === 'BlankNode') {
-    return html`
-        <div class="main-header">
-            <h3>${entity.label.string
-                ? entity.label.string
-                : entity.term.value}</h3>
-        </div>`
-  }
+  const text = entity.label.fallbackLabel
+    ? html`<h2></h2>`
+    : html`<h2>
+      ${entity.label.string}</h2>`
+
+  const link = entity.term.termType === 'BlankNode'
+    ? html``
+    : html`<a
+          href="${entity.term.value}"
+          title="${entity.term.value}">${entity.term.value}</a>`
 
   return html`
-      <div class="main-header">
-          <h2>${entity.label.string
-                  ? entity.label.string
-                  : entity.term.value}</h2>
-          <a href="${entity.term.value}" id="${entity.term.value}"
-             title=" ${entity.term.value}">${entity.term.value}</a>
-      </div>
+      <div class="main-header">${text}${link}</div>
   `
+}
+
+function ItemHeader (item, options, context) {
+  const text = item.label.fallbackLabel
+    ? html`<span>${TermWithCues(item,
+          options, context)}</span>`
+    : html`<h3>
+      ${TermWithCues(item, options, context)}</h3>`
+
+  return html`
+      <div class="header ${item.term.termType}">${text}</div>`
 }
 
 function Entity (item, options, context, renderedAsRoot) {
   const rows = item.rows ? item.rows.map(row => Row(row, options, context)) : []
-
   const header = renderedAsRoot
     ? RootHeader(item)
-    : html`
-      <div class="header ${item.term.termType}"><h3>
-          ${TermWithCues(item, options, context)}</h3></div>`
+    : ItemHeader(item, options,
+      context)
 
   if (item.rows) {
     return html`
-        <div class="entity ${renderedAsRoot ? 'entity-root' : ''}">
+        <div
+                id="${context.anchorFor.get(item.term)}"
+                class="entity ${renderedAsRoot ? 'entity-root' : ''}">
             ${header}
             <div class="rows">
                 ${rows}

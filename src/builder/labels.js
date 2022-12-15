@@ -57,7 +57,7 @@ function getLabel (cf, options) {
     }
   }
 
-  return splitIfVocab(term.value)
+  return { ...splitIfVocab(term.value), fallbackLabel: true }
 }
 
 export { getLabel }

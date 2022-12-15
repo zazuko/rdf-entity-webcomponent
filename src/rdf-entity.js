@@ -147,7 +147,7 @@ export class RdfEntity extends LitElement {
     }
 
     .BlankNode {
-      font-size: 10px;
+      //font-size: 10px;
     }
 
     .BlankNode a {
