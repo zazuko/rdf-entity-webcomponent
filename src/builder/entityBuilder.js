@@ -1,5 +1,7 @@
 import { ns } from '../namespaces.js'
-import { groupByValue, sortProperties } from './groupAndSort.js'
+import { groupByValue } from './group.js'
+import { sortRows, sortItem } from './sort.js'
+
 import { getLabel } from './labels.js'
 import { predicates } from './utils.js'
 import rdf from '../rdf-ext.js'
@@ -91,7 +93,13 @@ function getEntity (cf, options, context) {
   const byValue = options.groupPropertiesByValue
     ? groupByValue(byProperty)
     : byProperty
-  byValue.sort(sortProperties)
+  byValue.sort(sortRows)
+
+  for (const row of byValue) {
+    row.properties.sort(sortItem)
+    row.values.sort(sortItem)
+  }
+
   const entity = {
     ...nodeWithLabels(cf, options, context),
     ...(byValue && byValue.length &&

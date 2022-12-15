@@ -12,4 +12,12 @@ function toString (quads) {
   return dataset.toString()
 }
 
-export { toQuads, toString }
+function toClownface (turtle, term) {
+  const dataset = rdf.dataset()
+  for (const quad of toQuads(turtle.toString())) {
+    dataset.add(quad)
+  }
+  return rdf.clownface({ dataset, term })
+}
+
+export { toQuads, toString, toClownface }
