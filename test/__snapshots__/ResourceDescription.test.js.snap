@@ -1,0 +1,1302 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`default blank node 1`] = `
+Array [
+  "
+<a> <b> [ <c> <d> ] .
+",
+  NamedNode {
+    "value": "a",
+  },
+  "<!--lit-part ryV/+4XIfRc=-->
+      <!--lit-part 300Caz5OpOA=-->
+      <div class=\\"entities\\">
+          <!--lit-part--><!--lit-part 7Ti6ww9JQyM=-->
+        <div class=\\"entity entity-root\\"><!--lit-node 0-->
+            <!--lit-part 8jb6+z5gT1w=-->
+      <div class=\\"main-header\\">
+          <h2><!--lit-part-->a<!--/lit-part--></h2>
+          <a href=\\"a\\" id=\\"a\\"
+             title=\\" a\\"><!--lit-node 3--><!--lit-part-->a<!--/lit-part--></a>
+      </div>
+  <!--/lit-part-->
+            <div class=\\"rows\\">
+                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part zRzcmiI7aoI=-->
+      <ul> <!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"b\\"
+                   title=\\"b\\"><!--lit-node 0--><!--lit-part-->b<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part 7Ti6ww9JQyM=-->
+        <div class=\\"entity \\"><!--lit-node 0-->
+            <!--lit-part yAYhN0Tg6sI=-->
+      <div class=\\"header BlankNode\\"><!--lit-node 0--><h3>
+          <!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part 94tjhjhkEYE=--><span><!--lit-part-->n3-0<!--/lit-part--></span><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></h3></div><!--/lit-part-->
+            <div class=\\"rows\\">
+                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part zRzcmiI7aoI=-->
+      <ul> <!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"c\\"
+                   title=\\"c\\"><!--lit-node 0--><!--lit-part-->c<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"d\\"
+                   title=\\"d\\"><!--lit-node 0--><!--lit-part-->d<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--/lit-part-->
+            </div>
+        </div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--/lit-part-->
+            </div>
+        </div><!--/lit-part--><!--/lit-part-->
+      </div>
+  <!--/lit-part-->
+      <!--lit-part BRUAAAUVAAA=--><?><!--/lit-part-->
+  <!--/lit-part-->",
+]
+`;
+
+exports[`default does not repeat 1`] = `
+Array [
+  "
+<a> <b> <c> ;
+    <b> <c> .
+",
+  NamedNode {
+    "value": "a",
+  },
+  "<!--lit-part ryV/+4XIfRc=-->
+      <!--lit-part 300Caz5OpOA=-->
+      <div class=\\"entities\\">
+          <!--lit-part--><!--lit-part 7Ti6ww9JQyM=-->
+        <div class=\\"entity entity-root\\"><!--lit-node 0-->
+            <!--lit-part 8jb6+z5gT1w=-->
+      <div class=\\"main-header\\">
+          <h2><!--lit-part-->a<!--/lit-part--></h2>
+          <a href=\\"a\\" id=\\"a\\"
+             title=\\" a\\"><!--lit-node 3--><!--lit-part-->a<!--/lit-part--></a>
+      </div>
+  <!--/lit-part-->
+            <div class=\\"rows\\">
+                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part zRzcmiI7aoI=-->
+      <ul> <!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"b\\"
+                   title=\\"b\\"><!--lit-node 0--><!--lit-part-->b<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"c\\"
+                   title=\\"c\\"><!--lit-node 0--><!--lit-part-->c<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--/lit-part-->
+            </div>
+        </div><!--/lit-part--><!--/lit-part-->
+      </div>
+  <!--/lit-part-->
+      <!--lit-part BRUAAAUVAAA=--><?><!--/lit-part-->
+  <!--/lit-part-->",
+]
+`;
+
+exports[`default foaf image 1`] = `
+Array [
+  "
+<a> <http://xmlns.com/foaf/0.1/img> <little-cat> .
+",
+  NamedNode {
+    "value": "a",
+  },
+  "<!--lit-part ryV/+4XIfRc=-->
+      <!--lit-part 300Caz5OpOA=-->
+      <div class=\\"entities\\">
+          <!--lit-part--><!--lit-part 7Ti6ww9JQyM=-->
+        <div class=\\"entity entity-root\\"><!--lit-node 0-->
+            <!--lit-part 8jb6+z5gT1w=-->
+      <div class=\\"main-header\\">
+          <h2><!--lit-part-->a<!--/lit-part--></h2>
+          <a href=\\"a\\" id=\\"a\\"
+             title=\\" a\\"><!--lit-node 3--><!--lit-part-->a<!--/lit-part--></a>
+      </div>
+  <!--/lit-part-->
+            <div class=\\"rows\\">
+                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part zRzcmiI7aoI=-->
+      <ul> <!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"http://xmlns.com/foaf/0.1/img\\"
+                   title=\\"http://xmlns.com/foaf/0.1/img\\"><!--lit-node 0--><!--lit-part-->img<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part dxgOx/iLtJI=--><div class=\\"img-container\\"><img alt=\\"little-cat\\" src=\\"little-cat\\"><!--lit-node 1--></div><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--/lit-part-->
+            </div>
+        </div><!--/lit-part--><!--/lit-part-->
+      </div>
+  <!--/lit-part-->
+      <!--lit-part BRUAAAUVAAA=--><?><!--/lit-part-->
+  <!--/lit-part-->",
+]
+`;
+
+exports[`default groups attributes 1`] = `
+Array [
+  "
+<a> <b> <c> ;
+    <b> <d> .
+",
+  NamedNode {
+    "value": "a",
+  },
+  "<!--lit-part ryV/+4XIfRc=-->
+      <!--lit-part 300Caz5OpOA=-->
+      <div class=\\"entities\\">
+          <!--lit-part--><!--lit-part 7Ti6ww9JQyM=-->
+        <div class=\\"entity entity-root\\"><!--lit-node 0-->
+            <!--lit-part 8jb6+z5gT1w=-->
+      <div class=\\"main-header\\">
+          <h2><!--lit-part-->a<!--/lit-part--></h2>
+          <a href=\\"a\\" id=\\"a\\"
+             title=\\" a\\"><!--lit-node 3--><!--lit-part-->a<!--/lit-part--></a>
+      </div>
+  <!--/lit-part-->
+            <div class=\\"rows\\">
+                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part zRzcmiI7aoI=-->
+      <ul> <!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"b\\"
+                   title=\\"b\\"><!--lit-node 0--><!--lit-part-->b<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"c\\"
+                   title=\\"c\\"><!--lit-node 0--><!--lit-part-->c<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"d\\"
+                   title=\\"d\\"><!--lit-node 0--><!--lit-part-->d<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--/lit-part-->
+            </div>
+        </div><!--/lit-part--><!--/lit-part-->
+      </div>
+  <!--/lit-part-->
+      <!--lit-part BRUAAAUVAAA=--><?><!--/lit-part-->
+  <!--/lit-part-->",
+]
+`;
+
+exports[`default groups by value 1`] = `
+Array [
+  "
+<a> <b> <d> ;
+    <c> <d> .
+",
+  NamedNode {
+    "value": "a",
+  },
+  "<!--lit-part ryV/+4XIfRc=-->
+      <!--lit-part 300Caz5OpOA=-->
+      <div class=\\"entities\\">
+          <!--lit-part--><!--lit-part 7Ti6ww9JQyM=-->
+        <div class=\\"entity entity-root\\"><!--lit-node 0-->
+            <!--lit-part 8jb6+z5gT1w=-->
+      <div class=\\"main-header\\">
+          <h2><!--lit-part-->a<!--/lit-part--></h2>
+          <a href=\\"a\\" id=\\"a\\"
+             title=\\" a\\"><!--lit-node 3--><!--lit-part-->a<!--/lit-part--></a>
+      </div>
+  <!--/lit-part-->
+            <div class=\\"rows\\">
+                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part zRzcmiI7aoI=-->
+      <ul> <!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"b\\"
+                   title=\\"b\\"><!--lit-node 0--><!--lit-part-->b<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"c\\"
+                   title=\\"c\\"><!--lit-node 0--><!--lit-part-->c<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"d\\"
+                   title=\\"d\\"><!--lit-node 0--><!--lit-part-->d<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--/lit-part-->
+            </div>
+        </div><!--/lit-part--><!--/lit-part-->
+      </div>
+  <!--/lit-part-->
+      <!--lit-part BRUAAAUVAAA=--><?><!--/lit-part-->
+  <!--/lit-part-->",
+]
+`;
+
+exports[`default languages 1`] = `
+Array [
+  "
+<a> <b> <c> .
+<a> <http://www.w3.org/2004/02/skos/core#prefLabel> \\"skos a\\" .
+<a> <http://www.w3.org/2004/02/skos/core#prefLabel> \\"prefered\\"@en .
+",
+  NamedNode {
+    "value": "a",
+  },
+  "<!--lit-part ryV/+4XIfRc=-->
+      <!--lit-part 300Caz5OpOA=-->
+      <div class=\\"entities\\">
+          <!--lit-part--><!--lit-part 7Ti6ww9JQyM=-->
+        <div class=\\"entity entity-root\\"><!--lit-node 0-->
+            <!--lit-part 8jb6+z5gT1w=-->
+      <div class=\\"main-header\\">
+          <h2><!--lit-part-->prefered<!--/lit-part--></h2>
+          <a href=\\"a\\" id=\\"a\\"
+             title=\\" a\\"><!--lit-node 3--><!--lit-part-->a<!--/lit-part--></a>
+      </div>
+  <!--/lit-part-->
+            <div class=\\"rows\\">
+                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part zRzcmiI7aoI=-->
+      <ul> <!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"b\\"
+                   title=\\"b\\"><!--lit-node 0--><!--lit-part-->b<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"c\\"
+                   title=\\"c\\"><!--lit-node 0--><!--lit-part-->c<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part zRzcmiI7aoI=-->
+      <ul> <!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"http://www.w3.org/2004/02/skos/core#prefLabel\\"
+                   title=\\"http://www.w3.org/2004/02/skos/core#prefLabel\\"><!--lit-node 0--><!--lit-part-->prefLabel<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part 94tjhjhkEYE=--><span><!--lit-part-->prefered<!--/lit-part--></span><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part 94tjhjhkEYE=--><span><!--lit-part-->skos a<!--/lit-part--></span><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--/lit-part-->
+            </div>
+        </div><!--/lit-part--><!--/lit-part-->
+      </div>
+  <!--/lit-part-->
+      <!--lit-part BRUAAAUVAAA=--><?><!--/lit-part-->
+  <!--/lit-part-->",
+]
+`;
+
+exports[`default list 1`] = `
+Array [
+  "
+<a> <b> ( <c> <d> ) .
+",
+  NamedNode {
+    "value": "a",
+  },
+  "<!--lit-part ryV/+4XIfRc=-->
+      <!--lit-part 300Caz5OpOA=-->
+      <div class=\\"entities\\">
+          <!--lit-part--><!--lit-part 7Ti6ww9JQyM=-->
+        <div class=\\"entity entity-root\\"><!--lit-node 0-->
+            <!--lit-part 8jb6+z5gT1w=-->
+      <div class=\\"main-header\\">
+          <h2><!--lit-part-->a<!--/lit-part--></h2>
+          <a href=\\"a\\" id=\\"a\\"
+             title=\\" a\\"><!--lit-node 3--><!--lit-part-->a<!--/lit-part--></a>
+      </div>
+  <!--/lit-part-->
+            <div class=\\"rows\\">
+                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part zRzcmiI7aoI=-->
+      <ul> <!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"b\\"
+                   title=\\"b\\"><!--lit-node 0--><!--lit-part-->b<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part l6pZEPgNQTo=-->
+      <ol><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"c\\"
+                   title=\\"c\\"><!--lit-node 0--><!--lit-part-->c<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"d\\"
+                   title=\\"d\\"><!--lit-node 0--><!--lit-part-->d<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ol><!--/lit-part-->
+      </div><!--/lit-part--><!--/lit-part-->
+            </div>
+        </div><!--/lit-part--><!--/lit-part-->
+      </div>
+  <!--/lit-part-->
+      <!--lit-part BRUAAAUVAAA=--><?><!--/lit-part-->
+  <!--/lit-part-->",
+]
+`;
+
+exports[`default literal 1`] = `
+Array [
+  "
+<a> <b> \\"c\\" .
+",
+  NamedNode {
+    "value": "a",
+  },
+  "<!--lit-part ryV/+4XIfRc=-->
+      <!--lit-part 300Caz5OpOA=-->
+      <div class=\\"entities\\">
+          <!--lit-part--><!--lit-part 7Ti6ww9JQyM=-->
+        <div class=\\"entity entity-root\\"><!--lit-node 0-->
+            <!--lit-part 8jb6+z5gT1w=-->
+      <div class=\\"main-header\\">
+          <h2><!--lit-part-->a<!--/lit-part--></h2>
+          <a href=\\"a\\" id=\\"a\\"
+             title=\\" a\\"><!--lit-node 3--><!--lit-part-->a<!--/lit-part--></a>
+      </div>
+  <!--/lit-part-->
+            <div class=\\"rows\\">
+                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part zRzcmiI7aoI=-->
+      <ul> <!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"b\\"
+                   title=\\"b\\"><!--lit-node 0--><!--lit-part-->b<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part 94tjhjhkEYE=--><span><!--lit-part-->c<!--/lit-part--></span><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--/lit-part-->
+            </div>
+        </div><!--/lit-part--><!--/lit-part-->
+      </div>
+  <!--/lit-part-->
+      <!--lit-part BRUAAAUVAAA=--><?><!--/lit-part-->
+  <!--/lit-part-->",
+]
+`;
+
+exports[`default object label foaf 1`] = `
+Array [
+  "
+<a> <b> <c> .
+<c> <http://xmlns.com/foaf/0.1/name> \\"foaf c\\" .
+",
+  NamedNode {
+    "value": "a",
+  },
+  "<!--lit-part ryV/+4XIfRc=-->
+      <!--lit-part 300Caz5OpOA=-->
+      <div class=\\"entities\\">
+          <!--lit-part--><!--lit-part 7Ti6ww9JQyM=-->
+        <div class=\\"entity entity-root\\"><!--lit-node 0-->
+            <!--lit-part 8jb6+z5gT1w=-->
+      <div class=\\"main-header\\">
+          <h2><!--lit-part-->a<!--/lit-part--></h2>
+          <a href=\\"a\\" id=\\"a\\"
+             title=\\" a\\"><!--lit-node 3--><!--lit-part-->a<!--/lit-part--></a>
+      </div>
+  <!--/lit-part-->
+            <div class=\\"rows\\">
+                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part zRzcmiI7aoI=-->
+      <ul> <!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"b\\"
+                   title=\\"b\\"><!--lit-node 0--><!--lit-part-->b<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"#c\\"
+                   title=\\"c\\"><!--lit-node 0--><!--lit-part-->foaf c<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--/lit-part-->
+            </div>
+        </div><!--/lit-part--><!--lit-part 7Ti6ww9JQyM=-->
+        <div class=\\"entity entity-root\\"><!--lit-node 0-->
+            <!--lit-part 8jb6+z5gT1w=-->
+      <div class=\\"main-header\\">
+          <h2><!--lit-part-->foaf c<!--/lit-part--></h2>
+          <a href=\\"c\\" id=\\"c\\"
+             title=\\" c\\"><!--lit-node 3--><!--lit-part-->c<!--/lit-part--></a>
+      </div>
+  <!--/lit-part-->
+            <div class=\\"rows\\">
+                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part zRzcmiI7aoI=-->
+      <ul> <!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"http://xmlns.com/foaf/0.1/name\\"
+                   title=\\"http://xmlns.com/foaf/0.1/name\\"><!--lit-node 0--><!--lit-part-->name<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part 94tjhjhkEYE=--><span><!--lit-part-->foaf c<!--/lit-part--></span><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--/lit-part-->
+            </div>
+        </div><!--/lit-part--><!--/lit-part-->
+      </div>
+  <!--/lit-part-->
+      <!--lit-part BRUAAAUVAAA=--><?><!--/lit-part-->
+  <!--/lit-part-->",
+]
+`;
+
+exports[`default object label rdfs 1`] = `
+Array [
+  "
+<a> <b> <c> .
+<c> <http://www.w3.org/2000/01/rdf-schema#label> \\"rdfs c\\" .
+",
+  NamedNode {
+    "value": "a",
+  },
+  "<!--lit-part ryV/+4XIfRc=-->
+      <!--lit-part 300Caz5OpOA=-->
+      <div class=\\"entities\\">
+          <!--lit-part--><!--lit-part 7Ti6ww9JQyM=-->
+        <div class=\\"entity entity-root\\"><!--lit-node 0-->
+            <!--lit-part 8jb6+z5gT1w=-->
+      <div class=\\"main-header\\">
+          <h2><!--lit-part-->a<!--/lit-part--></h2>
+          <a href=\\"a\\" id=\\"a\\"
+             title=\\" a\\"><!--lit-node 3--><!--lit-part-->a<!--/lit-part--></a>
+      </div>
+  <!--/lit-part-->
+            <div class=\\"rows\\">
+                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part zRzcmiI7aoI=-->
+      <ul> <!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"b\\"
+                   title=\\"b\\"><!--lit-node 0--><!--lit-part-->b<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"#c\\"
+                   title=\\"c\\"><!--lit-node 0--><!--lit-part-->rdfs c<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--/lit-part-->
+            </div>
+        </div><!--/lit-part--><!--lit-part 7Ti6ww9JQyM=-->
+        <div class=\\"entity entity-root\\"><!--lit-node 0-->
+            <!--lit-part 8jb6+z5gT1w=-->
+      <div class=\\"main-header\\">
+          <h2><!--lit-part-->rdfs c<!--/lit-part--></h2>
+          <a href=\\"c\\" id=\\"c\\"
+             title=\\" c\\"><!--lit-node 3--><!--lit-part-->c<!--/lit-part--></a>
+      </div>
+  <!--/lit-part-->
+            <div class=\\"rows\\">
+                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part zRzcmiI7aoI=-->
+      <ul> <!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"http://www.w3.org/2000/01/rdf-schema#label\\"
+                   title=\\"http://www.w3.org/2000/01/rdf-schema#label\\"><!--lit-node 0--><!--lit-part-->label<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part 94tjhjhkEYE=--><span><!--lit-part-->rdfs c<!--/lit-part--></span><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--/lit-part-->
+            </div>
+        </div><!--/lit-part--><!--/lit-part-->
+      </div>
+  <!--/lit-part-->
+      <!--lit-part BRUAAAUVAAA=--><?><!--/lit-part-->
+  <!--/lit-part-->",
+]
+`;
+
+exports[`default object label schema 1`] = `
+Array [
+  "
+<a> <b> <c> .
+<c> <http://schema.org/name> \\"schema c\\" .
+",
+  NamedNode {
+    "value": "a",
+  },
+  "<!--lit-part ryV/+4XIfRc=-->
+      <!--lit-part 300Caz5OpOA=-->
+      <div class=\\"entities\\">
+          <!--lit-part--><!--lit-part 7Ti6ww9JQyM=-->
+        <div class=\\"entity entity-root\\"><!--lit-node 0-->
+            <!--lit-part 8jb6+z5gT1w=-->
+      <div class=\\"main-header\\">
+          <h2><!--lit-part-->a<!--/lit-part--></h2>
+          <a href=\\"a\\" id=\\"a\\"
+             title=\\" a\\"><!--lit-node 3--><!--lit-part-->a<!--/lit-part--></a>
+      </div>
+  <!--/lit-part-->
+            <div class=\\"rows\\">
+                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part zRzcmiI7aoI=-->
+      <ul> <!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"b\\"
+                   title=\\"b\\"><!--lit-node 0--><!--lit-part-->b<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"#c\\"
+                   title=\\"c\\"><!--lit-node 0--><!--lit-part-->schema c<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--/lit-part-->
+            </div>
+        </div><!--/lit-part--><!--lit-part 7Ti6ww9JQyM=-->
+        <div class=\\"entity entity-root\\"><!--lit-node 0-->
+            <!--lit-part 8jb6+z5gT1w=-->
+      <div class=\\"main-header\\">
+          <h2><!--lit-part-->schema c<!--/lit-part--></h2>
+          <a href=\\"c\\" id=\\"c\\"
+             title=\\" c\\"><!--lit-node 3--><!--lit-part-->c<!--/lit-part--></a>
+      </div>
+  <!--/lit-part-->
+            <div class=\\"rows\\">
+                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part zRzcmiI7aoI=-->
+      <ul> <!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"http://schema.org/name\\"
+                   title=\\"http://schema.org/name\\"><!--lit-node 0--><!--lit-part-->name<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part 94tjhjhkEYE=--><span><!--lit-part-->schema c<!--/lit-part--></span><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--/lit-part-->
+            </div>
+        </div><!--/lit-part--><!--/lit-part-->
+      </div>
+  <!--/lit-part-->
+      <!--lit-part BRUAAAUVAAA=--><?><!--/lit-part-->
+  <!--/lit-part-->",
+]
+`;
+
+exports[`default object label skos 1`] = `
+Array [
+  "
+<a> <b> <c> .
+<c> <http://www.w3.org/2004/02/skos/core#prefLabel> \\"skos c\\" .
+",
+  NamedNode {
+    "value": "a",
+  },
+  "<!--lit-part ryV/+4XIfRc=-->
+      <!--lit-part 300Caz5OpOA=-->
+      <div class=\\"entities\\">
+          <!--lit-part--><!--lit-part 7Ti6ww9JQyM=-->
+        <div class=\\"entity entity-root\\"><!--lit-node 0-->
+            <!--lit-part 8jb6+z5gT1w=-->
+      <div class=\\"main-header\\">
+          <h2><!--lit-part-->a<!--/lit-part--></h2>
+          <a href=\\"a\\" id=\\"a\\"
+             title=\\" a\\"><!--lit-node 3--><!--lit-part-->a<!--/lit-part--></a>
+      </div>
+  <!--/lit-part-->
+            <div class=\\"rows\\">
+                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part zRzcmiI7aoI=-->
+      <ul> <!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"b\\"
+                   title=\\"b\\"><!--lit-node 0--><!--lit-part-->b<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"#c\\"
+                   title=\\"c\\"><!--lit-node 0--><!--lit-part-->skos c<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--/lit-part-->
+            </div>
+        </div><!--/lit-part--><!--lit-part 7Ti6ww9JQyM=-->
+        <div class=\\"entity entity-root\\"><!--lit-node 0-->
+            <!--lit-part 8jb6+z5gT1w=-->
+      <div class=\\"main-header\\">
+          <h2><!--lit-part-->skos c<!--/lit-part--></h2>
+          <a href=\\"c\\" id=\\"c\\"
+             title=\\" c\\"><!--lit-node 3--><!--lit-part-->c<!--/lit-part--></a>
+      </div>
+  <!--/lit-part-->
+            <div class=\\"rows\\">
+                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part zRzcmiI7aoI=-->
+      <ul> <!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"http://www.w3.org/2004/02/skos/core#prefLabel\\"
+                   title=\\"http://www.w3.org/2004/02/skos/core#prefLabel\\"><!--lit-node 0--><!--lit-part-->prefLabel<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part 94tjhjhkEYE=--><span><!--lit-part-->skos c<!--/lit-part--></span><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--/lit-part-->
+            </div>
+        </div><!--/lit-part--><!--/lit-part-->
+      </div>
+  <!--/lit-part-->
+      <!--lit-part BRUAAAUVAAA=--><?><!--/lit-part-->
+  <!--/lit-part-->",
+]
+`;
+
+exports[`default predicate label foaf 1`] = `
+Array [
+  "
+<a> <b> <c> .
+<b> <http://xmlns.com/foaf/0.1/name> \\"foaf b\\" .
+",
+  NamedNode {
+    "value": "a",
+  },
+  "<!--lit-part ryV/+4XIfRc=-->
+      <!--lit-part 300Caz5OpOA=-->
+      <div class=\\"entities\\">
+          <!--lit-part--><!--lit-part 7Ti6ww9JQyM=-->
+        <div class=\\"entity entity-root\\"><!--lit-node 0-->
+            <!--lit-part 8jb6+z5gT1w=-->
+      <div class=\\"main-header\\">
+          <h2><!--lit-part-->a<!--/lit-part--></h2>
+          <a href=\\"a\\" id=\\"a\\"
+             title=\\" a\\"><!--lit-node 3--><!--lit-part-->a<!--/lit-part--></a>
+      </div>
+  <!--/lit-part-->
+            <div class=\\"rows\\">
+                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part zRzcmiI7aoI=-->
+      <ul> <!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"#b\\"
+                   title=\\"b\\"><!--lit-node 0--><!--lit-part-->foaf b<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"c\\"
+                   title=\\"c\\"><!--lit-node 0--><!--lit-part-->c<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--/lit-part-->
+            </div>
+        </div><!--/lit-part--><!--lit-part 7Ti6ww9JQyM=-->
+        <div class=\\"entity entity-root\\"><!--lit-node 0-->
+            <!--lit-part 8jb6+z5gT1w=-->
+      <div class=\\"main-header\\">
+          <h2><!--lit-part-->foaf b<!--/lit-part--></h2>
+          <a href=\\"b\\" id=\\"b\\"
+             title=\\" b\\"><!--lit-node 3--><!--lit-part-->b<!--/lit-part--></a>
+      </div>
+  <!--/lit-part-->
+            <div class=\\"rows\\">
+                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part zRzcmiI7aoI=-->
+      <ul> <!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"http://xmlns.com/foaf/0.1/name\\"
+                   title=\\"http://xmlns.com/foaf/0.1/name\\"><!--lit-node 0--><!--lit-part-->name<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part 94tjhjhkEYE=--><span><!--lit-part-->foaf b<!--/lit-part--></span><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--/lit-part-->
+            </div>
+        </div><!--/lit-part--><!--/lit-part-->
+      </div>
+  <!--/lit-part-->
+      <!--lit-part BRUAAAUVAAA=--><?><!--/lit-part-->
+  <!--/lit-part-->",
+]
+`;
+
+exports[`default predicate label rdfs 1`] = `
+Array [
+  "
+<a> <b> <c> .
+<b> <http://www.w3.org/2000/01/rdf-schema#label> \\"rdfs b\\" .
+",
+  NamedNode {
+    "value": "a",
+  },
+  "<!--lit-part ryV/+4XIfRc=-->
+      <!--lit-part 300Caz5OpOA=-->
+      <div class=\\"entities\\">
+          <!--lit-part--><!--lit-part 7Ti6ww9JQyM=-->
+        <div class=\\"entity entity-root\\"><!--lit-node 0-->
+            <!--lit-part 8jb6+z5gT1w=-->
+      <div class=\\"main-header\\">
+          <h2><!--lit-part-->a<!--/lit-part--></h2>
+          <a href=\\"a\\" id=\\"a\\"
+             title=\\" a\\"><!--lit-node 3--><!--lit-part-->a<!--/lit-part--></a>
+      </div>
+  <!--/lit-part-->
+            <div class=\\"rows\\">
+                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part zRzcmiI7aoI=-->
+      <ul> <!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"#b\\"
+                   title=\\"b\\"><!--lit-node 0--><!--lit-part-->rdfs b<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"c\\"
+                   title=\\"c\\"><!--lit-node 0--><!--lit-part-->c<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--/lit-part-->
+            </div>
+        </div><!--/lit-part--><!--lit-part 7Ti6ww9JQyM=-->
+        <div class=\\"entity entity-root\\"><!--lit-node 0-->
+            <!--lit-part 8jb6+z5gT1w=-->
+      <div class=\\"main-header\\">
+          <h2><!--lit-part-->rdfs b<!--/lit-part--></h2>
+          <a href=\\"b\\" id=\\"b\\"
+             title=\\" b\\"><!--lit-node 3--><!--lit-part-->b<!--/lit-part--></a>
+      </div>
+  <!--/lit-part-->
+            <div class=\\"rows\\">
+                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part zRzcmiI7aoI=-->
+      <ul> <!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"http://www.w3.org/2000/01/rdf-schema#label\\"
+                   title=\\"http://www.w3.org/2000/01/rdf-schema#label\\"><!--lit-node 0--><!--lit-part-->label<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part 94tjhjhkEYE=--><span><!--lit-part-->rdfs b<!--/lit-part--></span><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--/lit-part-->
+            </div>
+        </div><!--/lit-part--><!--/lit-part-->
+      </div>
+  <!--/lit-part-->
+      <!--lit-part BRUAAAUVAAA=--><?><!--/lit-part-->
+  <!--/lit-part-->",
+]
+`;
+
+exports[`default predicate label schema 1`] = `
+Array [
+  "
+<a> <b> <c> .
+<b> <http://schema.org/name> \\"schema b\\" .
+",
+  NamedNode {
+    "value": "a",
+  },
+  "<!--lit-part ryV/+4XIfRc=-->
+      <!--lit-part 300Caz5OpOA=-->
+      <div class=\\"entities\\">
+          <!--lit-part--><!--lit-part 7Ti6ww9JQyM=-->
+        <div class=\\"entity entity-root\\"><!--lit-node 0-->
+            <!--lit-part 8jb6+z5gT1w=-->
+      <div class=\\"main-header\\">
+          <h2><!--lit-part-->a<!--/lit-part--></h2>
+          <a href=\\"a\\" id=\\"a\\"
+             title=\\" a\\"><!--lit-node 3--><!--lit-part-->a<!--/lit-part--></a>
+      </div>
+  <!--/lit-part-->
+            <div class=\\"rows\\">
+                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part zRzcmiI7aoI=-->
+      <ul> <!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"#b\\"
+                   title=\\"b\\"><!--lit-node 0--><!--lit-part-->schema b<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"c\\"
+                   title=\\"c\\"><!--lit-node 0--><!--lit-part-->c<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--/lit-part-->
+            </div>
+        </div><!--/lit-part--><!--lit-part 7Ti6ww9JQyM=-->
+        <div class=\\"entity entity-root\\"><!--lit-node 0-->
+            <!--lit-part 8jb6+z5gT1w=-->
+      <div class=\\"main-header\\">
+          <h2><!--lit-part-->schema b<!--/lit-part--></h2>
+          <a href=\\"b\\" id=\\"b\\"
+             title=\\" b\\"><!--lit-node 3--><!--lit-part-->b<!--/lit-part--></a>
+      </div>
+  <!--/lit-part-->
+            <div class=\\"rows\\">
+                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part zRzcmiI7aoI=-->
+      <ul> <!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"http://schema.org/name\\"
+                   title=\\"http://schema.org/name\\"><!--lit-node 0--><!--lit-part-->name<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part 94tjhjhkEYE=--><span><!--lit-part-->schema b<!--/lit-part--></span><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--/lit-part-->
+            </div>
+        </div><!--/lit-part--><!--/lit-part-->
+      </div>
+  <!--/lit-part-->
+      <!--lit-part BRUAAAUVAAA=--><?><!--/lit-part-->
+  <!--/lit-part-->",
+]
+`;
+
+exports[`default predicate label skos 1`] = `
+Array [
+  "
+<a> <b> <c> .
+<b> <http://www.w3.org/2004/02/skos/core#prefLabel> \\"skos b\\" .
+",
+  NamedNode {
+    "value": "a",
+  },
+  "<!--lit-part ryV/+4XIfRc=-->
+      <!--lit-part 300Caz5OpOA=-->
+      <div class=\\"entities\\">
+          <!--lit-part--><!--lit-part 7Ti6ww9JQyM=-->
+        <div class=\\"entity entity-root\\"><!--lit-node 0-->
+            <!--lit-part 8jb6+z5gT1w=-->
+      <div class=\\"main-header\\">
+          <h2><!--lit-part-->a<!--/lit-part--></h2>
+          <a href=\\"a\\" id=\\"a\\"
+             title=\\" a\\"><!--lit-node 3--><!--lit-part-->a<!--/lit-part--></a>
+      </div>
+  <!--/lit-part-->
+            <div class=\\"rows\\">
+                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part zRzcmiI7aoI=-->
+      <ul> <!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"#b\\"
+                   title=\\"b\\"><!--lit-node 0--><!--lit-part-->skos b<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"c\\"
+                   title=\\"c\\"><!--lit-node 0--><!--lit-part-->c<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--/lit-part-->
+            </div>
+        </div><!--/lit-part--><!--lit-part 7Ti6ww9JQyM=-->
+        <div class=\\"entity entity-root\\"><!--lit-node 0-->
+            <!--lit-part 8jb6+z5gT1w=-->
+      <div class=\\"main-header\\">
+          <h2><!--lit-part-->skos b<!--/lit-part--></h2>
+          <a href=\\"b\\" id=\\"b\\"
+             title=\\" b\\"><!--lit-node 3--><!--lit-part-->b<!--/lit-part--></a>
+      </div>
+  <!--/lit-part-->
+            <div class=\\"rows\\">
+                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part zRzcmiI7aoI=-->
+      <ul> <!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"http://www.w3.org/2004/02/skos/core#prefLabel\\"
+                   title=\\"http://www.w3.org/2004/02/skos/core#prefLabel\\"><!--lit-node 0--><!--lit-part-->prefLabel<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part 94tjhjhkEYE=--><span><!--lit-part-->skos b<!--/lit-part--></span><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--/lit-part-->
+            </div>
+        </div><!--/lit-part--><!--/lit-part-->
+      </div>
+  <!--/lit-part-->
+      <!--lit-part BRUAAAUVAAA=--><?><!--/lit-part-->
+  <!--/lit-part-->",
+]
+`;
+
+exports[`default schema image 1`] = `
+Array [
+  "
+<a> <http://schema.org/image> <little-cat> .
+",
+  NamedNode {
+    "value": "a",
+  },
+  "<!--lit-part ryV/+4XIfRc=-->
+      <!--lit-part 300Caz5OpOA=-->
+      <div class=\\"entities\\">
+          <!--lit-part--><!--lit-part 7Ti6ww9JQyM=-->
+        <div class=\\"entity entity-root\\"><!--lit-node 0-->
+            <!--lit-part 8jb6+z5gT1w=-->
+      <div class=\\"main-header\\">
+          <h2><!--lit-part-->a<!--/lit-part--></h2>
+          <a href=\\"a\\" id=\\"a\\"
+             title=\\" a\\"><!--lit-node 3--><!--lit-part-->a<!--/lit-part--></a>
+      </div>
+  <!--/lit-part-->
+            <div class=\\"rows\\">
+                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part zRzcmiI7aoI=-->
+      <ul> <!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"http://schema.org/image\\"
+                   title=\\"http://schema.org/image\\"><!--lit-node 0--><!--lit-part-->image<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part dxgOx/iLtJI=--><div class=\\"img-container\\"><img alt=\\"little-cat\\" src=\\"little-cat\\"><!--lit-node 1--></div><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--/lit-part-->
+            </div>
+        </div><!--/lit-part--><!--/lit-part-->
+      </div>
+  <!--/lit-part-->
+      <!--lit-part BRUAAAUVAAA=--><?><!--/lit-part-->
+  <!--/lit-part-->",
+]
+`;
+
+exports[`default simple 1`] = `
+Array [
+  "
+<a> <b> <c> .
+",
+  NamedNode {
+    "value": "a",
+  },
+  "<!--lit-part ryV/+4XIfRc=-->
+      <!--lit-part 300Caz5OpOA=-->
+      <div class=\\"entities\\">
+          <!--lit-part--><!--lit-part 7Ti6ww9JQyM=-->
+        <div class=\\"entity entity-root\\"><!--lit-node 0-->
+            <!--lit-part 8jb6+z5gT1w=-->
+      <div class=\\"main-header\\">
+          <h2><!--lit-part-->a<!--/lit-part--></h2>
+          <a href=\\"a\\" id=\\"a\\"
+             title=\\" a\\"><!--lit-node 3--><!--lit-part-->a<!--/lit-part--></a>
+      </div>
+  <!--/lit-part-->
+            <div class=\\"rows\\">
+                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part zRzcmiI7aoI=-->
+      <ul> <!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"b\\"
+                   title=\\"b\\"><!--lit-node 0--><!--lit-part-->b<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"c\\"
+                   title=\\"c\\"><!--lit-node 0--><!--lit-part-->c<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--/lit-part-->
+            </div>
+        </div><!--/lit-part--><!--/lit-part-->
+      </div>
+  <!--/lit-part-->
+      <!--lit-part BRUAAAUVAAA=--><?><!--/lit-part-->
+  <!--/lit-part-->",
+]
+`;
+
+exports[`default subject label foaf 1`] = `
+Array [
+  "
+<a> <b> <c> .
+<a> <http://xmlns.com/foaf/0.1/name> \\"foaf a\\" .
+",
+  NamedNode {
+    "value": "a",
+  },
+  "<!--lit-part ryV/+4XIfRc=-->
+      <!--lit-part 300Caz5OpOA=-->
+      <div class=\\"entities\\">
+          <!--lit-part--><!--lit-part 7Ti6ww9JQyM=-->
+        <div class=\\"entity entity-root\\"><!--lit-node 0-->
+            <!--lit-part 8jb6+z5gT1w=-->
+      <div class=\\"main-header\\">
+          <h2><!--lit-part-->foaf a<!--/lit-part--></h2>
+          <a href=\\"a\\" id=\\"a\\"
+             title=\\" a\\"><!--lit-node 3--><!--lit-part-->a<!--/lit-part--></a>
+      </div>
+  <!--/lit-part-->
+            <div class=\\"rows\\">
+                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part zRzcmiI7aoI=-->
+      <ul> <!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"b\\"
+                   title=\\"b\\"><!--lit-node 0--><!--lit-part-->b<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"c\\"
+                   title=\\"c\\"><!--lit-node 0--><!--lit-part-->c<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part zRzcmiI7aoI=-->
+      <ul> <!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"http://xmlns.com/foaf/0.1/name\\"
+                   title=\\"http://xmlns.com/foaf/0.1/name\\"><!--lit-node 0--><!--lit-part-->name<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part 94tjhjhkEYE=--><span><!--lit-part-->foaf a<!--/lit-part--></span><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--/lit-part-->
+            </div>
+        </div><!--/lit-part--><!--/lit-part-->
+      </div>
+  <!--/lit-part-->
+      <!--lit-part BRUAAAUVAAA=--><?><!--/lit-part-->
+  <!--/lit-part-->",
+]
+`;
+
+exports[`default subject label rdfs 1`] = `
+Array [
+  "
+<a> <b> <c> .
+<a> <http://www.w3.org/2000/01/rdf-schema#label> \\"rdfs a\\" .
+",
+  NamedNode {
+    "value": "a",
+  },
+  "<!--lit-part ryV/+4XIfRc=-->
+      <!--lit-part 300Caz5OpOA=-->
+      <div class=\\"entities\\">
+          <!--lit-part--><!--lit-part 7Ti6ww9JQyM=-->
+        <div class=\\"entity entity-root\\"><!--lit-node 0-->
+            <!--lit-part 8jb6+z5gT1w=-->
+      <div class=\\"main-header\\">
+          <h2><!--lit-part-->rdfs a<!--/lit-part--></h2>
+          <a href=\\"a\\" id=\\"a\\"
+             title=\\" a\\"><!--lit-node 3--><!--lit-part-->a<!--/lit-part--></a>
+      </div>
+  <!--/lit-part-->
+            <div class=\\"rows\\">
+                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part zRzcmiI7aoI=-->
+      <ul> <!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"b\\"
+                   title=\\"b\\"><!--lit-node 0--><!--lit-part-->b<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"c\\"
+                   title=\\"c\\"><!--lit-node 0--><!--lit-part-->c<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part zRzcmiI7aoI=-->
+      <ul> <!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"http://www.w3.org/2000/01/rdf-schema#label\\"
+                   title=\\"http://www.w3.org/2000/01/rdf-schema#label\\"><!--lit-node 0--><!--lit-part-->label<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part 94tjhjhkEYE=--><span><!--lit-part-->rdfs a<!--/lit-part--></span><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--/lit-part-->
+            </div>
+        </div><!--/lit-part--><!--/lit-part-->
+      </div>
+  <!--/lit-part-->
+      <!--lit-part BRUAAAUVAAA=--><?><!--/lit-part-->
+  <!--/lit-part-->",
+]
+`;
+
+exports[`default subject label schema 1`] = `
+Array [
+  "
+<a> <b> <c> .
+<a> <http://schema.org/name> \\"schema a\\" .
+",
+  NamedNode {
+    "value": "a",
+  },
+  "<!--lit-part ryV/+4XIfRc=-->
+      <!--lit-part 300Caz5OpOA=-->
+      <div class=\\"entities\\">
+          <!--lit-part--><!--lit-part 7Ti6ww9JQyM=-->
+        <div class=\\"entity entity-root\\"><!--lit-node 0-->
+            <!--lit-part 8jb6+z5gT1w=-->
+      <div class=\\"main-header\\">
+          <h2><!--lit-part-->schema a<!--/lit-part--></h2>
+          <a href=\\"a\\" id=\\"a\\"
+             title=\\" a\\"><!--lit-node 3--><!--lit-part-->a<!--/lit-part--></a>
+      </div>
+  <!--/lit-part-->
+            <div class=\\"rows\\">
+                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part zRzcmiI7aoI=-->
+      <ul> <!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"b\\"
+                   title=\\"b\\"><!--lit-node 0--><!--lit-part-->b<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"c\\"
+                   title=\\"c\\"><!--lit-node 0--><!--lit-part-->c<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part zRzcmiI7aoI=-->
+      <ul> <!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"http://schema.org/name\\"
+                   title=\\"http://schema.org/name\\"><!--lit-node 0--><!--lit-part-->name<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part 94tjhjhkEYE=--><span><!--lit-part-->schema a<!--/lit-part--></span><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--/lit-part-->
+            </div>
+        </div><!--/lit-part--><!--/lit-part-->
+      </div>
+  <!--/lit-part-->
+      <!--lit-part BRUAAAUVAAA=--><?><!--/lit-part-->
+  <!--/lit-part-->",
+]
+`;
+
+exports[`default subject label skos 1`] = `
+Array [
+  "
+<a> <b> <c> .
+<a> <http://www.w3.org/2004/02/skos/core#prefLabel> \\"skos a\\" .
+",
+  NamedNode {
+    "value": "a",
+  },
+  "<!--lit-part ryV/+4XIfRc=-->
+      <!--lit-part 300Caz5OpOA=-->
+      <div class=\\"entities\\">
+          <!--lit-part--><!--lit-part 7Ti6ww9JQyM=-->
+        <div class=\\"entity entity-root\\"><!--lit-node 0-->
+            <!--lit-part 8jb6+z5gT1w=-->
+      <div class=\\"main-header\\">
+          <h2><!--lit-part-->skos a<!--/lit-part--></h2>
+          <a href=\\"a\\" id=\\"a\\"
+             title=\\" a\\"><!--lit-node 3--><!--lit-part-->a<!--/lit-part--></a>
+      </div>
+  <!--/lit-part-->
+            <div class=\\"rows\\">
+                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part zRzcmiI7aoI=-->
+      <ul> <!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"b\\"
+                   title=\\"b\\"><!--lit-node 0--><!--lit-part-->b<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"c\\"
+                   title=\\"c\\"><!--lit-node 0--><!--lit-part-->c<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part zRzcmiI7aoI=-->
+      <ul> <!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"http://www.w3.org/2004/02/skos/core#prefLabel\\"
+                   title=\\"http://www.w3.org/2004/02/skos/core#prefLabel\\"><!--lit-node 0--><!--lit-part-->prefLabel<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part 94tjhjhkEYE=--><span><!--lit-part-->skos a<!--/lit-part--></span><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--/lit-part-->
+            </div>
+        </div><!--/lit-part--><!--/lit-part-->
+      </div>
+  <!--/lit-part-->
+      <!--lit-part BRUAAAUVAAA=--><?><!--/lit-part-->
+  <!--/lit-part-->",
+]
+`;
