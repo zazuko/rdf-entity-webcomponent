@@ -7,23 +7,26 @@ function Term (entity, options, context) {
                                         src="${entity.term.value}"></div>`
   }
 
-  if (entity.term.termType === 'Literal') {
-    return html`${entity.label.string}`
-  }
-
-  function resolveUrl () {
-    if (options?.urlRewrite && options.urlRewrite(entity)) {
-      return options.urlRewrite(entity)
+  function maybeLink () {
+    if (entity.term.termType === 'Literal') {
+      return undefined
     }
     if (context.anchorFor.has(entity.term)) {
       return `#${context.anchorFor.get(entity.term)}`
     }
-    return entity.term.value
+    if (entity.term.termType === 'NamedNode') {
+      return entity.term.value
+    }
+    return undefined
   }
 
-  const url = resolveUrl()
-  return html`<a href="${url}"
+  const link = maybeLink()
+  if (link) {
+    return html`<a href="${link}"
                  title="${entity.term.value}">${entity.label.string}</a>`
+  } else {
+    return html`${entity.label.string}`
+  }
 }
 
 function TermWithCues (entity, options, context) {

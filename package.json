@@ -33,6 +33,7 @@
     "@rdfjs/term-set": "^2.0.1",
     "@tpluscode/rdf-ns-builders": "^2.0.1",
     "clownface": "^1.5.1",
+    "n3": "^1.16.3",
     "lit": "^2.4.1"
   },
   "devDependencies": {
@@ -45,7 +46,6 @@
     "expect-mocha-snapshot": "^2.1.5",
     "husky": "^8.0.2",
     "mocha": "^10.0.0",
-    "n3": "^1.16.2",
     "standard": "^17.0.0",
     "vite": "^3.2.4",
     "@lit-labs/ssr": "^2.3.0"

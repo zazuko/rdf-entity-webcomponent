@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Stress view</title>
+    <script type="module" src="/src/rdf-entity.js"></script>
+
+    <script type="module">
+      import rdf from './src/rdf-ext.js'
+
+      const turtle = `
+      @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix schema: <http://schema.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+_:b1 a schema:Person ;
+	schema:image <https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/664.jpg> ;
+	schema:url <http://mean-noon.org> ;
+	schema:telephone "473-376-1327 x64714" ;
+	schema:name "Cielo Pfeffer" ;
+	schema:jobTitle "International Directives Engineer" ;
+	schema:email <mailTo:Cielo_Pfeffer@yahoo.com> ;
+	schema:address [
+		rdf:type schema:PostalAddress ;
+		schema:addressLocality "South San Francisco" ;
+		schema:streetAddress "726 Trace Motorway" ;
+		schema:addressRegion "OK" ;
+		schema:postalCode "34076-3885" ;
+	] ;
+	foaf:knows <http://example.org/1>, [
+		rdf:type schema:Person ;
+		schema:image <https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/274.jpg> ;
+		schema:url <https://fixed-headlight.name> ;
+		schema:telephone "758-673-7919 x4995" ;
+		schema:name "Cydney Kirlin" ;
+		schema:jobTitle "Customer Interactions Liaison" ;
+		schema:email <mailTo:Cydney_Kirlin@hotmail.com> ;
+		schema:address [
+			rdf:type schema:PostalAddress ;
+			schema:addressLocality "Riverside" ;
+			schema:streetAddress "02504 Ankunding Mount" ;
+			schema:addressRegion "AR" ;
+			schema:postalCode "32328" ;
+		] ;
+		foaf:knows _:b6 ;
+	] .
+
+<http://example.org/1> a schema:Person ;
+	schema:image <https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/93.jpg> ;
+	schema:url <https://circular-envy.biz> ;
+	schema:telephone "(746) 297-6809" ;
+	schema:name "Nelson Langworth" ;
+	schema:jobTitle "Product Integration Facilitator" ;
+	schema:email <mailTo:Nelson17@yahoo.com> ;
+	schema:address [
+		rdf:type schema:PostalAddress ;
+		schema:addressLocality "Santa Barbara" ;
+		schema:streetAddress "5284 Garth Spur" ;
+		schema:addressRegion "NY" ;
+		schema:postalCode "28300" ;
+	] ;
+	foaf:knows _:b6, [
+		rdf:type schema:Person ;
+		schema:image <https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/930.jpg> ;
+		schema:url <http://equal-stepdaughter.info> ;
+		schema:telephone "225-361-0008 x60422" ;
+		schema:name "Marcia Shanahan" ;
+		schema:jobTitle "Internal Markets Representative" ;
+		schema:email <mailTo:Marcia.Shanahan@hotmail.com> ;
+		schema:address [
+			rdf:type schema:PostalAddress ;
+			schema:addressLocality "Milford" ;
+			schema:streetAddress "8977 Tromp Extensions" ;
+			schema:addressRegion "MT" ;
+			schema:postalCode "18335" ;
+		] ;
+		foaf:knows _:b10, [
+			rdf:type schema:Person ;
+			schema:image <https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/145.jpg> ;
+			schema:url <http://both-ruby.info> ;
+			schema:telephone "(923) 677-3299 x3488" ;
+			schema:name "Andrew Ratke" ;
+			schema:jobTitle "Principal Assurance Assistant" ;
+			schema:email <mailTo:Andrew35@yahoo.com> ;
+			schema:address [
+				rdf:type schema:PostalAddress ;
+				schema:addressLocality "Enid" ;
+				schema:streetAddress "452 Wunsch Center" ;
+				schema:addressRegion "TX" ;
+				schema:postalCode "84131-1723" ;
+			] ;
+			foaf:knows _:b14, [
+				rdf:type schema:Person ;
+				schema:image <https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1134.jpg> ;
+				schema:url <http://noxious-wind-chime.name> ;
+				schema:telephone "1-969-467-0620 x13861" ;
+				schema:name "Libbie Stanton" ;
+				schema:jobTitle "Corporate Directives Developer" ;
+				schema:email <mailTo:Libbie_Stanton@yahoo.com> ;
+				schema:address [
+					rdf:type schema:PostalAddress ;
+					schema:addressLocality "Kingsport" ;
+					schema:streetAddress "4406 Santina Valleys" ;
+					schema:addressRegion "WA" ;
+					schema:postalCode "06779-7020" ;
+				] ;
+				foaf:knows _:b18, [
+					rdf:type schema:Person ;
+					schema:image <https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/63.jpg> ;
+					schema:url <https://authorized-advocate.com> ;
+					schema:telephone "1-333-767-8200 x06792" ;
+					schema:name "Jaime Volkman" ;
+					schema:jobTitle "District Assurance Liaison" ;
+					schema:email <mailTo:Jaime10@hotmail.com> ;
+					schema:address [
+						rdf:type schema:PostalAddress ;
+						schema:addressLocality "Maple Grove" ;
+						schema:streetAddress "8397 Stokes Canyon" ;
+						schema:addressRegion "IA" ;
+						schema:postalCode "92934-4706" ;
+					] ;
+					foaf:knows _:b22, [
+						rdf:type schema:Person ;
+						schema:image <https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/433.jpg> ;
+						schema:url <http://natural-twist.info> ;
+						schema:telephone "(958) 938-1790" ;
+						schema:name "Norma Tillman" ;
+						schema:jobTitle "Legacy Markets Consultant" ;
+						schema:email <mailTo:Norma.Tillman@yahoo.com> ;
+						schema:address [
+							rdf:type schema:PostalAddress ;
+							schema:addressLocality "Bismarck" ;
+							schema:streetAddress "1380 Eulah Park" ;
+							schema:addressRegion "WA" ;
+							schema:postalCode "53250" ;
+						] ;
+						foaf:knows _:b26, [
+							rdf:type schema:Person ;
+							schema:image <https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/38.jpg> ;
+							schema:url <http://euphoric-patio.info> ;
+							schema:telephone "(306) 964-6866" ;
+							schema:name "Royal Schoen" ;
+							schema:jobTitle "National Assurance Consultant" ;
+							schema:email <mailTo:Royal_Schoen99@yahoo.com> ;
+							schema:address [
+								rdf:type schema:PostalAddress ;
+								schema:addressLocality "Santa Ana" ;
+								schema:streetAddress "56894 Toy Branch" ;
+								schema:addressRegion "MT" ;
+								schema:postalCode "75775-8060" ;
+							] ;
+							foaf:knows _:b30, [
+								rdf:type schema:Person ;
+								schema:image <https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/40.jpg> ;
+								schema:url <https://dismal-cutlet.com> ;
+								schema:telephone "562-310-0324 x497" ;
+								schema:name "Dejah Wehner" ;
+								schema:jobTitle "International Response Technician" ;
+								schema:email <mailTo:Dejah_Wehner@yahoo.com> ;
+								schema:address [
+									rdf:type schema:PostalAddress ;
+									schema:addressLocality "Enterprise" ;
+									schema:streetAddress "5266 McClure Cliffs" ;
+									schema:addressRegion "MS" ;
+									schema:postalCode "82714" ;
+								] ;
+								foaf:knows _:b34, [
+									rdf:type schema:Person ;
+									schema:image <https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/883.jpg> ;
+									schema:url <https://frugal-bowl.biz> ;
+									schema:telephone "361-599-2533 x194" ;
+									schema:name "Eden Hartmann" ;
+									schema:jobTitle "Corporate Implementation Specialist" ;
+									schema:email <mailTo:Eden74@hotmail.com> ;
+									schema:address [
+										rdf:type schema:PostalAddress ;
+										schema:addressLocality "Cary" ;
+										schema:streetAddress "401 Marquardt Forest" ;
+										schema:addressRegion "NH" ;
+										schema:postalCode "64083-6763" ;
+									] ;
+									foaf:knows _:b38, [
+										rdf:type schema:Person ;
+										schema:image <https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/22.jpg> ;
+										schema:url <http://motionless-draw.net> ;
+										schema:telephone "953-247-0765" ;
+										schema:name "Elian Hirthe" ;
+										schema:jobTitle "Dynamic Response Technician" ;
+										schema:email <mailTo:Elian_Hirthe@hotmail.com> ;
+										schema:address [
+											rdf:type schema:PostalAddress ;
+											schema:addressLocality "Turlock" ;
+											schema:streetAddress "56574 Sipes Courts" ;
+											schema:addressRegion "MN" ;
+											schema:postalCode "70258-2383" ;
+										] ;
+										foaf:knows _:b42, [
+											rdf:type schema:Person ;
+											schema:image <https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/931.jpg> ;
+											schema:url <https://pretty-bloodflow.name> ;
+											schema:telephone "1-538-714-5224 x63075" ;
+											schema:name "Brionna Hauck" ;
+											schema:jobTitle "Chief Intranet Strategist" ;
+											schema:email <mailTo:Brionna49@gmail.com> ;
+											schema:address [
+												rdf:type schema:PostalAddress ;
+												schema:addressLocality "Lake Ridge" ;
+												schema:streetAddress "075 Madelynn Circles" ;
+												schema:addressRegion "LA" ;
+												schema:postalCode "60483-9450" ;
+											] ;
+											foaf:knows _:b46, [
+												rdf:type schema:Person ;
+												schema:image <https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/636.jpg> ;
+												schema:url <http://fatal-consulate.net> ;
+												schema:telephone "214-940-8864 x134" ;
+												schema:name "Wilfred Kirlin" ;
+												schema:jobTitle "Future Accounts Liaison" ;
+												schema:email <mailTo:Wilfred90@yahoo.com> ;
+												schema:address [
+													rdf:type schema:PostalAddress ;
+													schema:addressLocality "Allentown" ;
+													schema:streetAddress "65613 Rogers Camp" ;
+													schema:addressRegion "NC" ;
+													schema:postalCode "90617-9255" ;
+												] ;
+												foaf:knows _:b50, [
+													rdf:type schema:Person ;
+													schema:image <https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/55.jpg> ;
+													schema:url <https://nautical-root.info> ;
+													schema:telephone "419.655.3666" ;
+													schema:name "Mauricio Labadie" ;
+													schema:jobTitle "Investor Paradigm Liaison" ;
+													schema:email <mailTo:Mauricio.Labadie@hotmail.com> ;
+													schema:address [
+														rdf:type schema:PostalAddress ;
+														schema:addressLocality "Memphis" ;
+														schema:streetAddress "697 Adella Circle" ;
+														schema:addressRegion "VT" ;
+														schema:postalCode "95702" ;
+													] ;
+													foaf:knows _:b54, [
+														rdf:type schema:Person ;
+														schema:image <https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/675.jpg> ;
+														schema:url <https://lovable-accessory.biz> ;
+														schema:telephone "391-796-3212 x2494" ;
+														schema:name "Zackary Medhurst" ;
+														schema:jobTitle "Internal Communications Architect" ;
+														schema:email <mailTo:Zackary.Medhurst@gmail.com> ;
+														schema:address [
+															rdf:type schema:PostalAddress ;
+															schema:addressLocality "Salem" ;
+															schema:streetAddress "405 Jenkins Tunnel" ;
+															schema:addressRegion "VT" ;
+															schema:postalCode "84691" ;
+														] ;
+														foaf:knows _:b58, [
+															rdf:type schema:Person ;
+															schema:image <https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/61.jpg> ;
+															schema:url <https://baggy-elicit.biz> ;
+															schema:telephone "450.480.5674 x924" ;
+															schema:name "Reba Mante" ;
+															schema:jobTitle "Lead Creative Director" ;
+															schema:email <mailTo:Reba78@yahoo.com> ;
+															schema:address [
+																rdf:type schema:PostalAddress ;
+																schema:addressLocality "Passaic" ;
+																schema:streetAddress "917 Daron Villages" ;
+																schema:addressRegion "DE" ;
+																schema:postalCode "24880" ;
+															] ;
+															foaf:knows _:b62, [
+																rdf:type schema:Person ;
+																schema:image <https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1211.jpg> ;
+																schema:url <http://weekly-quadrant.org> ;
+																schema:telephone "(903) 866-6369 x51280" ;
+																schema:name "Kiley Hammes" ;
+																schema:jobTitle "Central Intranet Developer" ;
+																schema:email <mailTo:Kiley.Hammes13@gmail.com> ;
+																schema:address [
+																	rdf:type schema:PostalAddress ;
+																	schema:addressLocality "El Cajon" ;
+																	schema:streetAddress "48588 Raynor Villages" ;
+																	schema:addressRegion "WI" ;
+																	schema:postalCode "81089-8720" ;
+																] ;
+																foaf:knows _:b66, [
+																	rdf:type schema:Person ;
+																	schema:image <https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/990.jpg> ;
+																	schema:url <http://musty-failure.net> ;
+																	schema:telephone "1-843-324-9256 x7216" ;
+																	schema:name "Preston Lockman" ;
+																	schema:jobTitle "Investor Accounts Planner" ;
+																	schema:email <mailTo:Preston.Lockman@gmail.com> ;
+																	schema:address [
+																		rdf:type schema:PostalAddress ;
+																		schema:addressLocality "Santa Ana" ;
+																		schema:streetAddress "8503 VonRueden Valley" ;
+																		schema:addressRegion "WI" ;
+																		schema:postalCode "19389-8693" ;
+																	] ;
+																	foaf:knows _:b70, [
+																		rdf:type schema:Person ;
+																		schema:image <https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/415.jpg> ;
+																		schema:url <http://dense-worry.name> ;
+																		schema:telephone "(822) 628-6156 x747" ;
+																		schema:name "Arden Lind" ;
+																		schema:jobTitle "Central Marketing Associate" ;
+																		schema:email <mailTo:Arden_Lind@gmail.com> ;
+																		schema:address [
+																			rdf:type schema:PostalAddress ;
+																			schema:addressLocality "Hacienda Heights" ;
+																			schema:streetAddress "78946 Schmitt Landing" ;
+																			schema:addressRegion "MO" ;
+																			schema:postalCode "27246" ;
+																		] ;
+																		foaf:knows _:b74, [
+																			rdf:type schema:Person ;
+																			schema:image <https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/439.jpg> ;
+																			schema:url <http://cute-comfortable.org> ;
+																			schema:telephone "(785) 881-8086" ;
+																			schema:name "Russell Barton" ;
+																			schema:jobTitle "Regional Markets Officer" ;
+																			schema:email <mailTo:Russell4@gmail.com> ;
+																			schema:address [
+																				rdf:type schema:PostalAddress ;
+																				schema:addressLocality "Provo" ;
+																				schema:streetAddress "0806 Christiansen Estates" ;
+																				schema:addressRegion "WA" ;
+																				schema:postalCode "52553" ;
+																			] ;
+																			foaf:knows _:b78 ;
+																		] ;
+																	] ;
+																] ;
+															] ;
+														] ;
+													] ;
+												] ;
+											] ;
+										] ;
+									] ;
+								] ;
+							] ;
+						] ;
+					] ;
+				] ;
+			] ;
+		] ;
+	] .
+
+_:b6 a schema:Person ;
+	schema:image <https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/205.jpg> ;
+	schema:url <http://potable-aquarium.org> ;
+	schema:telephone "1-764-359-7815 x9606" ;
+	schema:name "Treva Toy" ;
+	schema:jobTitle "Dynamic Creative Director" ;
+	schema:email <mailTo:Treva87@hotmail.com> ;
+	schema:address [
+		rdf:type schema:PostalAddress ;
+		schema:addressLocality "Concord" ;
+		schema:streetAddress "75282 May Extension" ;
+		schema:addressRegion "OH" ;
+		schema:postalCode "22209-2777" ;
+	] ;
+	foaf:knows _:b10 .
+
+_:b10 a schema:Person ;
+	schema:image <https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1068.jpg> ;
+	schema:url <https://strident-silicon.com> ;
+	schema:telephone "1-497-540-7027" ;
+	schema:name "Gustave Leannon" ;
+	schema:jobTitle "Product Applications Developer" ;
+	schema:email <mailTo:Gustave_Leannon@hotmail.com> ;
+	schema:address [
+		rdf:type schema:PostalAddress ;
+		schema:addressLocality "Alhambra" ;
+		schema:streetAddress "5911 Cremin Mall" ;
+		schema:addressRegion "NC" ;
+		schema:postalCode "04643" ;
+	] ;
+	foaf:knows _:b14 .
+
+_:b14 a schema:Person ;
+	schema:image <https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/721.jpg> ;
+	schema:url <http://negative-doorpost.info> ;
+	schema:telephone "1-912-979-7694 x2199" ;
+	schema:name "Pasquale Mueller" ;
+	schema:jobTitle "Chief Solutions Supervisor" ;
+	schema:email <mailTo:Pasquale.Mueller@yahoo.com> ;
+	schema:address [
+		rdf:type schema:PostalAddress ;
+		schema:addressLocality "Trenton" ;
+		schema:streetAddress "8694 Schowalter Motorway" ;
+		schema:addressRegion "KS" ;
+		schema:postalCode "42746-5444" ;
+	] ;
+	foaf:knows _:b18 .
+
+_:b18 a schema:Person ;
+	schema:image <https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/799.jpg> ;
+	schema:url <https://ordinary-zampone.name> ;
+	schema:telephone "871-765-7919 x94797" ;
+	schema:name "Tomas Hamill" ;
+	schema:jobTitle "National Research Planner" ;
+	schema:email <mailTo:Tomas69@yahoo.com> ;
+	schema:address [
+		rdf:type schema:PostalAddress ;
+		schema:addressLocality "Brockton" ;
+		schema:streetAddress "275 Rosemarie Manor" ;
+		schema:addressRegion "ME" ;
+		schema:postalCode "14328-4957" ;
+	] ;
+	foaf:knows _:b22 .
+
+_:b22 a schema:Person ;
+	schema:image <https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/404.jpg> ;
+	schema:url <http://icy-penguin.info> ;
+	schema:telephone "(341) 641-7663 x134" ;
+	schema:name "Otis Lueilwitz" ;
+	schema:jobTitle "Dynamic Identity Specialist" ;
+	schema:email <mailTo:Otis_Lueilwitz@hotmail.com> ;
+	schema:address [
+		rdf:type schema:PostalAddress ;
+		schema:addressLocality "Santa Clarita" ;
+		schema:streetAddress "45662 Boyle Prairie" ;
+		schema:addressRegion "MO" ;
+		schema:postalCode "71216-3981" ;
+	] ;
+	foaf:knows _:b26 .
+
+_:b26 a schema:Person ;
+	schema:image <https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/388.jpg> ;
+	schema:url <https://educated-photoreceptor.biz> ;
+	schema:telephone "(551) 730-1542 x506" ;
+	schema:name "Johanna Hudson" ;
+	schema:jobTitle "Future Usability Developer" ;
+	schema:email <mailTo:Johanna12@yahoo.com> ;
+	schema:address [
+		rdf:type schema:PostalAddress ;
+		schema:addressLocality "Sierra Vista" ;
+		schema:streetAddress "6778 Stacey Course" ;
+		schema:addressRegion "LA" ;
+		schema:postalCode "39895" ;
+	] ;
+	foaf:knows _:b30 .
+
+_:b30 a schema:Person ;
+	schema:image <https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/519.jpg> ;
+	schema:url <http://rotten-fold.com> ;
+	schema:telephone "850.209.1657" ;
+	schema:name "Chaz Hegmann" ;
+	schema:jobTitle "Dynamic Branding Supervisor" ;
+	schema:email <mailTo:Chaz_Hegmann@hotmail.com> ;
+	schema:address [
+		rdf:type schema:PostalAddress ;
+		schema:addressLocality "Lynn" ;
+		schema:streetAddress "2554 Derek Drive" ;
+		schema:addressRegion "NM" ;
+		schema:postalCode "41530-4715" ;
+	] ;
+	foaf:knows _:b34 .
+
+_:b34 a schema:Person ;
+	schema:image <https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/438.jpg> ;
+	schema:url <http://definitive-gall-bladder.biz> ;
+	schema:telephone "752.275.5502 x90493" ;
+	schema:name "Hal Vandervort" ;
+	schema:jobTitle "Lead Division Administrator" ;
+	schema:email <mailTo:Hal.Vandervort@yahoo.com> ;
+	schema:address [
+		rdf:type schema:PostalAddress ;
+		schema:addressLocality "Appleton" ;
+		schema:streetAddress "62985 Hamill Stream" ;
+		schema:addressRegion "MS" ;
+		schema:postalCode "62556" ;
+	] ;
+	foaf:knows _:b38 .
+
+_:b38 a schema:Person ;
+	schema:image <https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/708.jpg> ;
+	schema:url <http://aware-sorrow.name> ;
+	schema:telephone "553.751.2865 x752" ;
+	schema:name "Coleman Kozey" ;
+	schema:jobTitle "Principal Branding Developer" ;
+	schema:email <mailTo:Coleman.Kozey98@yahoo.com> ;
+	schema:address [
+		rdf:type schema:PostalAddress ;
+		schema:addressLocality "Altoona" ;
+		schema:streetAddress "37409 Terrance Summit" ;
+		schema:addressRegion "KY" ;
+		schema:postalCode "79834-8312" ;
+	] ;
+	foaf:knows _:b42 .
+
+_:b42 a schema:Person ;
+	schema:image <https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/445.jpg> ;
+	schema:url <http://vague-businessman.net> ;
+	schema:telephone "1-522-289-5240 x0526" ;
+	schema:name "Quinton Marquardt" ;
+	schema:jobTitle "Direct Usability Designer" ;
+	schema:email <mailTo:Quinton_Marquardt@yahoo.com> ;
+	schema:address [
+		rdf:type schema:PostalAddress ;
+		schema:addressLocality "Mesa" ;
+		schema:streetAddress "867 Willms Heights" ;
+		schema:addressRegion "AL" ;
+		schema:postalCode "05768-6786" ;
+	] ;
+	foaf:knows _:b46 .
+
+_:b46 a schema:Person ;
+	schema:image <https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/969.jpg> ;
+	schema:url <https://smoggy-acrylic.org> ;
+	schema:telephone "254.942.4474" ;
+	schema:name "Elvie Hickle" ;
+	schema:jobTitle "Product Data Technician" ;
+	schema:email <mailTo:Elvie98@yahoo.com> ;
+	schema:address [
+		rdf:type schema:PostalAddress ;
+		schema:addressLocality "Wichita" ;
+		schema:streetAddress "0781 Zetta Divide" ;
+		schema:addressRegion "NH" ;
+		schema:postalCode "71739" ;
+	] ;
+	foaf:knows _:b50 .
+
+_:b50 a schema:Person ;
+	schema:image <https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/896.jpg> ;
+	schema:url <https://reflecting-watcher.net> ;
+	schema:telephone "(330) 927-6110 x62916" ;
+	schema:name "Cory Shields" ;
+	schema:jobTitle "Corporate Research Designer" ;
+	schema:email <mailTo:Cory_Shields32@hotmail.com> ;
+	schema:address [
+		rdf:type schema:PostalAddress ;
+		schema:addressLocality "Joplin" ;
+		schema:streetAddress "9586 Luella Route" ;
+		schema:addressRegion "TN" ;
+		schema:postalCode "88376" ;
+	] ;
+	foaf:knows _:b54 .
+
+_:b54 a schema:Person ;
+	schema:image <https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/745.jpg> ;
+	schema:url <http://webbed-flat.com> ;
+	schema:telephone "1-639-795-0436 x056" ;
+	schema:name "Dudley Dietrich" ;
+	schema:jobTitle "Dynamic Integration Assistant" ;
+	schema:email <mailTo:Dudley_Dietrich@yahoo.com> ;
+	schema:address [
+		rdf:type schema:PostalAddress ;
+		schema:addressLocality "Dearborn Heights" ;
+		schema:streetAddress "496 Donnelly Loaf" ;
+		schema:addressRegion "AZ" ;
+		schema:postalCode "23062" ;
+	] ;
+	foaf:knows _:b58 .
+
+_:b58 a schema:Person ;
+	schema:image <https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/170.jpg> ;
+	schema:url <https://required-priest.org> ;
+	schema:telephone "1-310-497-0633 x654" ;
+	schema:name "Jeanne Cruickshank" ;
+	schema:jobTitle "Human Infrastructure Administrator" ;
+	schema:email <mailTo:Jeanne_Cruickshank@yahoo.com> ;
+	schema:address [
+		rdf:type schema:PostalAddress ;
+		schema:addressLocality "Whittier" ;
+		schema:streetAddress "5799 Orrin Rapids" ;
+		schema:addressRegion "LA" ;
+		schema:postalCode "42181" ;
+	] ;
+	foaf:knows _:b62 .
+
+_:b62 a schema:Person ;
+	schema:image <https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/729.jpg> ;
+	schema:url <https://rotating-whip.net> ;
+	schema:telephone "(945) 996-0749 x375" ;
+	schema:name "Clarabelle Ziemann" ;
+	schema:jobTitle "Dynamic Security Developer" ;
+	schema:email <mailTo:Clarabelle_Ziemann76@yahoo.com> ;
+	schema:address [
+		rdf:type schema:PostalAddress ;
+		schema:addressLocality "Stockton" ;
+		schema:streetAddress "242 Brakus Street" ;
+		schema:addressRegion "VT" ;
+		schema:postalCode "16033" ;
+	] ;
+	foaf:knows _:b66 .
+
+_:b66 a schema:Person ;
+	schema:image <https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1028.jpg> ;
+	schema:url <https://awful-accusation.name> ;
+	schema:telephone "1-536-880-0404" ;
+	schema:name "Audreanne Farrell" ;
+	schema:jobTitle "Senior Tactics Director" ;
+	schema:email <mailTo:Audreanne.Farrell93@gmail.com> ;
+	schema:address [
+		rdf:type schema:PostalAddress ;
+		schema:addressLocality "Orem" ;
+		schema:streetAddress "329 Adams Springs" ;
+		schema:addressRegion "RI" ;
+		schema:postalCode "71381-4070" ;
+	] ;
+	foaf:knows _:b70 .
+
+_:b70 a schema:Person ;
+	schema:image <https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/148.jpg> ;
+	schema:url <https://fitting-swine.com> ;
+	schema:telephone "1-748-530-3773 x80779" ;
+	schema:name "Davon Becker" ;
+	schema:jobTitle "Internal Marketing Liaison" ;
+	schema:email <mailTo:Davon_Becker@yahoo.com> ;
+	schema:address [
+		rdf:type schema:PostalAddress ;
+		schema:addressLocality "Levittown" ;
+		schema:streetAddress "881 Cormier Mall" ;
+		schema:addressRegion "MD" ;
+		schema:postalCode "41025" ;
+	] ;
+	foaf:knows _:b74 .
+
+_:b74 a schema:Person ;
+	schema:image <https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/27.jpg> ;
+	schema:url <https://winding-intervention.name> ;
+	schema:telephone "(843) 588-4620" ;
+	schema:name "Chase Bogan" ;
+	schema:jobTitle "Global Creative Strategist" ;
+	schema:email <mailTo:Chase_Bogan@gmail.com> ;
+	schema:address [
+		rdf:type schema:PostalAddress ;
+		schema:addressLocality "El Dorado Hills" ;
+		schema:streetAddress "5239 Stracke Summit" ;
+		schema:addressRegion "PA" ;
+		schema:postalCode "29225-8815" ;
+	] ;
+	foaf:knows _:b78 .
+
+_:b78 a schema:Person ;
+	schema:image <https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/605.jpg> ;
+	schema:url <https://incomparable-talking.info> ;
+	schema:telephone "1-430-920-8223 x9488" ;
+	schema:name "Rebeka Mraz" ;
+	schema:jobTitle "Central Functionality Developer" ;
+	schema:email <mailTo:Rebeka.Mraz@gmail.com> ;
+	schema:address [
+		rdf:type schema:PostalAddress ;
+		schema:addressLocality "Tamarac" ;
+		schema:streetAddress "0968 Keagan Rapid" ;
+		schema:addressRegion "IL" ;
+		schema:postalCode "44842" ;
+	] .
+      `
+
+      const dataset = rdf.parse(turtle)
+      const pointer = rdf.clownface({ dataset, term: rdf.namedNode('http://example.org/1') })
+      let demo = document.getElementById('demo')
+      demo.maxLevel = 3
+      demo.pointer = pointer
+    </script>
+</head>
+<body>
+<rdf-entity id="demo"
+            technical-cues
+            show-named-graphs
+            compact-mode
+            embed-lists
+            embed-blank-nodes
+            embed-named-nodes
+            highlight-language
+            ></rdf-entity>
+</body>
+</html>
+
+
+
