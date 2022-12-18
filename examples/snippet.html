@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>RDF entity demo</title>
+    <script type="module" src="/src/rdf-entity.js"></script>
+</head>
+<body>
+<rdf-entity id="demo">
+    <script type="text/turtle">
+@prefix schema: <http://schema.org/> .
+<http://tbbt.ld/john> a schema:Person ;
+                      schema:name "John Doe" ;
+                      schema:knows [
+                            schema:name "Jane" ;
+                        ] .
+    </script>
+</rdf-entity>
+</body>
+</html>
+
+
+

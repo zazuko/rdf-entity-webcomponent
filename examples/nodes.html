@@ -7,7 +7,7 @@
     <script type="module" src="/src/rdf-entity.js"></script>
 
     <script type="module">
-      import rdf from './src/rdf-ext.js'
+      import rdf from '../src/rdf-ext.js'
 
       const turtle = `
       @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -654,10 +654,9 @@ _:b78 a schema:Person ;
 	] .
       `
 
-      const dataset = rdf.parse(turtle)
       let demo = document.getElementById('demo')
       demo.maxLevel = 3
-      demo.dataset = dataset
+      demo.dataset = rdf.parse(turtle)
       demo.terms = [rdf.namedNode('http://example.org/1')]
 
     </script>
@@ -670,7 +669,7 @@ _:b78 a schema:Person ;
             embed-blank-nodes
             embed-named-nodes
             highlight-language
-></rdf-entity>
+>  </rdf-entity>
 </body>
 </html>
 

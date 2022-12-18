@@ -7,18 +7,33 @@ A Web component that visualizes a dataset in (simple) tabular formats
 The element requires a single property `dataset` which conforms to
 the [rdf-dataset spec](https://rdf.js.org/dataset-spec/)
 
-## Run the example
+Alternatively, one can directly specify turtle in the tag 
+
+```html
+<rdf-entity id="demo">
+    <script type="text/turtle">
+@prefix schema: <http://schema.org/> .
+<http://tbbt.ld/john> a schema:Person ;
+                      schema:name "John Doe" ;
+                      schema:knows [
+                            schema:name "Jane" ;
+                        ] .
+    </script>
+</rdf-entity>
+```
+
+## Run the examples
 
 ```
 npm install
 npm run dev
 ```
 
-It will display something similar to:
+See the [examples](./examples) folder for details
+
+## Screenshot
 
 ![screenshot.png](./docs/screenshot.png)
-
-See the [example](./index.html) for details
 
 ## Properties
 
