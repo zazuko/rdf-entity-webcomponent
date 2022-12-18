@@ -1,22 +1,30 @@
-import { subjects } from './builder/utils.js'
 import rdf from './rdf-ext.js'
 import { createEntityWithContext } from './builder/entityBuilder.js'
 
-function entity (cf, options) {
+function getSecondary (primary, dataset) {
+  const secondary = rdf.termSet()
+  for (const quad of dataset) {
+    if (!primary.has(quad.subject)) {
+      secondary.add(quad.subject)
+    }
+  }
+  return secondary
+}
+
+function entity ({ dataset, terms }, options) {
   const visited = rdf.termSet()
   const entities = []
 
-  // If this clownface is pointing  to a term, render it first
-  const allSubjects = cf.term
-    ? [
-        cf.term,
-        ...subjects(cf.any()).filter(node => !node.equals(cf.term))]
-    : subjects(
-      cf.any())
+  // render the user-specified terms first
+  const primary = rdf.termSet(terms || [])
 
-  for (const subject of [...allSubjects]) {
+  const subjects = [...terms || [], ...getSecondary(primary, dataset)]
+
+  for (const subject of subjects) {
     if (!visited.has(subject)) {
-      const { entity } = createEntityWithContext(cf.node(subject), options,
+      const singlePointer = rdf.clownface({ dataset, term: subject })
+
+      const { entity } = createEntityWithContext(singlePointer, options,
         { visited })
 
       entities.push(entity)

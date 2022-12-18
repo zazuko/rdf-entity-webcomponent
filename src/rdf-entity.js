@@ -1,6 +1,5 @@
 import { LitElement, css, html } from 'lit'
 import { EntityList } from './components/EntityList.js'
-import rdf from './rdf-ext.js'
 
 import { DEFAULT_BUILDER_OPTIONS, getBuilderOptions } from './options.js'
 
@@ -150,8 +149,6 @@ export class RdfEntity extends LitElement {
 
   constructor () {
     super()
-    this._pointer = rdf.clownface({ dataset: rdf.dataset() })
-
     for (const [key, value] of Object.entries(DEFAULT_BUILDER_OPTIONS)) {
       this[key] = value
     }
@@ -161,7 +158,9 @@ export class RdfEntity extends LitElement {
 
   static get properties () {
     return {
-      pointer: { type: Object, attribute: false, required: true },
+      dataset: { type: Object, attribute: false, required: true },
+      terms: { type: Object, attribute: false, required: true },
+
       technicalCues: {
         type: Boolean, attribute: 'technical-cues', required: false
       },
@@ -185,22 +184,33 @@ export class RdfEntity extends LitElement {
     }
   }
 
-  get pointer () {
-    return this._pointer
+  get dataset () {
+    return this._dataset
   }
 
-  set pointer (pointer) {
-    this._pointer = pointer
+  set dataset (dataset) {
+    this._dataset = dataset
+    this.requestUpdate()
+  }
+
+  get terms () {
+    return this._terms
+  }
+
+  set terms (terms) {
+    this._terms = terms
     this.requestUpdate()
   }
 
   render () {
-    if (!this._pointer || !this._pointer.dataset) {
-      return html`requires a Clownface pointer`
-    } else if (!this._pointer.dataset.size) {
+    if (!this._dataset) {
+      return html`requires a dataset`
+    } else if (!this._dataset.size) {
       return html`No quads`
     } else {
-      return EntityList(this._pointer, getBuilderOptions(this))
+      return EntityList({
+        dataset: this._dataset, terms: this._terms
+      }, getBuilderOptions(this))
     }
   }
 }

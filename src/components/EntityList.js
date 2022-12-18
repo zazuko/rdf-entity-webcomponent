@@ -3,8 +3,8 @@ import rdf from '../rdf-ext.js'
 import { entity } from '../model.js'
 import { Entity } from './Entity.js'
 
-function EntityList (cf, options) {
-  const items = entity(cf, options)
+function EntityList ({ dataset, terms }, options) {
+  const items = entity({ dataset, terms }, options)
 
   const anchorFor = rdf.termMap()
   let blankCount = 0

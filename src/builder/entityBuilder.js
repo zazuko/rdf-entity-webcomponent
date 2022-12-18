@@ -112,6 +112,9 @@ function createEntityWithContext (cf, options, context) {
   if (!cf) {
     throw Error('Requires pointer')
   }
+  if (cf.datasets.length !== 1) {
+    throw Error('Single pointer required')
+  }
 
   const defaultOptions = {
     labelProperties: [

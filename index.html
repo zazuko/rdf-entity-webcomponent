@@ -10,7 +10,7 @@
       import { ns } from './src/namespaces.js'
       import rdf from './src/rdf-ext.js'
 
-      function examplePointer () {
+      function exampleDataset () {
         ns.ex = rdf.namespace('http://example.org/')
         const result = rdf.clownface({ dataset: rdf.dataset(), factory: rdf }).
           node(ns.ex.WhiteRabbit).
@@ -38,18 +38,14 @@
         result.node(ns.ex.drinkTea).
           addOut(ns.schema.name, rdf.literal('Drink tea')).
           addOut(ns.ex.when, rdf.literal('During the morning'))
-        return result
+        return result.dataset
       }
 
-      const demoPointer = examplePointer()
       let demo = document.getElementById('demo')
       demo.maxLevel = 3
       demo.preferredLanguages = ['en', 'fr', 'de', 'it', 'pl']
-      demo.metadata = {
-        'SPARQL endpoint:': rdf.namedNode('http://example.org/sparql'),
-        'arbitrary': 'value',
-      }
-      demo.pointer = demoPointer
+      demo.dataset = exampleDataset()
+      demo.terms = [ns.ex.WhiteRabbit]
     </script>
 </head>
 <body>
