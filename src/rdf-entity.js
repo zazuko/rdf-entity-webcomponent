@@ -1,6 +1,6 @@
 import { LitElement, css, html } from 'lit'
 import { EntityList } from './components/EntityList.js'
-
+import rdf from '../src/rdf-ext.js'
 import { DEFAULT_BUILDER_OPTIONS, getBuilderOptions } from './options.js'
 
 export class RdfEntity extends LitElement {
@@ -203,6 +203,16 @@ export class RdfEntity extends LitElement {
   }
 
   render () {
+    if (this.textContent && this.textContent.trim().length > 0) {
+      try {
+        const dataset = rdf.parse(this.textContent)
+        return EntityList({
+          dataset, terms: this._terms
+        }, getBuilderOptions(this))
+      } catch (error) {
+        return html`${error}`
+      }
+    }
     if (!this._dataset) {
       return html`requires a dataset`
     } else if (!this._dataset.size) {
