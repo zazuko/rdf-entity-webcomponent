@@ -7,17 +7,8 @@ import { DEFAULT_BUILDER_OPTIONS, getBuilderOptions } from './options.js'
 export class RdfEntity extends LitElement {
   static styles = css`
     :host {
-      --color-primary: #ffb15e;
-      --color-primary-light: #ffe38d;
-      --color-secondary: #ff441c;
-      --color-secondary-dark: #c30000;
-      --color-text-on-primary: #000000;
-      --color-text-on-secondary: #000000;
-      --color-black: #000000;
-      --color-grey: #4f4f4f;
-      --color-white: #ffffff;
-      --color-darker-white: #fcfcfc;
-      --color-light-grey: #e5e5e5;
+      --border: #d1d1d1;
+      --metadata: #4f4f4f;
     }
 
     .entities {
@@ -29,11 +20,7 @@ export class RdfEntity extends LitElement {
     .entity {
       display: flex;
       flex-direction: column;
-      border: 1px solid var(--color-grey);
-    }
-
-    .entity-root {
-      border: 1px solid var(--color-grey);
+      border: 1px solid var(--border);
     }
 
     .main-header {
@@ -51,7 +38,6 @@ export class RdfEntity extends LitElement {
 
     .main-header a {
       font-size: 18px;
-      color: var(--color-black);
       text-transform: uppercase;
       text-align: center;
     }
@@ -59,12 +45,6 @@ export class RdfEntity extends LitElement {
     .header {
       font-size: 18px;
       padding-left: 10px;
-      border-bottom: 1px dashed var(--color-grey);
-      //background-color: var(--color-primary);
-    }
-
-    .header a {
-      color: var(--color-text-on-primary);
     }
 
     .rows {
@@ -73,12 +53,12 @@ export class RdfEntity extends LitElement {
     }
 
     .rows > :nth-child(1n) {
-      border-top: 1px solid var(--color-light-grey);
+      border-top: 1px solid var(--border);
     }
 
     .rows > :nth-child(2n) {
-      border-top: 1px solid var(--color-light-grey);
-      background: rgba(0, 0, 0, 0.05);
+      border-top: 1px solid var(--border);
+      background: rgba(0, 0, 0, 0.01);
     }
 
     .rows .row {
@@ -122,11 +102,11 @@ export class RdfEntity extends LitElement {
     }
 
     div .bringDown {
-      color: var(--color-grey);
+      color: var(--metadata);
     }
 
     .vocab {
-      color: var(--color-text-on-secondary);
+      color: var(--metadata);
       font-size: 0.7rem;
     }
 
@@ -135,13 +115,13 @@ export class RdfEntity extends LitElement {
     }
 
     .language {
-      color: var(--color-text-on-secondary);
+      color: var(--metadata);
       font-size: 0.7rem;
       margin-left: 4px;
     }
 
     .datatype {
-      color: var(--color-text-on-secondary);
+      color: var(--metadata);
       font-size: 0.5rem;
       margin-left: 4px;
     }
@@ -151,7 +131,7 @@ export class RdfEntity extends LitElement {
     }
 
     .BlankNode a {
-      color: var(--color-grey);
+      color: var(--metadata);
       overflow: hidden;
       display: -webkit-box;
       -webkit-line-clamp: 1;

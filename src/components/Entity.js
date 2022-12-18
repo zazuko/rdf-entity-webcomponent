@@ -1,32 +1,77 @@
 import { html } from 'lit'
 
-function Term (entity, options, context) {
-  if (entity.renderAs === 'Image') {
+function Entity (entity, options, context, renderedAsRoot) {
+  const rows = entity.rows ? entity.rows.map(row => Row(row, options, context)) : []
+  const header = renderedAsRoot
+    ? RootHeader(entity)
+    : ItemHeader(entity, options,
+      context)
+
+  if (entity.rows) {
     return html`
-        <div class="img-container"><img alt="${entity.term.value}"
-                                        src="${entity.term.value}"></div>`
-  }
-
-  function maybeLink () {
-    if (entity.term.termType === 'Literal') {
-      return undefined
-    }
-    if (context.anchorFor.has(entity.term)) {
-      return `#${context.anchorFor.get(entity.term)}`
-    }
-    if (entity.term.termType === 'NamedNode') {
-      return entity.term.value
-    }
-    return undefined
-  }
-
-  const link = maybeLink()
-  if (link) {
-    return html`<a href="${link}"
-                 title="${entity.term.value}">${entity.label.string}</a>`
+        <div
+                id="${context.anchorFor.get(entity.term)}"
+                class="entity ${renderedAsRoot ? 'entity-root' : ''}">
+            ${header}
+            <div class="rows">
+                ${rows}
+            </div>
+        </div>`
   } else {
-    return html`${entity.label.string}`
+    return TermWithCues(entity, options, context)
   }
+}
+
+function RootHeader (entity) {
+  const text = entity.label.fallbackLabel
+    ? html`<h2></h2>`
+    : html`<h2>
+      ${entity.label.string}</h2>`
+
+  const link = entity.term.termType === 'BlankNode'
+    ? html``
+    : html`<a
+          href="${entity.term.value}"
+          title="${entity.term.value}">${entity.term.value}</a>`
+
+  return html`
+      <div class="main-header">${text}${link}</div>
+  `
+}
+
+function ItemHeader (entity, options, context) {
+  const text = entity.label.fallbackLabel
+    ? html`<span>${TermWithCues(entity,
+          options, context)}</span>`
+    : html`<h3>
+      ${TermWithCues(entity, options, context)}</h3>`
+
+  return html`
+      <div class="header ${entity.term.termType}">${text}</div>`
+}
+
+function Row (row, options, context) {
+  const predicatesList = html`
+      <ul>
+          ${row.properties.map(property => html`
+              <li>${TermWithCues(property, options, context)}</li>`)}
+      </ul>`
+
+  const valuesList = row.renderAs === 'List'
+    ? html`
+      <ol>${row.values.map(value => html`
+          <li>${Entity(value, options, context)}</li>`)}
+      </ol>`
+    : html`
+      <ul>${row.values.map(value => html`
+          <li>${Entity(value, options, context)}</li>`)}
+      </ul>`
+
+  return html`
+      <div class="row">
+          ${predicatesList}
+          ${valuesList}
+      </div>`
 }
 
 function TermWithCues (entity, options, context) {
@@ -57,76 +102,32 @@ function TermWithCues (entity, options, context) {
       <div>${spans}</div>`
 }
 
-function Row (row, options, context) {
-  const predicatesList = html`
-      <ul> ${row.properties.map(property => html`
-          <li>${TermWithCues(property, options, context)}</li>`)}
-      </ul>`
-
-  const valuesList = row.renderAs === 'List'
-    ? html`
-      <ol>${row.values.map(value => html`
-          <li>${Entity(value, options, context)}</li>`)}
-      </ol>`
-    : html`
-      <ul>${row.values.map(value => html`
-          <li>${Entity(value, options, context)}</li>`)}
-      </ul>`
-
-  return html`
-      <div class="row">
-          ${predicatesList}
-          ${valuesList}
-      </div>`
-}
-
-function RootHeader (entity) {
-  const text = entity.label.fallbackLabel
-    ? html`<h2></h2>`
-    : html`<h2>
-      ${entity.label.string}</h2>`
-
-  const link = entity.term.termType === 'BlankNode'
-    ? html``
-    : html`<a
-          href="${entity.term.value}"
-          title="${entity.term.value}">${entity.term.value}</a>`
-
-  return html`
-      <div class="main-header">${text}${link}</div>
-  `
-}
-
-function ItemHeader (item, options, context) {
-  const text = item.label.fallbackLabel
-    ? html`<span>${TermWithCues(item,
-          options, context)}</span>`
-    : html`<h3>
-      ${TermWithCues(item, options, context)}</h3>`
-
-  return html`
-      <div class="header ${item.term.termType}">${text}</div>`
-}
-
-function Entity (item, options, context, renderedAsRoot) {
-  const rows = item.rows ? item.rows.map(row => Row(row, options, context)) : []
-  const header = renderedAsRoot
-    ? RootHeader(item)
-    : ItemHeader(item, options,
-      context)
-
-  if (item.rows) {
+function Term (entity, options, context) {
+  if (entity.renderAs === 'Image') {
     return html`
-        <div
-                id="${context.anchorFor.get(item.term)}"
-                class="entity ${renderedAsRoot ? 'entity-root' : ''}">
-            ${header}
-            <div class="rows">
-                ${rows}
-            </div>
-        </div>`
+        <div class="img-container"><img alt="${entity.term.value}"
+                                        src="${entity.term.value}"></div>`
+  }
+
+  function maybeLink () {
+    if (entity.term.termType === 'Literal') {
+      return undefined
+    }
+    if (context.anchorFor.has(entity.term)) {
+      return `#${context.anchorFor.get(entity.term)}`
+    }
+    if (entity.term.termType === 'NamedNode') {
+      return entity.term.value
+    }
+    return undefined
+  }
+
+  const link = maybeLink()
+  if (link) {
+    return html`<a href="${link}"
+                   title="${entity.term.value}">${entity.label.string}</a>`
   } else {
-    return TermWithCues(item, options, context)
+    return html`${entity.label.string}`
   }
 }
 
