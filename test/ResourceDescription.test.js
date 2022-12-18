@@ -1,7 +1,7 @@
 import { expect } from 'expect'
 import toMatchSnapshot from 'expect-mocha-snapshot'
 import { describe, it } from 'mocha'
-import { ResourceDescription } from '../src/components/ResourceDescription.js'
+import { EntityList } from '../src/components/EntityList.js'
 import { battery } from './battery.js'
 import { toClownface } from './support/serialization.js'
 import {
@@ -15,7 +15,7 @@ describe('ResourceDescription', () => {
     it(`HTML ${testName}`, function () {
       const cf = toClownface(turtle, term)
 
-      const resourceWebComponent = ResourceDescription(cf, {})
+      const resourceWebComponent = EntityList(cf, {})
       const stringIterator = renderWebComponent(resourceWebComponent)
       const html = Array.from(stringIterator).join('')
       expect([turtle, term, html]).toMatchSnapshot(this)

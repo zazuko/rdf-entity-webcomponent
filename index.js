@@ -1,4 +1,5 @@
-import { ResourceDescription } from './src/components/ResourceDescription.js'
+import { EntityList } from './src/components/EntityList.js'
+import { Entity } from './src/components/Entity.js'
 import { RdfEntity } from './src/rdf-entity.js'
 
-export { ResourceDescription, RdfEntity }
+export { Entity, EntityList, RdfEntity }

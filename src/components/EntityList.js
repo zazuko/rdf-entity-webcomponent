@@ -2,8 +2,6 @@ import { html } from 'lit'
 import rdf from '../rdf-ext.js'
 import { entity } from '../model.js'
 import { Entity } from './Entity.js'
-import { Metadata } from './Metadata.js'
-import { Debug } from './Debug.js'
 
 function EntityList (cf, options) {
   const items = entity(cf, options)
@@ -28,20 +26,4 @@ function EntityList (cf, options) {
   `
 }
 
-function ResourceDescription (cf, options) {
-  const debug = options.debug ? Debug(cf, options) : html``
-  return html`
-      <div>
-          ${EntityList(cf, options)}
-          ${Metadata(cf, options)}
-          ${debug}
-      </div>
-  `
-}
-
-function Empty (message) {
-  return html`
-      <div>${message}</div>`
-}
-
-export { ResourceDescription, Empty }
+export { EntityList }

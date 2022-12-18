@@ -38,6 +38,3 @@ See the [example](./index.html) for details
 | `embedLists`         | `embed-lists`         |           | `Boolean`   | false                    | Display rdf-lists as ordered lists                                 |
 | `highlightLanguage`  | `highlight-language`  |           | `Boolean`   | false                    | Highlights literals matching prefered language                     |
 | `maxLevel`           | `max-level`           |           | `Number`    | 3                        | The maximum depth of the trees                                     |
-| `showNamedGraphs`    | `show-named-graphs`   |           | `Boolean`   | false                    | Display stats about named graphs and counts                        |
-| `metadata`           | `metadata`            |           | `Object`    | undefined                | Additional values to display in the     section `metadata`         |
-| `debug`              | `debug`               |           | `Boolean`   | false                    | Displays the current triples for debugging                         |

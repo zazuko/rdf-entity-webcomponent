@@ -1,5 +1,5 @@
-import { LitElement, css } from 'lit-element'
-import { Empty, ResourceDescription } from './components/ResourceDescription.js'
+import { LitElement, css, html } from 'lit'
+import { EntityList } from './components/EntityList.js'
 import rdf from './rdf-ext.js'
 
 import { DEFAULT_BUILDER_OPTIONS, getBuilderOptions } from './options.js'
@@ -41,21 +41,21 @@ export class RdfEntity extends LitElement {
       margin-right: auto;
       margin-bottom: 15px;
     }
-    
-    .main-header h2{
+
+    .main-header h2 {
       margin-top: 15px;
       margin-bottom: 15px;
       font-size: 32px;
       text-align: center;
     }
 
-    .main-header a{
+    .main-header a {
       font-size: 18px;
       color: var(--color-black);
       text-transform: uppercase;
       text-align: center;
     }
-    
+
     .header {
       font-size: 18px;
       padding-left: 10px;
@@ -158,20 +158,6 @@ export class RdfEntity extends LitElement {
       -webkit-box-orient: vertical;
     }
 
-    .metadata {
-      border: var(--color-grey) solid 1px;
-    }
-
-    .metadata h3 {
-      text-align: center;
-      color: var(--color-grey);
-    }
-
-    .metadata table {
-      margin-left: auto;
-      margin-right: auto;
-    }
-    
     .img-container {
       margin-left: auto;
       margin-right: auto;
@@ -181,6 +167,7 @@ export class RdfEntity extends LitElement {
       max-width: 100%;
     }
   `
+
   constructor () {
     super()
     this._pointer = rdf.clownface({ dataset: rdf.dataset() })
@@ -195,17 +182,26 @@ export class RdfEntity extends LitElement {
   static get properties () {
     return {
       pointer: { type: Object, attribute: false, required: true },
-      technicalCues: { type: Boolean, attribute: 'technical-cues', required: false },
-      compactMode: { type: Boolean, attribute: 'compact-mode', required: false },
-      preferredLanguages: { type: Array, attribute: 'preferred-languages', required: false },
-      embedNamedNodes: { type: Boolean, attribute: 'embed-named-nodes', required: false },
-      embedBlankNodes: { type: Boolean, attribute: 'embed-blank-nodes', required: false },
+      technicalCues: {
+        type: Boolean, attribute: 'technical-cues', required: false
+      },
+      compactMode: {
+        type: Boolean, attribute: 'compact-mode', required: false
+      },
+      preferredLanguages: {
+        type: Array, attribute: 'preferred-languages', required: false
+      },
+      embedNamedNodes: {
+        type: Boolean, attribute: 'embed-named-nodes', required: false
+      },
+      embedBlankNodes: {
+        type: Boolean, attribute: 'embed-blank-nodes', required: false
+      },
       embedLists: { type: Boolean, attribute: 'embed-lists', required: false },
-      highlightLanguage: { type: Boolean, attribute: 'highlight-language', required: false },
-      maxLevel: { type: Number, attribute: 'max-level', required: false },
-      showNamedGraphs: { type: Boolean, attribute: 'show-named-graphs', required: false },
-      metadata: { type: Object, attribute: 'metadata', required: false },
-      debug: { type: Boolean, attribute: 'debug', required: false }
+      highlightLanguage: {
+        type: Boolean, attribute: 'highlight-language', required: false
+      },
+      maxLevel: { type: Number, attribute: 'max-level', required: false }
     }
   }
 
@@ -220,11 +216,11 @@ export class RdfEntity extends LitElement {
 
   render () {
     if (!this._pointer || !this._pointer.dataset) {
-      return Empty('requires a Clownface pointer')
+      return html`requires a Clownface pointer`
     } else if (!this._pointer.dataset.size) {
-      return Empty('No quads')
+      return html`No quads`
     } else {
-      return ResourceDescription(this._pointer, getBuilderOptions(this))
+      return EntityList(this._pointer, getBuilderOptions(this))
     }
   }
 }
