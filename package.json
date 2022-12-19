@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "vite",
     "prepare": "husky install",
-    "release": "changeset publish",
+    "release": "vite build && changeset publish",
     "updateManifest": "cem analyze --globs \"src/rdf-entity.js\"",
     "test": "standard && c8 --reporter=lcov --reporter=text mocha"
   },
