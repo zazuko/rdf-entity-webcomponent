@@ -37,7 +37,8 @@
     "lit": "^2.4.1"
   },
   "files": [
-    "dist"
+    "dist",
+    "src"
   ],
   "devDependencies": {
     "@changesets/cli": "^2.25.2",
