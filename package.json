@@ -1,6 +1,6 @@
 {
   "name": "rdf-entity-webcomponent",
-  "version": "0.6.3",
+  "version": "0.6.4",
   "description": "A Web component that displays a Graph Pointer (clownface)",
   "type": "module",
   "main": "index.js",
