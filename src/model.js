@@ -11,7 +11,7 @@ function getSecondary (primary, dataset) {
   return secondary
 }
 
-function entity ({ dataset, terms }, options) {
+function createModel ({ dataset, terms }, options) {
   const visited = rdf.termSet()
   const entities = []
 
@@ -33,4 +33,4 @@ function entity ({ dataset, terms }, options) {
   return entities
 }
 
-export { entity }
+export { createModel }

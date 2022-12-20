@@ -208,8 +208,8 @@ export class RdfEntity extends LitElement {
     const terms = this._terms
       ? this.terms
       : this.term
-        ? [rdf.namedNode(
-            this.term)]
+        ? [
+            rdf.namedNode(this.term)]
         : undefined
 
     if (this.textContent && this.textContent.trim().length > 0) {
@@ -221,8 +221,7 @@ export class RdfEntity extends LitElement {
       } catch (error) {
         return html`${error}`
       }
-    }
-    if (!this._dataset) {
+    } else if (!this._dataset) {
       return html`requires a dataset`
     } else if (!this._dataset.size) {
       return html`No quads`
@@ -234,4 +233,6 @@ export class RdfEntity extends LitElement {
   }
 }
 
-window.customElements.define('rdf-entity', RdfEntity)
+if (typeof window !== 'undefined') {
+  window.customElements.define('rdf-entity', RdfEntity)
+}
