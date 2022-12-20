@@ -160,7 +160,9 @@ export class RdfEntity extends LitElement {
     return {
       dataset: { type: Object, attribute: false, required: true },
       terms: { type: Object, attribute: false, required: true },
-
+      term: {
+        type: String, attribute: 'term', required: false
+      },
       technicalCues: {
         type: Boolean, attribute: 'technical-cues', required: false
       },
@@ -203,11 +205,18 @@ export class RdfEntity extends LitElement {
   }
 
   render () {
+    const terms = this._terms
+      ? this.terms
+      : this.term
+        ? [rdf.namedNode(
+            this.term)]
+        : undefined
+
     if (this.textContent && this.textContent.trim().length > 0) {
       try {
         const dataset = rdf.parse(this.textContent)
         return EntityList({
-          dataset, terms: this._terms
+          dataset, terms
         }, getBuilderOptions(this))
       } catch (error) {
         return html`${error}`
@@ -219,7 +228,7 @@ export class RdfEntity extends LitElement {
       return html`No quads`
     } else {
       return EntityList({
-        dataset: this._dataset, terms: this._terms
+        dataset: this._dataset, terms
       }, getBuilderOptions(this))
     }
   }

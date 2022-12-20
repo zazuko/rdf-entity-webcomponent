@@ -7,14 +7,22 @@
     <script type="module" src="/src/rdf-entity.js"></script>
 </head>
 <body>
-<rdf-entity id="demo">
+<rdf-entity id="demo"
+            term="http://tbbt.ld/jane"
+            technical-cues
+            compact-mode
+            embed-lists
+            embed-blank-nodes
+            embed-named-nodes
+            highlight-language>
     <script type="text/turtle">
 @prefix schema: <http://schema.org/> .
 <http://tbbt.ld/john> a schema:Person ;
                       schema:name "John Doe" ;
-                      schema:knows [
-                            schema:name "Jane" ;
-                        ] .
+                      schema:knows <http://tbbt.ld/jane> .
+
+<http://tbbt.ld/jane> schema:name "Jane" ;
+                      schema:knows <http://tbbt.ld/john> .
     </script>
 </rdf-entity>
 </body>
