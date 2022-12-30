@@ -1,16 +1,24 @@
 import { ns } from '../namespaces.js'
 
+function sortRows (rows, options) {
+  rows.sort(_sortRows)
+  for (const row of rows) {
+    row.properties.sort(_sortItem)
+    row.values.sort(_sortItem)
+  }
+}
+
 const sortStrings = (a, b) => a.toUpperCase().localeCompare(b.toUpperCase())
 const sortNamed = (a, b) => sortStrings(a.value, b.value)
 
-function sortItem (a, b) {
+function _sortItem (a, b) {
   if (a.label && b.label) {
     return a.label.string.localeCompare(b.label.string)
   }
   return sortNamed(a, b)
 }
 
-function sortRows (a, b) {
+function _sortRows (a, b) {
   if (!b.properties) {
     return 0
   }
@@ -31,4 +39,4 @@ function sortRows (a, b) {
   return b.properties.length < a.properties.length
 }
 
-export { sortRows, sortItem }
+export { sortRows }

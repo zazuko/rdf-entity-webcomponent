@@ -1,6 +1,21 @@
 import rdf from '../rdf-ext.js'
 
-function groupByValue (rows) {
+function groupRows (rows, options) {
+  // Already grouped by property. If groupValuesByProperty is false, expand.
+  const byProperty = options.groupValuesByProperty
+    ? rows
+    : rows.map(
+      row => row.values.map(value => {
+        return {
+          properties: row.properties, values: [value]
+        }
+      })).flat()
+  return options.groupPropertiesByValue
+    ? _groupByValue(byProperty)
+    : byProperty
+}
+
+function _groupByValue (rows) {
   const rowsByObject = new Map()
   const eqSet = (a, b) => a.size === b.size &&
     [...a].every(value => b.has(value))
@@ -34,4 +49,4 @@ function groupByValue (rows) {
   return [...rowsByObject.values()]
 }
 
-export { groupByValue }
+export { groupRows }

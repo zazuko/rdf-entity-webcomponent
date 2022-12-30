@@ -54,7 +54,7 @@ function Row (row, options, context) {
   const predicatesList = html`
       <ul>
           ${row.properties.map(property => html`
-              <li>${TermWithCues(property, options, context)}</li>`)}
+              <li>${Entity(property, options, context)}</li>`)}
       </ul>`
 
   const valuesList = row.renderAs === 'List'
