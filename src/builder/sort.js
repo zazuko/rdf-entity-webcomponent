@@ -1,10 +1,13 @@
 import { ns } from '../namespaces.js'
 
 function sortRows (rows, options) {
-  rows.sort(_sortRows)
-  for (const row of rows) {
-    row.properties.sort(_sortItem)
-    row.values.sort(_sortItem)
+  const { sortRows } = options
+  if (sortRows) {
+    rows.sort(_sortRows)
+    for (const row of rows) {
+      row.properties.sort(_sortItem)
+      row.values.sort(_sortItem)
+    }
   }
 }
 

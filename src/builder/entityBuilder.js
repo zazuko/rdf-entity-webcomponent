@@ -15,6 +15,7 @@ const defaultOptions = {
   embedLists: true,
   embedNamedNodes: false,
   embedBlankNodes: true,
+  sortRows: true,
   maxLevel: undefined,
   preferredLanguages: ['en'],
   renderAs: (cf, options, context) => {
