@@ -22,7 +22,6 @@ export class RdfEntity extends LitElement {
       flex-direction: column;
       border-left: 1px solid var(--border);
       border-bottom: 1px solid var(--border);
-      border-top: 1px solid var(--border);
     }
 
     .rows {
