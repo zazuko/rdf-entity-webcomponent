@@ -229,7 +229,7 @@ it('show images foaf', function () {
   const cf = toClownface(data, rdf.namedNode('dog'))
 
   const options = {
-    showImages: true,
+    showImages: true
   }
   const result = createEntity(cf, options)
   expect(result).toMatchSnapshot(this)
@@ -242,7 +242,7 @@ it('show images schema', function () {
   const cf = toClownface(data, rdf.namedNode('cat'))
 
   const options = {
-    showImages: true,
+    showImages: true
   }
   const result = createEntity(cf, options)
   expect(result).toMatchSnapshot(this)
