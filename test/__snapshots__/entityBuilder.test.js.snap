@@ -1,1341 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ResourceDescription HTML blank node 1`] = `
-Array [
-  "
-<a> <b> [ <c> <d> ] .
-",
-  NamedNode {
-    "value": "a",
-  },
-  "<!--lit-part 300Caz5OpOA=-->
-      <div class=\\"entities\\">
-          <!--lit-part--><!--lit-part m9y/MSli8Iw=-->
-        <div
-                id=\\"a\\"
-                class=\\"entity entity-root\\"><!--lit-node 0-->
-            <!--lit-part CwfZQ+5yJQA=-->
-      <div class=\\"main-header\\"><!--lit-part gVAMBy6Ncnw=--><h2></h2><!--/lit-part--><!--lit-part f8TKvenZ2ig=--><a
-          href=\\"a\\"
-          title=\\"a\\"><!--lit-node 0--><!--lit-part-->a<!--/lit-part--></a><!--/lit-part--></div>
-  <!--/lit-part-->
-            <div class=\\"rows\\">
-                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
-      <div class=\\"row\\">
-          <!--lit-part LU+8SsiHQy4=-->
-      <ul>
-          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
-              <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"b\\"
-                   title=\\"b\\"><!--lit-node 0--><!--lit-part-->b<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-          <!--lit-part zRzcmqIQQTo=-->
-      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
-          <li><!--lit-part m9y/MSli8Iw=-->
-        <div
-                id=\\"blank-1\\"
-                class=\\"entity \\"><!--lit-node 0-->
-            <!--lit-part 0X+kKfjmlu4=-->
-      <div class=\\"header BlankNode\\"><!--lit-node 0--><!--lit-part 94tjhjhkEYE=--><span><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"#blank-1\\"
-                   title=\\"n3-0\\"><!--lit-node 0--><!--lit-part-->n3-0<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></span><!--/lit-part--></div><!--/lit-part-->
-            <div class=\\"rows\\">
-                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
-      <div class=\\"row\\">
-          <!--lit-part LU+8SsiHQy4=-->
-      <ul>
-          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
-              <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"c\\"
-                   title=\\"c\\"><!--lit-node 0--><!--lit-part-->c<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-          <!--lit-part zRzcmqIQQTo=-->
-      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
-          <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"d\\"
-                   title=\\"d\\"><!--lit-node 0--><!--lit-part-->d<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-      </div><!--/lit-part--><!--/lit-part-->
-            </div>
-        </div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-      </div><!--/lit-part--><!--/lit-part-->
-            </div>
-        </div><!--/lit-part--><!--/lit-part-->
-      </div>
-  <!--/lit-part-->",
-]
-`;
-
-exports[`ResourceDescription HTML does not repeat 1`] = `
-Array [
-  "
-<a> <b> <c> ;
-    <b> <c> .
-",
-  NamedNode {
-    "value": "a",
-  },
-  "<!--lit-part 300Caz5OpOA=-->
-      <div class=\\"entities\\">
-          <!--lit-part--><!--lit-part m9y/MSli8Iw=-->
-        <div
-                id=\\"a\\"
-                class=\\"entity entity-root\\"><!--lit-node 0-->
-            <!--lit-part CwfZQ+5yJQA=-->
-      <div class=\\"main-header\\"><!--lit-part gVAMBy6Ncnw=--><h2></h2><!--/lit-part--><!--lit-part f8TKvenZ2ig=--><a
-          href=\\"a\\"
-          title=\\"a\\"><!--lit-node 0--><!--lit-part-->a<!--/lit-part--></a><!--/lit-part--></div>
-  <!--/lit-part-->
-            <div class=\\"rows\\">
-                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
-      <div class=\\"row\\">
-          <!--lit-part LU+8SsiHQy4=-->
-      <ul>
-          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
-              <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"b\\"
-                   title=\\"b\\"><!--lit-node 0--><!--lit-part-->b<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-          <!--lit-part zRzcmqIQQTo=-->
-      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
-          <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"c\\"
-                   title=\\"c\\"><!--lit-node 0--><!--lit-part-->c<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-      </div><!--/lit-part--><!--/lit-part-->
-            </div>
-        </div><!--/lit-part--><!--/lit-part-->
-      </div>
-  <!--/lit-part-->",
-]
-`;
-
-exports[`ResourceDescription HTML foaf image 1`] = `
-Array [
-  "
-<a> <http://xmlns.com/foaf/0.1/img> <little-cat> .
-",
-  NamedNode {
-    "value": "a",
-  },
-  "<!--lit-part 300Caz5OpOA=-->
-      <div class=\\"entities\\">
-          <!--lit-part--><!--lit-part m9y/MSli8Iw=-->
-        <div
-                id=\\"a\\"
-                class=\\"entity entity-root\\"><!--lit-node 0-->
-            <!--lit-part CwfZQ+5yJQA=-->
-      <div class=\\"main-header\\"><!--lit-part gVAMBy6Ncnw=--><h2></h2><!--/lit-part--><!--lit-part f8TKvenZ2ig=--><a
-          href=\\"a\\"
-          title=\\"a\\"><!--lit-node 0--><!--lit-part-->a<!--/lit-part--></a><!--/lit-part--></div>
-  <!--/lit-part-->
-            <div class=\\"rows\\">
-                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
-      <div class=\\"row\\">
-          <!--lit-part LU+8SsiHQy4=-->
-      <ul>
-          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
-              <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"http://xmlns.com/foaf/0.1/img\\"
-                   title=\\"http://xmlns.com/foaf/0.1/img\\"><!--lit-node 0--><!--lit-part-->img<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-          <!--lit-part zRzcmqIQQTo=-->
-      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
-          <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part B2t8Dchb22Q=-->
-        <div class=\\"img-container\\"><img alt=\\"little-cat\\"
-                                        src=\\"little-cat\\"><!--lit-node 1--></div><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-      </div><!--/lit-part--><!--/lit-part-->
-            </div>
-        </div><!--/lit-part--><!--/lit-part-->
-      </div>
-  <!--/lit-part-->",
-]
-`;
-
-exports[`ResourceDescription HTML groups attributes 1`] = `
-Array [
-  "
-<a> <b> <c> ;
-    <b> <d> .
-",
-  NamedNode {
-    "value": "a",
-  },
-  "<!--lit-part 300Caz5OpOA=-->
-      <div class=\\"entities\\">
-          <!--lit-part--><!--lit-part m9y/MSli8Iw=-->
-        <div
-                id=\\"a\\"
-                class=\\"entity entity-root\\"><!--lit-node 0-->
-            <!--lit-part CwfZQ+5yJQA=-->
-      <div class=\\"main-header\\"><!--lit-part gVAMBy6Ncnw=--><h2></h2><!--/lit-part--><!--lit-part f8TKvenZ2ig=--><a
-          href=\\"a\\"
-          title=\\"a\\"><!--lit-node 0--><!--lit-part-->a<!--/lit-part--></a><!--/lit-part--></div>
-  <!--/lit-part-->
-            <div class=\\"rows\\">
-                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
-      <div class=\\"row\\">
-          <!--lit-part LU+8SsiHQy4=-->
-      <ul>
-          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
-              <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"b\\"
-                   title=\\"b\\"><!--lit-node 0--><!--lit-part-->b<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-          <!--lit-part zRzcmqIQQTo=-->
-      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
-          <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"c\\"
-                   title=\\"c\\"><!--lit-node 0--><!--lit-part-->c<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--lit-part 808gqjblHe4=-->
-          <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"d\\"
-                   title=\\"d\\"><!--lit-node 0--><!--lit-part-->d<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-      </div><!--/lit-part--><!--/lit-part-->
-            </div>
-        </div><!--/lit-part--><!--/lit-part-->
-      </div>
-  <!--/lit-part-->",
-]
-`;
-
-exports[`ResourceDescription HTML groups by value 1`] = `
-Array [
-  "
-<a> <b> <d> ;
-    <c> <d> .
-",
-  NamedNode {
-    "value": "a",
-  },
-  "<!--lit-part 300Caz5OpOA=-->
-      <div class=\\"entities\\">
-          <!--lit-part--><!--lit-part m9y/MSli8Iw=-->
-        <div
-                id=\\"a\\"
-                class=\\"entity entity-root\\"><!--lit-node 0-->
-            <!--lit-part CwfZQ+5yJQA=-->
-      <div class=\\"main-header\\"><!--lit-part gVAMBy6Ncnw=--><h2></h2><!--/lit-part--><!--lit-part f8TKvenZ2ig=--><a
-          href=\\"a\\"
-          title=\\"a\\"><!--lit-node 0--><!--lit-part-->a<!--/lit-part--></a><!--/lit-part--></div>
-  <!--/lit-part-->
-            <div class=\\"rows\\">
-                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
-      <div class=\\"row\\">
-          <!--lit-part LU+8SsiHQy4=-->
-      <ul>
-          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
-              <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"b\\"
-                   title=\\"b\\"><!--lit-node 0--><!--lit-part-->b<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--lit-part 83vL2TZWgro=-->
-              <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"c\\"
-                   title=\\"c\\"><!--lit-node 0--><!--lit-part-->c<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-          <!--lit-part zRzcmqIQQTo=-->
-      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
-          <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"d\\"
-                   title=\\"d\\"><!--lit-node 0--><!--lit-part-->d<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-      </div><!--/lit-part--><!--/lit-part-->
-            </div>
-        </div><!--/lit-part--><!--/lit-part-->
-      </div>
-  <!--/lit-part-->",
-]
-`;
-
-exports[`ResourceDescription HTML languages 1`] = `
-Array [
-  "
-<a> <b> <c> .
-<a> <http://www.w3.org/2004/02/skos/core#prefLabel> \\"skos a\\" .
-<a> <http://www.w3.org/2004/02/skos/core#prefLabel> \\"prefered\\"@en .
-",
-  NamedNode {
-    "value": "a",
-  },
-  "<!--lit-part 300Caz5OpOA=-->
-      <div class=\\"entities\\">
-          <!--lit-part--><!--lit-part m9y/MSli8Iw=-->
-        <div
-                id=\\"a\\"
-                class=\\"entity entity-root\\"><!--lit-node 0-->
-            <!--lit-part CwfZQ+5yJQA=-->
-      <div class=\\"main-header\\"><!--lit-part q1mnU+7T3cs=--><h2>
-      <!--lit-part-->prefered<!--/lit-part--></h2><!--/lit-part--><!--lit-part f8TKvenZ2ig=--><a
-          href=\\"a\\"
-          title=\\"a\\"><!--lit-node 0--><!--lit-part-->a<!--/lit-part--></a><!--/lit-part--></div>
-  <!--/lit-part-->
-            <div class=\\"rows\\">
-                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
-      <div class=\\"row\\">
-          <!--lit-part LU+8SsiHQy4=-->
-      <ul>
-          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
-              <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"b\\"
-                   title=\\"b\\"><!--lit-node 0--><!--lit-part-->b<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-          <!--lit-part zRzcmqIQQTo=-->
-      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
-          <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"c\\"
-                   title=\\"c\\"><!--lit-node 0--><!--lit-part-->c<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-      </div><!--/lit-part--><!--lit-part kfEHKSf/yyE=-->
-      <div class=\\"row\\">
-          <!--lit-part LU+8SsiHQy4=-->
-      <ul>
-          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
-              <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"http://www.w3.org/2004/02/skos/core#prefLabel\\"
-                   title=\\"http://www.w3.org/2004/02/skos/core#prefLabel\\"><!--lit-node 0--><!--lit-part-->prefLabel<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-          <!--lit-part zRzcmqIQQTo=-->
-      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
-          <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part BRUAAAUVAAA=--><!--lit-part-->prefered<!--/lit-part--><?><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--lit-part 808gqjblHe4=-->
-          <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part BRUAAAUVAAA=--><!--lit-part-->skos a<!--/lit-part--><?><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-      </div><!--/lit-part--><!--/lit-part-->
-            </div>
-        </div><!--/lit-part--><!--/lit-part-->
-      </div>
-  <!--/lit-part-->",
-]
-`;
-
-exports[`ResourceDescription HTML languagesMultiple 1`] = `
-Array [
-  "
-<a> <http://www.w3.org/2004/02/skos/core#prefLabel> \\"first\\" .
-<a> <http://www.w3.org/2004/02/skos/core#prefLabel> \\"second\\" .
-",
-  NamedNode {
-    "value": "a",
-  },
-  "<!--lit-part 300Caz5OpOA=-->
-      <div class=\\"entities\\">
-          <!--lit-part--><!--lit-part m9y/MSli8Iw=-->
-        <div
-                id=\\"a\\"
-                class=\\"entity entity-root\\"><!--lit-node 0-->
-            <!--lit-part CwfZQ+5yJQA=-->
-      <div class=\\"main-header\\"><!--lit-part q1mnU+7T3cs=--><h2>
-      <!--lit-part-->first<!--/lit-part--></h2><!--/lit-part--><!--lit-part f8TKvenZ2ig=--><a
-          href=\\"a\\"
-          title=\\"a\\"><!--lit-node 0--><!--lit-part-->a<!--/lit-part--></a><!--/lit-part--></div>
-  <!--/lit-part-->
-            <div class=\\"rows\\">
-                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
-      <div class=\\"row\\">
-          <!--lit-part LU+8SsiHQy4=-->
-      <ul>
-          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
-              <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"http://www.w3.org/2004/02/skos/core#prefLabel\\"
-                   title=\\"http://www.w3.org/2004/02/skos/core#prefLabel\\"><!--lit-node 0--><!--lit-part-->prefLabel<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-          <!--lit-part zRzcmqIQQTo=-->
-      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
-          <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part BRUAAAUVAAA=--><!--lit-part-->first<!--/lit-part--><?><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--lit-part 808gqjblHe4=-->
-          <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part BRUAAAUVAAA=--><!--lit-part-->second<!--/lit-part--><?><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-      </div><!--/lit-part--><!--/lit-part-->
-            </div>
-        </div><!--/lit-part--><!--/lit-part-->
-      </div>
-  <!--/lit-part-->",
-]
-`;
-
-exports[`ResourceDescription HTML list 1`] = `
-Array [
-  "
-<a> <b> ( <c> <d> ) .
-",
-  NamedNode {
-    "value": "a",
-  },
-  "<!--lit-part 300Caz5OpOA=-->
-      <div class=\\"entities\\">
-          <!--lit-part--><!--lit-part m9y/MSli8Iw=-->
-        <div
-                id=\\"a\\"
-                class=\\"entity entity-root\\"><!--lit-node 0-->
-            <!--lit-part CwfZQ+5yJQA=-->
-      <div class=\\"main-header\\"><!--lit-part gVAMBy6Ncnw=--><h2></h2><!--/lit-part--><!--lit-part f8TKvenZ2ig=--><a
-          href=\\"a\\"
-          title=\\"a\\"><!--lit-node 0--><!--lit-part-->a<!--/lit-part--></a><!--/lit-part--></div>
-  <!--/lit-part-->
-            <div class=\\"rows\\">
-                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
-      <div class=\\"row\\">
-          <!--lit-part LU+8SsiHQy4=-->
-      <ul>
-          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
-              <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"b\\"
-                   title=\\"b\\"><!--lit-node 0--><!--lit-part-->b<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-          <!--lit-part l6pZEPgNQTo=-->
-      <ol><!--lit-part--><!--lit-part 808gqjblHe4=-->
-          <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"c\\"
-                   title=\\"c\\"><!--lit-node 0--><!--lit-part-->c<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--lit-part 808gqjblHe4=-->
-          <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"d\\"
-                   title=\\"d\\"><!--lit-node 0--><!--lit-part-->d<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ol><!--/lit-part-->
-      </div><!--/lit-part--><!--/lit-part-->
-            </div>
-        </div><!--/lit-part--><!--/lit-part-->
-      </div>
-  <!--/lit-part-->",
-]
-`;
-
-exports[`ResourceDescription HTML literal 1`] = `
-Array [
-  "
-<a> <b> \\"c\\" .
-",
-  NamedNode {
-    "value": "a",
-  },
-  "<!--lit-part 300Caz5OpOA=-->
-      <div class=\\"entities\\">
-          <!--lit-part--><!--lit-part m9y/MSli8Iw=-->
-        <div
-                id=\\"a\\"
-                class=\\"entity entity-root\\"><!--lit-node 0-->
-            <!--lit-part CwfZQ+5yJQA=-->
-      <div class=\\"main-header\\"><!--lit-part gVAMBy6Ncnw=--><h2></h2><!--/lit-part--><!--lit-part f8TKvenZ2ig=--><a
-          href=\\"a\\"
-          title=\\"a\\"><!--lit-node 0--><!--lit-part-->a<!--/lit-part--></a><!--/lit-part--></div>
-  <!--/lit-part-->
-            <div class=\\"rows\\">
-                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
-      <div class=\\"row\\">
-          <!--lit-part LU+8SsiHQy4=-->
-      <ul>
-          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
-              <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"b\\"
-                   title=\\"b\\"><!--lit-node 0--><!--lit-part-->b<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-          <!--lit-part zRzcmqIQQTo=-->
-      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
-          <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part BRUAAAUVAAA=--><!--lit-part-->c<!--/lit-part--><?><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-      </div><!--/lit-part--><!--/lit-part-->
-            </div>
-        </div><!--/lit-part--><!--/lit-part-->
-      </div>
-  <!--/lit-part-->",
-]
-`;
-
-exports[`ResourceDescription HTML object label foaf 1`] = `
-Array [
-  "
-<a> <b> <c> .
-<c> <http://xmlns.com/foaf/0.1/name> \\"foaf c\\" .
-",
-  NamedNode {
-    "value": "a",
-  },
-  "<!--lit-part 300Caz5OpOA=-->
-      <div class=\\"entities\\">
-          <!--lit-part--><!--lit-part m9y/MSli8Iw=-->
-        <div
-                id=\\"a\\"
-                class=\\"entity entity-root\\"><!--lit-node 0-->
-            <!--lit-part CwfZQ+5yJQA=-->
-      <div class=\\"main-header\\"><!--lit-part gVAMBy6Ncnw=--><h2></h2><!--/lit-part--><!--lit-part f8TKvenZ2ig=--><a
-          href=\\"a\\"
-          title=\\"a\\"><!--lit-node 0--><!--lit-part-->a<!--/lit-part--></a><!--/lit-part--></div>
-  <!--/lit-part-->
-            <div class=\\"rows\\">
-                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
-      <div class=\\"row\\">
-          <!--lit-part LU+8SsiHQy4=-->
-      <ul>
-          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
-              <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"b\\"
-                   title=\\"b\\"><!--lit-node 0--><!--lit-part-->b<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-          <!--lit-part zRzcmqIQQTo=-->
-      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
-          <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"#c\\"
-                   title=\\"c\\"><!--lit-node 0--><!--lit-part-->foaf c<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-      </div><!--/lit-part--><!--/lit-part-->
-            </div>
-        </div><!--/lit-part--><!--lit-part m9y/MSli8Iw=-->
-        <div
-                id=\\"c\\"
-                class=\\"entity entity-root\\"><!--lit-node 0-->
-            <!--lit-part CwfZQ+5yJQA=-->
-      <div class=\\"main-header\\"><!--lit-part q1mnU+7T3cs=--><h2>
-      <!--lit-part-->foaf c<!--/lit-part--></h2><!--/lit-part--><!--lit-part f8TKvenZ2ig=--><a
-          href=\\"c\\"
-          title=\\"c\\"><!--lit-node 0--><!--lit-part-->c<!--/lit-part--></a><!--/lit-part--></div>
-  <!--/lit-part-->
-            <div class=\\"rows\\">
-                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
-      <div class=\\"row\\">
-          <!--lit-part LU+8SsiHQy4=-->
-      <ul>
-          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
-              <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"http://xmlns.com/foaf/0.1/name\\"
-                   title=\\"http://xmlns.com/foaf/0.1/name\\"><!--lit-node 0--><!--lit-part-->name<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-          <!--lit-part zRzcmqIQQTo=-->
-      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
-          <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part BRUAAAUVAAA=--><!--lit-part-->foaf c<!--/lit-part--><?><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-      </div><!--/lit-part--><!--/lit-part-->
-            </div>
-        </div><!--/lit-part--><!--/lit-part-->
-      </div>
-  <!--/lit-part-->",
-]
-`;
-
-exports[`ResourceDescription HTML object label rdfs 1`] = `
-Array [
-  "
-<a> <b> <c> .
-<c> <http://www.w3.org/2000/01/rdf-schema#label> \\"rdfs c\\" .
-",
-  NamedNode {
-    "value": "a",
-  },
-  "<!--lit-part 300Caz5OpOA=-->
-      <div class=\\"entities\\">
-          <!--lit-part--><!--lit-part m9y/MSli8Iw=-->
-        <div
-                id=\\"a\\"
-                class=\\"entity entity-root\\"><!--lit-node 0-->
-            <!--lit-part CwfZQ+5yJQA=-->
-      <div class=\\"main-header\\"><!--lit-part gVAMBy6Ncnw=--><h2></h2><!--/lit-part--><!--lit-part f8TKvenZ2ig=--><a
-          href=\\"a\\"
-          title=\\"a\\"><!--lit-node 0--><!--lit-part-->a<!--/lit-part--></a><!--/lit-part--></div>
-  <!--/lit-part-->
-            <div class=\\"rows\\">
-                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
-      <div class=\\"row\\">
-          <!--lit-part LU+8SsiHQy4=-->
-      <ul>
-          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
-              <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"b\\"
-                   title=\\"b\\"><!--lit-node 0--><!--lit-part-->b<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-          <!--lit-part zRzcmqIQQTo=-->
-      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
-          <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"#c\\"
-                   title=\\"c\\"><!--lit-node 0--><!--lit-part-->rdfs c<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-      </div><!--/lit-part--><!--/lit-part-->
-            </div>
-        </div><!--/lit-part--><!--lit-part m9y/MSli8Iw=-->
-        <div
-                id=\\"c\\"
-                class=\\"entity entity-root\\"><!--lit-node 0-->
-            <!--lit-part CwfZQ+5yJQA=-->
-      <div class=\\"main-header\\"><!--lit-part q1mnU+7T3cs=--><h2>
-      <!--lit-part-->rdfs c<!--/lit-part--></h2><!--/lit-part--><!--lit-part f8TKvenZ2ig=--><a
-          href=\\"c\\"
-          title=\\"c\\"><!--lit-node 0--><!--lit-part-->c<!--/lit-part--></a><!--/lit-part--></div>
-  <!--/lit-part-->
-            <div class=\\"rows\\">
-                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
-      <div class=\\"row\\">
-          <!--lit-part LU+8SsiHQy4=-->
-      <ul>
-          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
-              <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"http://www.w3.org/2000/01/rdf-schema#label\\"
-                   title=\\"http://www.w3.org/2000/01/rdf-schema#label\\"><!--lit-node 0--><!--lit-part-->label<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-          <!--lit-part zRzcmqIQQTo=-->
-      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
-          <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part BRUAAAUVAAA=--><!--lit-part-->rdfs c<!--/lit-part--><?><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-      </div><!--/lit-part--><!--/lit-part-->
-            </div>
-        </div><!--/lit-part--><!--/lit-part-->
-      </div>
-  <!--/lit-part-->",
-]
-`;
-
-exports[`ResourceDescription HTML object label schema 1`] = `
-Array [
-  "
-<a> <b> <c> .
-<c> <http://schema.org/name> \\"schema c\\" .
-",
-  NamedNode {
-    "value": "a",
-  },
-  "<!--lit-part 300Caz5OpOA=-->
-      <div class=\\"entities\\">
-          <!--lit-part--><!--lit-part m9y/MSli8Iw=-->
-        <div
-                id=\\"a\\"
-                class=\\"entity entity-root\\"><!--lit-node 0-->
-            <!--lit-part CwfZQ+5yJQA=-->
-      <div class=\\"main-header\\"><!--lit-part gVAMBy6Ncnw=--><h2></h2><!--/lit-part--><!--lit-part f8TKvenZ2ig=--><a
-          href=\\"a\\"
-          title=\\"a\\"><!--lit-node 0--><!--lit-part-->a<!--/lit-part--></a><!--/lit-part--></div>
-  <!--/lit-part-->
-            <div class=\\"rows\\">
-                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
-      <div class=\\"row\\">
-          <!--lit-part LU+8SsiHQy4=-->
-      <ul>
-          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
-              <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"b\\"
-                   title=\\"b\\"><!--lit-node 0--><!--lit-part-->b<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-          <!--lit-part zRzcmqIQQTo=-->
-      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
-          <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"#c\\"
-                   title=\\"c\\"><!--lit-node 0--><!--lit-part-->schema c<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-      </div><!--/lit-part--><!--/lit-part-->
-            </div>
-        </div><!--/lit-part--><!--lit-part m9y/MSli8Iw=-->
-        <div
-                id=\\"c\\"
-                class=\\"entity entity-root\\"><!--lit-node 0-->
-            <!--lit-part CwfZQ+5yJQA=-->
-      <div class=\\"main-header\\"><!--lit-part q1mnU+7T3cs=--><h2>
-      <!--lit-part-->schema c<!--/lit-part--></h2><!--/lit-part--><!--lit-part f8TKvenZ2ig=--><a
-          href=\\"c\\"
-          title=\\"c\\"><!--lit-node 0--><!--lit-part-->c<!--/lit-part--></a><!--/lit-part--></div>
-  <!--/lit-part-->
-            <div class=\\"rows\\">
-                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
-      <div class=\\"row\\">
-          <!--lit-part LU+8SsiHQy4=-->
-      <ul>
-          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
-              <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"http://schema.org/name\\"
-                   title=\\"http://schema.org/name\\"><!--lit-node 0--><!--lit-part-->name<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-          <!--lit-part zRzcmqIQQTo=-->
-      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
-          <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part BRUAAAUVAAA=--><!--lit-part-->schema c<!--/lit-part--><?><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-      </div><!--/lit-part--><!--/lit-part-->
-            </div>
-        </div><!--/lit-part--><!--/lit-part-->
-      </div>
-  <!--/lit-part-->",
-]
-`;
-
-exports[`ResourceDescription HTML object label skos 1`] = `
-Array [
-  "
-<a> <b> <c> .
-<c> <http://www.w3.org/2004/02/skos/core#prefLabel> \\"skos c\\" .
-",
-  NamedNode {
-    "value": "a",
-  },
-  "<!--lit-part 300Caz5OpOA=-->
-      <div class=\\"entities\\">
-          <!--lit-part--><!--lit-part m9y/MSli8Iw=-->
-        <div
-                id=\\"a\\"
-                class=\\"entity entity-root\\"><!--lit-node 0-->
-            <!--lit-part CwfZQ+5yJQA=-->
-      <div class=\\"main-header\\"><!--lit-part gVAMBy6Ncnw=--><h2></h2><!--/lit-part--><!--lit-part f8TKvenZ2ig=--><a
-          href=\\"a\\"
-          title=\\"a\\"><!--lit-node 0--><!--lit-part-->a<!--/lit-part--></a><!--/lit-part--></div>
-  <!--/lit-part-->
-            <div class=\\"rows\\">
-                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
-      <div class=\\"row\\">
-          <!--lit-part LU+8SsiHQy4=-->
-      <ul>
-          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
-              <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"b\\"
-                   title=\\"b\\"><!--lit-node 0--><!--lit-part-->b<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-          <!--lit-part zRzcmqIQQTo=-->
-      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
-          <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"#c\\"
-                   title=\\"c\\"><!--lit-node 0--><!--lit-part-->skos c<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-      </div><!--/lit-part--><!--/lit-part-->
-            </div>
-        </div><!--/lit-part--><!--lit-part m9y/MSli8Iw=-->
-        <div
-                id=\\"c\\"
-                class=\\"entity entity-root\\"><!--lit-node 0-->
-            <!--lit-part CwfZQ+5yJQA=-->
-      <div class=\\"main-header\\"><!--lit-part q1mnU+7T3cs=--><h2>
-      <!--lit-part-->skos c<!--/lit-part--></h2><!--/lit-part--><!--lit-part f8TKvenZ2ig=--><a
-          href=\\"c\\"
-          title=\\"c\\"><!--lit-node 0--><!--lit-part-->c<!--/lit-part--></a><!--/lit-part--></div>
-  <!--/lit-part-->
-            <div class=\\"rows\\">
-                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
-      <div class=\\"row\\">
-          <!--lit-part LU+8SsiHQy4=-->
-      <ul>
-          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
-              <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"http://www.w3.org/2004/02/skos/core#prefLabel\\"
-                   title=\\"http://www.w3.org/2004/02/skos/core#prefLabel\\"><!--lit-node 0--><!--lit-part-->prefLabel<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-          <!--lit-part zRzcmqIQQTo=-->
-      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
-          <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part BRUAAAUVAAA=--><!--lit-part-->skos c<!--/lit-part--><?><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-      </div><!--/lit-part--><!--/lit-part-->
-            </div>
-        </div><!--/lit-part--><!--/lit-part-->
-      </div>
-  <!--/lit-part-->",
-]
-`;
-
-exports[`ResourceDescription HTML predicate label foaf 1`] = `
-Array [
-  "
-<a> <b> <c> .
-<b> <http://xmlns.com/foaf/0.1/name> \\"foaf b\\" .
-",
-  NamedNode {
-    "value": "a",
-  },
-  "<!--lit-part 300Caz5OpOA=-->
-      <div class=\\"entities\\">
-          <!--lit-part--><!--lit-part m9y/MSli8Iw=-->
-        <div
-                id=\\"a\\"
-                class=\\"entity entity-root\\"><!--lit-node 0-->
-            <!--lit-part CwfZQ+5yJQA=-->
-      <div class=\\"main-header\\"><!--lit-part gVAMBy6Ncnw=--><h2></h2><!--/lit-part--><!--lit-part f8TKvenZ2ig=--><a
-          href=\\"a\\"
-          title=\\"a\\"><!--lit-node 0--><!--lit-part-->a<!--/lit-part--></a><!--/lit-part--></div>
-  <!--/lit-part-->
-            <div class=\\"rows\\">
-                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
-      <div class=\\"row\\">
-          <!--lit-part LU+8SsiHQy4=-->
-      <ul>
-          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
-              <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"#b\\"
-                   title=\\"b\\"><!--lit-node 0--><!--lit-part-->foaf b<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-          <!--lit-part zRzcmqIQQTo=-->
-      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
-          <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"c\\"
-                   title=\\"c\\"><!--lit-node 0--><!--lit-part-->c<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-      </div><!--/lit-part--><!--/lit-part-->
-            </div>
-        </div><!--/lit-part--><!--lit-part m9y/MSli8Iw=-->
-        <div
-                id=\\"b\\"
-                class=\\"entity entity-root\\"><!--lit-node 0-->
-            <!--lit-part CwfZQ+5yJQA=-->
-      <div class=\\"main-header\\"><!--lit-part q1mnU+7T3cs=--><h2>
-      <!--lit-part-->foaf b<!--/lit-part--></h2><!--/lit-part--><!--lit-part f8TKvenZ2ig=--><a
-          href=\\"b\\"
-          title=\\"b\\"><!--lit-node 0--><!--lit-part-->b<!--/lit-part--></a><!--/lit-part--></div>
-  <!--/lit-part-->
-            <div class=\\"rows\\">
-                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
-      <div class=\\"row\\">
-          <!--lit-part LU+8SsiHQy4=-->
-      <ul>
-          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
-              <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"http://xmlns.com/foaf/0.1/name\\"
-                   title=\\"http://xmlns.com/foaf/0.1/name\\"><!--lit-node 0--><!--lit-part-->name<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-          <!--lit-part zRzcmqIQQTo=-->
-      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
-          <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part BRUAAAUVAAA=--><!--lit-part-->foaf b<!--/lit-part--><?><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-      </div><!--/lit-part--><!--/lit-part-->
-            </div>
-        </div><!--/lit-part--><!--/lit-part-->
-      </div>
-  <!--/lit-part-->",
-]
-`;
-
-exports[`ResourceDescription HTML predicate label rdfs 1`] = `
-Array [
-  "
-<a> <b> <c> .
-<b> <http://www.w3.org/2000/01/rdf-schema#label> \\"rdfs b\\" .
-",
-  NamedNode {
-    "value": "a",
-  },
-  "<!--lit-part 300Caz5OpOA=-->
-      <div class=\\"entities\\">
-          <!--lit-part--><!--lit-part m9y/MSli8Iw=-->
-        <div
-                id=\\"a\\"
-                class=\\"entity entity-root\\"><!--lit-node 0-->
-            <!--lit-part CwfZQ+5yJQA=-->
-      <div class=\\"main-header\\"><!--lit-part gVAMBy6Ncnw=--><h2></h2><!--/lit-part--><!--lit-part f8TKvenZ2ig=--><a
-          href=\\"a\\"
-          title=\\"a\\"><!--lit-node 0--><!--lit-part-->a<!--/lit-part--></a><!--/lit-part--></div>
-  <!--/lit-part-->
-            <div class=\\"rows\\">
-                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
-      <div class=\\"row\\">
-          <!--lit-part LU+8SsiHQy4=-->
-      <ul>
-          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
-              <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"#b\\"
-                   title=\\"b\\"><!--lit-node 0--><!--lit-part-->rdfs b<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-          <!--lit-part zRzcmqIQQTo=-->
-      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
-          <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"c\\"
-                   title=\\"c\\"><!--lit-node 0--><!--lit-part-->c<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-      </div><!--/lit-part--><!--/lit-part-->
-            </div>
-        </div><!--/lit-part--><!--lit-part m9y/MSli8Iw=-->
-        <div
-                id=\\"b\\"
-                class=\\"entity entity-root\\"><!--lit-node 0-->
-            <!--lit-part CwfZQ+5yJQA=-->
-      <div class=\\"main-header\\"><!--lit-part q1mnU+7T3cs=--><h2>
-      <!--lit-part-->rdfs b<!--/lit-part--></h2><!--/lit-part--><!--lit-part f8TKvenZ2ig=--><a
-          href=\\"b\\"
-          title=\\"b\\"><!--lit-node 0--><!--lit-part-->b<!--/lit-part--></a><!--/lit-part--></div>
-  <!--/lit-part-->
-            <div class=\\"rows\\">
-                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
-      <div class=\\"row\\">
-          <!--lit-part LU+8SsiHQy4=-->
-      <ul>
-          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
-              <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"http://www.w3.org/2000/01/rdf-schema#label\\"
-                   title=\\"http://www.w3.org/2000/01/rdf-schema#label\\"><!--lit-node 0--><!--lit-part-->label<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-          <!--lit-part zRzcmqIQQTo=-->
-      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
-          <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part BRUAAAUVAAA=--><!--lit-part-->rdfs b<!--/lit-part--><?><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-      </div><!--/lit-part--><!--/lit-part-->
-            </div>
-        </div><!--/lit-part--><!--/lit-part-->
-      </div>
-  <!--/lit-part-->",
-]
-`;
-
-exports[`ResourceDescription HTML predicate label schema 1`] = `
-Array [
-  "
-<a> <b> <c> .
-<b> <http://schema.org/name> \\"schema b\\" .
-",
-  NamedNode {
-    "value": "a",
-  },
-  "<!--lit-part 300Caz5OpOA=-->
-      <div class=\\"entities\\">
-          <!--lit-part--><!--lit-part m9y/MSli8Iw=-->
-        <div
-                id=\\"a\\"
-                class=\\"entity entity-root\\"><!--lit-node 0-->
-            <!--lit-part CwfZQ+5yJQA=-->
-      <div class=\\"main-header\\"><!--lit-part gVAMBy6Ncnw=--><h2></h2><!--/lit-part--><!--lit-part f8TKvenZ2ig=--><a
-          href=\\"a\\"
-          title=\\"a\\"><!--lit-node 0--><!--lit-part-->a<!--/lit-part--></a><!--/lit-part--></div>
-  <!--/lit-part-->
-            <div class=\\"rows\\">
-                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
-      <div class=\\"row\\">
-          <!--lit-part LU+8SsiHQy4=-->
-      <ul>
-          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
-              <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"#b\\"
-                   title=\\"b\\"><!--lit-node 0--><!--lit-part-->schema b<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-          <!--lit-part zRzcmqIQQTo=-->
-      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
-          <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"c\\"
-                   title=\\"c\\"><!--lit-node 0--><!--lit-part-->c<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-      </div><!--/lit-part--><!--/lit-part-->
-            </div>
-        </div><!--/lit-part--><!--lit-part m9y/MSli8Iw=-->
-        <div
-                id=\\"b\\"
-                class=\\"entity entity-root\\"><!--lit-node 0-->
-            <!--lit-part CwfZQ+5yJQA=-->
-      <div class=\\"main-header\\"><!--lit-part q1mnU+7T3cs=--><h2>
-      <!--lit-part-->schema b<!--/lit-part--></h2><!--/lit-part--><!--lit-part f8TKvenZ2ig=--><a
-          href=\\"b\\"
-          title=\\"b\\"><!--lit-node 0--><!--lit-part-->b<!--/lit-part--></a><!--/lit-part--></div>
-  <!--/lit-part-->
-            <div class=\\"rows\\">
-                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
-      <div class=\\"row\\">
-          <!--lit-part LU+8SsiHQy4=-->
-      <ul>
-          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
-              <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"http://schema.org/name\\"
-                   title=\\"http://schema.org/name\\"><!--lit-node 0--><!--lit-part-->name<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-          <!--lit-part zRzcmqIQQTo=-->
-      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
-          <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part BRUAAAUVAAA=--><!--lit-part-->schema b<!--/lit-part--><?><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-      </div><!--/lit-part--><!--/lit-part-->
-            </div>
-        </div><!--/lit-part--><!--/lit-part-->
-      </div>
-  <!--/lit-part-->",
-]
-`;
-
-exports[`ResourceDescription HTML predicate label skos 1`] = `
-Array [
-  "
-<a> <b> <c> .
-<b> <http://www.w3.org/2004/02/skos/core#prefLabel> \\"skos b\\" .
-",
-  NamedNode {
-    "value": "a",
-  },
-  "<!--lit-part 300Caz5OpOA=-->
-      <div class=\\"entities\\">
-          <!--lit-part--><!--lit-part m9y/MSli8Iw=-->
-        <div
-                id=\\"a\\"
-                class=\\"entity entity-root\\"><!--lit-node 0-->
-            <!--lit-part CwfZQ+5yJQA=-->
-      <div class=\\"main-header\\"><!--lit-part gVAMBy6Ncnw=--><h2></h2><!--/lit-part--><!--lit-part f8TKvenZ2ig=--><a
-          href=\\"a\\"
-          title=\\"a\\"><!--lit-node 0--><!--lit-part-->a<!--/lit-part--></a><!--/lit-part--></div>
-  <!--/lit-part-->
-            <div class=\\"rows\\">
-                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
-      <div class=\\"row\\">
-          <!--lit-part LU+8SsiHQy4=-->
-      <ul>
-          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
-              <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"#b\\"
-                   title=\\"b\\"><!--lit-node 0--><!--lit-part-->skos b<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-          <!--lit-part zRzcmqIQQTo=-->
-      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
-          <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"c\\"
-                   title=\\"c\\"><!--lit-node 0--><!--lit-part-->c<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-      </div><!--/lit-part--><!--/lit-part-->
-            </div>
-        </div><!--/lit-part--><!--lit-part m9y/MSli8Iw=-->
-        <div
-                id=\\"b\\"
-                class=\\"entity entity-root\\"><!--lit-node 0-->
-            <!--lit-part CwfZQ+5yJQA=-->
-      <div class=\\"main-header\\"><!--lit-part q1mnU+7T3cs=--><h2>
-      <!--lit-part-->skos b<!--/lit-part--></h2><!--/lit-part--><!--lit-part f8TKvenZ2ig=--><a
-          href=\\"b\\"
-          title=\\"b\\"><!--lit-node 0--><!--lit-part-->b<!--/lit-part--></a><!--/lit-part--></div>
-  <!--/lit-part-->
-            <div class=\\"rows\\">
-                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
-      <div class=\\"row\\">
-          <!--lit-part LU+8SsiHQy4=-->
-      <ul>
-          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
-              <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"http://www.w3.org/2004/02/skos/core#prefLabel\\"
-                   title=\\"http://www.w3.org/2004/02/skos/core#prefLabel\\"><!--lit-node 0--><!--lit-part-->prefLabel<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-          <!--lit-part zRzcmqIQQTo=-->
-      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
-          <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part BRUAAAUVAAA=--><!--lit-part-->skos b<!--/lit-part--><?><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-      </div><!--/lit-part--><!--/lit-part-->
-            </div>
-        </div><!--/lit-part--><!--/lit-part-->
-      </div>
-  <!--/lit-part-->",
-]
-`;
-
-exports[`ResourceDescription HTML schema image 1`] = `
-Array [
-  "
-<a> <http://schema.org/image> <little-cat> .
-",
-  NamedNode {
-    "value": "a",
-  },
-  "<!--lit-part 300Caz5OpOA=-->
-      <div class=\\"entities\\">
-          <!--lit-part--><!--lit-part m9y/MSli8Iw=-->
-        <div
-                id=\\"a\\"
-                class=\\"entity entity-root\\"><!--lit-node 0-->
-            <!--lit-part CwfZQ+5yJQA=-->
-      <div class=\\"main-header\\"><!--lit-part gVAMBy6Ncnw=--><h2></h2><!--/lit-part--><!--lit-part f8TKvenZ2ig=--><a
-          href=\\"a\\"
-          title=\\"a\\"><!--lit-node 0--><!--lit-part-->a<!--/lit-part--></a><!--/lit-part--></div>
-  <!--/lit-part-->
-            <div class=\\"rows\\">
-                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
-      <div class=\\"row\\">
-          <!--lit-part LU+8SsiHQy4=-->
-      <ul>
-          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
-              <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"http://schema.org/image\\"
-                   title=\\"http://schema.org/image\\"><!--lit-node 0--><!--lit-part-->image<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-          <!--lit-part zRzcmqIQQTo=-->
-      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
-          <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part B2t8Dchb22Q=-->
-        <div class=\\"img-container\\"><img alt=\\"little-cat\\"
-                                        src=\\"little-cat\\"><!--lit-node 1--></div><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-      </div><!--/lit-part--><!--/lit-part-->
-            </div>
-        </div><!--/lit-part--><!--/lit-part-->
-      </div>
-  <!--/lit-part-->",
-]
-`;
-
-exports[`ResourceDescription HTML simple 1`] = `
-Array [
-  "
-<a> <b> <c> .
-",
-  NamedNode {
-    "value": "a",
-  },
-  "<!--lit-part 300Caz5OpOA=-->
-      <div class=\\"entities\\">
-          <!--lit-part--><!--lit-part m9y/MSli8Iw=-->
-        <div
-                id=\\"a\\"
-                class=\\"entity entity-root\\"><!--lit-node 0-->
-            <!--lit-part CwfZQ+5yJQA=-->
-      <div class=\\"main-header\\"><!--lit-part gVAMBy6Ncnw=--><h2></h2><!--/lit-part--><!--lit-part f8TKvenZ2ig=--><a
-          href=\\"a\\"
-          title=\\"a\\"><!--lit-node 0--><!--lit-part-->a<!--/lit-part--></a><!--/lit-part--></div>
-  <!--/lit-part-->
-            <div class=\\"rows\\">
-                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
-      <div class=\\"row\\">
-          <!--lit-part LU+8SsiHQy4=-->
-      <ul>
-          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
-              <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"b\\"
-                   title=\\"b\\"><!--lit-node 0--><!--lit-part-->b<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-          <!--lit-part zRzcmqIQQTo=-->
-      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
-          <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"c\\"
-                   title=\\"c\\"><!--lit-node 0--><!--lit-part-->c<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-      </div><!--/lit-part--><!--/lit-part-->
-            </div>
-        </div><!--/lit-part--><!--/lit-part-->
-      </div>
-  <!--/lit-part-->",
-]
-`;
-
-exports[`ResourceDescription HTML subject label foaf 1`] = `
-Array [
-  "
-<a> <b> <c> .
-<a> <http://xmlns.com/foaf/0.1/name> \\"foaf a\\" .
-",
-  NamedNode {
-    "value": "a",
-  },
-  "<!--lit-part 300Caz5OpOA=-->
-      <div class=\\"entities\\">
-          <!--lit-part--><!--lit-part m9y/MSli8Iw=-->
-        <div
-                id=\\"a\\"
-                class=\\"entity entity-root\\"><!--lit-node 0-->
-            <!--lit-part CwfZQ+5yJQA=-->
-      <div class=\\"main-header\\"><!--lit-part q1mnU+7T3cs=--><h2>
-      <!--lit-part-->foaf a<!--/lit-part--></h2><!--/lit-part--><!--lit-part f8TKvenZ2ig=--><a
-          href=\\"a\\"
-          title=\\"a\\"><!--lit-node 0--><!--lit-part-->a<!--/lit-part--></a><!--/lit-part--></div>
-  <!--/lit-part-->
-            <div class=\\"rows\\">
-                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
-      <div class=\\"row\\">
-          <!--lit-part LU+8SsiHQy4=-->
-      <ul>
-          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
-              <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"b\\"
-                   title=\\"b\\"><!--lit-node 0--><!--lit-part-->b<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-          <!--lit-part zRzcmqIQQTo=-->
-      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
-          <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"c\\"
-                   title=\\"c\\"><!--lit-node 0--><!--lit-part-->c<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-      </div><!--/lit-part--><!--lit-part kfEHKSf/yyE=-->
-      <div class=\\"row\\">
-          <!--lit-part LU+8SsiHQy4=-->
-      <ul>
-          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
-              <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"http://xmlns.com/foaf/0.1/name\\"
-                   title=\\"http://xmlns.com/foaf/0.1/name\\"><!--lit-node 0--><!--lit-part-->name<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-          <!--lit-part zRzcmqIQQTo=-->
-      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
-          <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part BRUAAAUVAAA=--><!--lit-part-->foaf a<!--/lit-part--><?><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-      </div><!--/lit-part--><!--/lit-part-->
-            </div>
-        </div><!--/lit-part--><!--/lit-part-->
-      </div>
-  <!--/lit-part-->",
-]
-`;
-
-exports[`ResourceDescription HTML subject label rdfs 1`] = `
-Array [
-  "
-<a> <b> <c> .
-<a> <http://www.w3.org/2000/01/rdf-schema#label> \\"rdfs a\\" .
-",
-  NamedNode {
-    "value": "a",
-  },
-  "<!--lit-part 300Caz5OpOA=-->
-      <div class=\\"entities\\">
-          <!--lit-part--><!--lit-part m9y/MSli8Iw=-->
-        <div
-                id=\\"a\\"
-                class=\\"entity entity-root\\"><!--lit-node 0-->
-            <!--lit-part CwfZQ+5yJQA=-->
-      <div class=\\"main-header\\"><!--lit-part q1mnU+7T3cs=--><h2>
-      <!--lit-part-->rdfs a<!--/lit-part--></h2><!--/lit-part--><!--lit-part f8TKvenZ2ig=--><a
-          href=\\"a\\"
-          title=\\"a\\"><!--lit-node 0--><!--lit-part-->a<!--/lit-part--></a><!--/lit-part--></div>
-  <!--/lit-part-->
-            <div class=\\"rows\\">
-                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
-      <div class=\\"row\\">
-          <!--lit-part LU+8SsiHQy4=-->
-      <ul>
-          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
-              <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"b\\"
-                   title=\\"b\\"><!--lit-node 0--><!--lit-part-->b<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-          <!--lit-part zRzcmqIQQTo=-->
-      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
-          <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"c\\"
-                   title=\\"c\\"><!--lit-node 0--><!--lit-part-->c<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-      </div><!--/lit-part--><!--lit-part kfEHKSf/yyE=-->
-      <div class=\\"row\\">
-          <!--lit-part LU+8SsiHQy4=-->
-      <ul>
-          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
-              <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"http://www.w3.org/2000/01/rdf-schema#label\\"
-                   title=\\"http://www.w3.org/2000/01/rdf-schema#label\\"><!--lit-node 0--><!--lit-part-->label<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-          <!--lit-part zRzcmqIQQTo=-->
-      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
-          <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part BRUAAAUVAAA=--><!--lit-part-->rdfs a<!--/lit-part--><?><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-      </div><!--/lit-part--><!--/lit-part-->
-            </div>
-        </div><!--/lit-part--><!--/lit-part-->
-      </div>
-  <!--/lit-part-->",
-]
-`;
-
-exports[`ResourceDescription HTML subject label schema 1`] = `
-Array [
-  "
-<a> <b> <c> .
-<a> <http://schema.org/name> \\"schema a\\" .
-",
-  NamedNode {
-    "value": "a",
-  },
-  "<!--lit-part 300Caz5OpOA=-->
-      <div class=\\"entities\\">
-          <!--lit-part--><!--lit-part m9y/MSli8Iw=-->
-        <div
-                id=\\"a\\"
-                class=\\"entity entity-root\\"><!--lit-node 0-->
-            <!--lit-part CwfZQ+5yJQA=-->
-      <div class=\\"main-header\\"><!--lit-part q1mnU+7T3cs=--><h2>
-      <!--lit-part-->schema a<!--/lit-part--></h2><!--/lit-part--><!--lit-part f8TKvenZ2ig=--><a
-          href=\\"a\\"
-          title=\\"a\\"><!--lit-node 0--><!--lit-part-->a<!--/lit-part--></a><!--/lit-part--></div>
-  <!--/lit-part-->
-            <div class=\\"rows\\">
-                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
-      <div class=\\"row\\">
-          <!--lit-part LU+8SsiHQy4=-->
-      <ul>
-          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
-              <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"b\\"
-                   title=\\"b\\"><!--lit-node 0--><!--lit-part-->b<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-          <!--lit-part zRzcmqIQQTo=-->
-      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
-          <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"c\\"
-                   title=\\"c\\"><!--lit-node 0--><!--lit-part-->c<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-      </div><!--/lit-part--><!--lit-part kfEHKSf/yyE=-->
-      <div class=\\"row\\">
-          <!--lit-part LU+8SsiHQy4=-->
-      <ul>
-          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
-              <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"http://schema.org/name\\"
-                   title=\\"http://schema.org/name\\"><!--lit-node 0--><!--lit-part-->name<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-          <!--lit-part zRzcmqIQQTo=-->
-      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
-          <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part BRUAAAUVAAA=--><!--lit-part-->schema a<!--/lit-part--><?><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-      </div><!--/lit-part--><!--/lit-part-->
-            </div>
-        </div><!--/lit-part--><!--/lit-part-->
-      </div>
-  <!--/lit-part-->",
-]
-`;
-
-exports[`ResourceDescription HTML subject label skos 1`] = `
-Array [
-  "
-<a> <b> <c> .
-<a> <http://www.w3.org/2004/02/skos/core#prefLabel> \\"skos a\\" .
-",
-  NamedNode {
-    "value": "a",
-  },
-  "<!--lit-part 300Caz5OpOA=-->
-      <div class=\\"entities\\">
-          <!--lit-part--><!--lit-part m9y/MSli8Iw=-->
-        <div
-                id=\\"a\\"
-                class=\\"entity entity-root\\"><!--lit-node 0-->
-            <!--lit-part CwfZQ+5yJQA=-->
-      <div class=\\"main-header\\"><!--lit-part q1mnU+7T3cs=--><h2>
-      <!--lit-part-->skos a<!--/lit-part--></h2><!--/lit-part--><!--lit-part f8TKvenZ2ig=--><a
-          href=\\"a\\"
-          title=\\"a\\"><!--lit-node 0--><!--lit-part-->a<!--/lit-part--></a><!--/lit-part--></div>
-  <!--/lit-part-->
-            <div class=\\"rows\\">
-                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
-      <div class=\\"row\\">
-          <!--lit-part LU+8SsiHQy4=-->
-      <ul>
-          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
-              <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"b\\"
-                   title=\\"b\\"><!--lit-node 0--><!--lit-part-->b<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-          <!--lit-part zRzcmqIQQTo=-->
-      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
-          <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"c\\"
-                   title=\\"c\\"><!--lit-node 0--><!--lit-part-->c<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-      </div><!--/lit-part--><!--lit-part kfEHKSf/yyE=-->
-      <div class=\\"row\\">
-          <!--lit-part LU+8SsiHQy4=-->
-      <ul>
-          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
-              <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"http://www.w3.org/2004/02/skos/core#prefLabel\\"
-                   title=\\"http://www.w3.org/2004/02/skos/core#prefLabel\\"><!--lit-node 0--><!--lit-part-->prefLabel<!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-          <!--lit-part zRzcmqIQQTo=-->
-      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
-          <li><!--lit-part c3yZ93Y7viA=-->
-      <div><!--lit-part--><!--lit-part BRUAAAUVAAA=--><!--lit-part-->skos a<!--/lit-part--><?><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
-      </ul><!--/lit-part-->
-      </div><!--/lit-part--><!--/lit-part-->
-            </div>
-        </div><!--/lit-part--><!--/lit-part-->
-      </div>
-  <!--/lit-part-->",
-]
-`;
-
 exports[`default blank node 1`] = `
 Array [
   "
@@ -1367,7 +31,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "n3-8",
+              "string": "n3-5",
             },
             "rows": Array [
               Object {
@@ -1399,7 +63,7 @@ Array [
             ],
             "term": Object {
               "termType": "BlankNode",
-              "value": "n3-8",
+              "value": "n3-5",
             },
           },
         ],
@@ -1495,7 +159,6 @@ Array [
               "fallbackLabel": true,
               "string": "little-cat",
             },
-            "renderAs": "Image",
             "term": Object {
               "termType": "NamedNode",
               "value": "little-cat",
@@ -2341,7 +1004,6 @@ Array [
               "fallbackLabel": true,
               "string": "little-cat",
             },
-            "renderAs": "Image",
             "term": Object {
               "termType": "NamedNode",
               "value": "little-cat",
@@ -2972,7 +1634,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "n3-11",
+              "string": "n3-8",
             },
             "rows": Array [
               Object {
@@ -3004,7 +1666,7 @@ Array [
             ],
             "term": Object {
               "termType": "BlankNode",
-              "value": "n3-11",
+              "value": "n3-8",
             },
           },
         ],
@@ -3100,7 +1762,6 @@ Array [
               "fallbackLabel": true,
               "string": "little-cat",
             },
-            "renderAs": "Image",
             "term": Object {
               "termType": "NamedNode",
               "value": "little-cat",
@@ -4057,7 +2718,6 @@ Array [
               "fallbackLabel": true,
               "string": "little-cat",
             },
-            "renderAs": "Image",
             "term": Object {
               "termType": "NamedNode",
               "value": "little-cat",
@@ -4449,7 +3109,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "n3-14",
+              "string": "n3-11",
             },
             "rows": Array [
               Object {
@@ -4481,7 +3141,7 @@ Array [
             ],
             "term": Object {
               "termType": "BlankNode",
-              "value": "n3-14",
+              "value": "n3-11",
             },
           },
         ],
@@ -4577,7 +3237,6 @@ Array [
               "fallbackLabel": true,
               "string": "little-cat",
             },
-            "renderAs": "Image",
             "term": Object {
               "termType": "NamedNode",
               "value": "little-cat",
@@ -5652,7 +4311,6 @@ Array [
               "fallbackLabel": true,
               "string": "little-cat",
             },
-            "renderAs": "Image",
             "term": Object {
               "termType": "NamedNode",
               "value": "little-cat",
@@ -6046,4 +4704,88 @@ Array [
     },
   },
 ]
+`;
+
+exports[`show images foaf 1`] = `
+Object {
+  "label": Object {
+    "fallbackLabel": true,
+    "string": "dog",
+  },
+  "rows": Array [
+    Object {
+      "properties": Array [
+        Object {
+          "label": Object {
+            "fallbackLabel": true,
+            "string": "img",
+            "vocab": "foaf",
+          },
+          "term": Object {
+            "termType": "NamedNode",
+            "value": "http://xmlns.com/foaf/0.1/img",
+          },
+        },
+      ],
+      "values": Array [
+        Object {
+          "label": Object {
+            "fallbackLabel": true,
+            "string": "dogImg",
+          },
+          "renderAs": "Image",
+          "term": Object {
+            "termType": "NamedNode",
+            "value": "dogImg",
+          },
+        },
+      ],
+    },
+  ],
+  "term": NamedNode {
+    "value": "dog",
+  },
+}
+`;
+
+exports[`show images schema 1`] = `
+Object {
+  "label": Object {
+    "fallbackLabel": true,
+    "string": "cat",
+  },
+  "rows": Array [
+    Object {
+      "properties": Array [
+        Object {
+          "label": Object {
+            "fallbackLabel": true,
+            "string": "image",
+            "vocab": "schema",
+          },
+          "term": Object {
+            "termType": "NamedNode",
+            "value": "http://schema.org/image",
+          },
+        },
+      ],
+      "values": Array [
+        Object {
+          "label": Object {
+            "fallbackLabel": true,
+            "string": "catImg",
+          },
+          "renderAs": "Image",
+          "term": Object {
+            "termType": "NamedNode",
+            "value": "catImg",
+          },
+        },
+      ],
+    },
+  ],
+  "term": NamedNode {
+    "value": "cat",
+  },
+}
 `;

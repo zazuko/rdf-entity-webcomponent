@@ -221,3 +221,29 @@ it('fetch languages', function () {
   const result = createEntity(cf, options)
   expect(result).toMatchSnapshot(this)
 })
+
+it('show images foaf', function () {
+  const data = `
+<dog> <http://xmlns.com/foaf/0.1/img> <dogImg> .
+`
+  const cf = toClownface(data, rdf.namedNode('dog'))
+
+  const options = {
+    showImages: true,
+  }
+  const result = createEntity(cf, options)
+  expect(result).toMatchSnapshot(this)
+})
+
+it('show images schema', function () {
+  const data = `
+<cat> <http://schema.org/image> <catImg> .
+`
+  const cf = toClownface(data, rdf.namedNode('cat'))
+
+  const options = {
+    showImages: true,
+  }
+  const result = createEntity(cf, options)
+  expect(result).toMatchSnapshot(this)
+})

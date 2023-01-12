@@ -20,6 +20,7 @@ function getBuilderOptions (webComponent) {
     embedNamedNodes: boolean(webComponent.embedNamedNodes, false),
     embedBlankNodes: boolean(webComponent.embedBlankNodes, false),
     maxLevel: webComponent.maxLevel ?? 3,
+    showImages: boolean(webComponent.showImages, false),
 
     // The following are shortcuts and do not correspond to the exact options of the builder
     groupValuesByProperty: boolean(webComponent.compactMode, false),

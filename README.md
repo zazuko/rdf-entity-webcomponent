@@ -49,3 +49,4 @@ See the [examples](./examples) folder for details
 | `embedLists`         | `embed-lists`         |           | `Boolean` | false                    | Display rdf-lists as ordered lists                                                                        |
 | `highlightLanguage`  | `highlight-language`  |           | `Boolean` | false                    | Highlights literals matching prefered language                                                            |
 | `maxLevel`           | `max-level`           |           | `Number`  | 3                        | The maximum depth of the trees                                                                            |
+| `showImages`         | `show-images`         |           | `Boolean` | false                    | embeds images denoted by schema:image or foaf:img                                                         |

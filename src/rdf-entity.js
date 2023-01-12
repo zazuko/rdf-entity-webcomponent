@@ -143,7 +143,7 @@ export class RdfEntity extends LitElement {
     }
 
     .img-container img {
-      max-width: 100%;
+      max-width: 300px;
     }
   `
 
@@ -182,7 +182,8 @@ export class RdfEntity extends LitElement {
       highlightLanguage: {
         type: Boolean, attribute: 'highlight-language', required: false
       },
-      maxLevel: { type: Number, attribute: 'max-level', required: false }
+      maxLevel: { type: Number, attribute: 'max-level', required: false },
+      showImages: { type: Boolean, attribute: 'show-images', required: false }
     }
   }
 

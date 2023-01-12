@@ -19,11 +19,13 @@ const defaultOptions = {
   maxLevel: undefined,
   preferredLanguages: ['en'],
   renderAs: (cf, options, context) => {
-    // Adds 'Image' tag to the specified properties
     if (context.incomingProperty) {
-      for (const imageProperty of [ns.foaf.img, ns.schema.image]) {
-        if (imageProperty.equals(context.incomingProperty)) {
-          return 'Image'
+      // Adds 'Image' tag to the specified properties
+      if (options.showImages) {
+        for (const imageProperty of [ns.foaf.img, ns.schema.image]) {
+          if (imageProperty.equals(context.incomingProperty)) {
+            return 'Image'
+          }
         }
       }
     }
