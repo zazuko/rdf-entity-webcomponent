@@ -1,6 +1,6 @@
-import { LitElement, css, html } from 'lit'
-import { EntityList } from './components/EntityList.js'
+import { css, html, LitElement } from 'lit'
 import rdf from '../src/rdf-ext.js'
+import { EntityList } from './components/EntityList.js'
 import { DEFAULT_BUILDER_OPTIONS, getBuilderOptions } from './options.js'
 
 export class RdfEntity extends LitElement {
@@ -14,36 +14,15 @@ export class RdfEntity extends LitElement {
       display: flex;
       flex-direction: column;
       gap: 20px;
+      border-right: 1px solid var(--border);
     }
 
     .entity {
       display: flex;
       flex-direction: column;
-      border: 1px solid var(--border);
-    }
-
-    .main-header {
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 15px;
-    }
-
-    .main-header h2 {
-      margin-top: 15px;
-      margin-bottom: 15px;
-      font-size: 32px;
-      text-align: center;
-    }
-
-    .main-header a {
-      font-size: 18px;
-      text-transform: uppercase;
-      text-align: center;
-    }
-
-    .header {
-      font-size: 18px;
-      padding-left: 10px;
+      border-left: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      border-top: 1px solid var(--border);
     }
 
     .rows {
@@ -60,20 +39,25 @@ export class RdfEntity extends LitElement {
       background: rgba(0, 0, 0, 0.01);
     }
 
-    .rows .row {
+    .rows > .row {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
     }
 
+    /* Properties */
+
     .row > :nth-child(1) {
       align-self: flex-start;
       width: 35%;
       word-break: break-all;
-      margin-top: 1rem;
       margin-left: 1%;
       margin-right: 1rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
     }
+
+    /* Values */
 
     .row > :nth-child(2) {
       wrap-option: wrap;
@@ -81,6 +65,8 @@ export class RdfEntity extends LitElement {
       word-break: break-all;
       margin-left: 1rem;
       margin-right: auto;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
     }
 
     ul {
@@ -143,7 +129,7 @@ export class RdfEntity extends LitElement {
     }
 
     .img-container img {
-      max-width: 300px;
+      max-width: 200px;
     }
   `
 
@@ -183,7 +169,12 @@ export class RdfEntity extends LitElement {
         type: Boolean, attribute: 'highlight-language', required: false
       },
       maxLevel: { type: Number, attribute: 'max-level', required: false },
-      showImages: { type: Boolean, attribute: 'show-images', required: false }
+      showImages: { type: Boolean, attribute: 'show-images', required: false },
+      simplifiedMode: {
+        type: Boolean,
+        attribute: 'simplified-mode',
+        required: false
+      }
     }
   }
 

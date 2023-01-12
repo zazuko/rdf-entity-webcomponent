@@ -1,3 +1,7 @@
+import { DEFAULT_LABEL_PROPERTIES } from '../src/builder/entityBuilder.js'
+import { ns } from './namespaces.js'
+import rdf from './rdf-ext.js'
+
 function boolean (value, defaultValue) {
   if (value === undefined) {
     return defaultValue
@@ -21,8 +25,13 @@ function getBuilderOptions (webComponent) {
     embedBlankNodes: boolean(webComponent.embedBlankNodes, false),
     maxLevel: webComponent.maxLevel ?? 3,
     showImages: boolean(webComponent.showImages, false),
+    simplifiedMode: boolean(webComponent.simplifiedMode, false),
 
-    // The following are shortcuts and do not correspond to the exact options of the builder
+    // The following are specific properties not intended to be exposed by the Web component
+    ignoreProperties: webComponent.simplifiedMode
+      ? rdf.termSet(
+        [ns.rdf.type, ...DEFAULT_LABEL_PROPERTIES])
+      : rdf.termSet([]),
     groupValuesByProperty: boolean(webComponent.compactMode, false),
     groupPropertiesByValue: boolean(webComponent.compactMode, false)
   }

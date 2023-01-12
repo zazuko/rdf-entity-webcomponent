@@ -1,19 +1,21 @@
 import { html } from 'lit'
 
 function Entity (entity, options, context, renderedAsRoot) {
-  const rows = entity.rows ? entity.rows.map(row => Row(row, options, context)) : []
-  const header = renderedAsRoot
-    ? RootHeader(entity)
-    : ItemHeader(entity, options,
+  const header = options.simplifiedMode
+    ? SimplifiedHeader(entity, options,
       context)
+    : html``
+  const rows = entity.rows
+    ? entity.rows.map(row => Row(row, options, context))
+    : []
 
   if (entity.rows) {
     return html`
-        <div
-                id="${context.anchorFor.get(entity.term)}"
-                class="entity ${renderedAsRoot ? 'entity-root' : ''}">
-            ${header}
+        <div id="${context.anchorFor.get(entity.term)}"
+             class="entity ${renderedAsRoot ? 'entity-root' : ''}">
+
             <div class="rows">
+                ${header}
                 ${rows}
             </div>
         </div>`
@@ -22,32 +24,20 @@ function Entity (entity, options, context, renderedAsRoot) {
   }
 }
 
-function RootHeader (entity) {
-  const text = entity.label.fallbackLabel
-    ? html`<h2></h2>`
-    : html`<h2>
-      ${entity.label.string}</h2>`
-
-  const link = entity.term.termType === 'BlankNode'
-    ? html``
-    : html`<a
-          href="${entity.term.value}"
-          title="${entity.term.value}">${entity.term.value}</a>`
-
+function SimplifiedHeader (entity, options, context) {
+  const types = html`
+      <ul>${(entity.types ?? []).map(value => html`
+          <li>${Entity(value, options, context)}</li>`)}
+      </ul>`
   return html`
-      <div class="main-header">${text}${link}</div>
-  `
-}
-
-function ItemHeader (entity, options, context) {
-  const text = entity.label.fallbackLabel
-    ? html`<span>${TermWithCues(entity,
-          options, context)}</span>`
-    : html`<h3>
-      ${TermWithCues(entity, options, context)}</h3>`
-
-  return html`
-      <div class="header ${entity.term.termType}">${text}</div>`
+      <div class="row">
+          <ul>
+              <li>
+                  ${TermWithCues(entity, options, context)}
+              </li>
+          </ul>
+          ${types}
+      </div>`
 }
 
 function Row (row, options, context) {
@@ -59,13 +49,13 @@ function Row (row, options, context) {
 
   const valuesList = row.renderAs === 'List'
     ? html`
-      <ol>${row.values.map(value => html`
-          <li>${Entity(value, options, context)}</li>`)}
-      </ol>`
+              <ol>${row.values.map(value => html`
+                  <li>${Entity(value, options, context)}</li>`)}
+              </ol>`
     : html`
-      <ul>${row.values.map(value => html`
-          <li>${Entity(value, options, context)}</li>`)}
-      </ul>`
+              <ul>${row.values.map(value => html`
+                  <li>${Entity(value, options, context)}</li>`)}
+              </ul>`
 
   return html`
       <div class="row">
@@ -93,9 +83,9 @@ function TermWithCues (entity, options, context) {
     const isHighLight = entity.label.language === options.highlightLanguage
     return isHighLight
       ? html`
-        <div>${spans}</div>`
+                <div>${spans}</div>`
       : html`
-        <div class="bringDown">${spans}</div>`
+                <div class="bringDown">${spans}</div>`
   }
 
   return html`
@@ -125,9 +115,9 @@ function Term (entity, options, context) {
   const link = maybeLink()
   if (link) {
     return html`<a href="${link}"
-                   title="${entity.term.value}">${entity.label.string}</a>`
+                   title="${entity.term.value}">${entity.label.value}</a>`
   } else {
-    return html`${entity.label.string}`
+    return html`${entity.label.value}`
   }
 }
 

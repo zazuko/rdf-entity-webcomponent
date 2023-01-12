@@ -1,13 +1,16 @@
 import { ns } from '../namespaces.js'
 import rdf from '../rdf-ext.js'
-import { getLabel } from './labels.js'
 import { groupRows } from './group.js'
+import { getLabel } from './labels.js'
 import { sortRows } from './sort.js'
+import { getTypes } from './types.js'
 import { predicates } from './utils.js'
 
+const DEFAULT_LABEL_PROPERTIES = [
+  ns.foaf.name, ns.skos.prefLabel, ns.schema.name, ns.rdfs.label]
+
 const defaultOptions = {
-  labelProperties: [
-    ns.foaf.name, ns.skos.prefLabel, ns.schema.name, ns.rdfs.label],
+  labelProperties: DEFAULT_LABEL_PROPERTIES,
   externalLabels: rdf.clownface({ dataset: rdf.dataset() }),
   ignoreProperties: rdf.termSet([]),
   groupValuesByProperty: true,
@@ -132,12 +135,19 @@ function getEntity (cf, options, context) {
   const rows = getRows(cf, options, context)
   const grouped = groupRows(rows, options)
   sortRows(grouped, options)
+
   const entity = {
     ...nodeWithLabels(cf, options, context),
     ...(grouped && grouped.length &&
       { rows: grouped })
   }
+
+  const types = getTypes(cf, options)
+  if (types && types.length) {
+    entity.types = types
+  }
+
   return { entity, context }
 }
 
-export { createEntity, createEntityWithContext }
+export { createEntity, createEntityWithContext, DEFAULT_LABEL_PROPERTIES }

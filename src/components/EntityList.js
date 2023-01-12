@@ -21,7 +21,7 @@ function EntityList ({ dataset, terms }, options) {
   }
 
   const model = createModel({ dataset, terms }, options)
-  const list = model.map(entity => Entity(entity, options, { anchorFor }, true))
+  const list = model.map(entity => Entity(entity, options, { anchorFor }))
 
   return html`
       <div class="entities">

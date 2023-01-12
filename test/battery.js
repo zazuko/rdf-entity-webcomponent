@@ -132,7 +132,14 @@ const battery = {
     `
 <a> <http://www.w3.org/2004/02/skos/core#prefLabel> "first" .
 <a> <http://www.w3.org/2004/02/skos/core#prefLabel> "second" .
+`, rdf.namedNode('a')],
+  types: [
+    `<a> a <b> .
+<a> a <c> .
+<c> <http://schema.org/name> "class c" .
+
 `, rdf.namedNode('a')]
+
 }
 
 export { battery }
