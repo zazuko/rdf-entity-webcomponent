@@ -16,7 +16,7 @@ const sortNamed = (a, b) => sortStrings(a.value, b.value)
 
 function _sortItem (a, b) {
   if (a.label && b.label) {
-    return a.label.string.localeCompare(b.label.string)
+    return a.label.value.localeCompare(b.label.value)
   }
   return sortNamed(a, b)
 }

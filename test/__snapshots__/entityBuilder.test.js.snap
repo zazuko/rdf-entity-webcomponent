@@ -1,5 +1,1339 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`ResourceDescription HTML blank node 1`] = `
+Array [
+  "
+<a> <b> [ <c> <d> ] .
+",
+  NamedNode {
+    "value": "a",
+  },
+  "<!--lit-part 300Caz5OpOA=-->
+      <div class=\\"entities\\">
+          <!--lit-part--><!--lit-part m9y/MSli8Iw=-->
+        <div
+                id=\\"a\\"
+                class=\\"entity entity-root\\"><!--lit-node 0-->
+            <!--lit-part CwfZQ+5yJQA=-->
+      <div class=\\"main-header\\"><!--lit-part gVAMBy6Ncnw=--><h2></h2><!--/lit-part--><!--lit-part f8TKvenZ2ig=--><a
+          href=\\"a\\"
+          title=\\"a\\"><!--lit-node 0--><!--lit-part-->a<!--/lit-part--></a><!--/lit-part--></div>
+  <!--/lit-part-->
+            <div class=\\"rows\\">
+                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part LU+8SsiHQy4=-->
+      <ul>
+          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
+              <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"b\\"
+                   title=\\"b\\"><!--lit-node 0--><!--lit-part--><!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part m9y/MSli8Iw=-->
+        <div
+                id=\\"blank-1\\"
+                class=\\"entity \\"><!--lit-node 0-->
+            <!--lit-part 0X+kKfjmlu4=-->
+      <div class=\\"header BlankNode\\"><!--lit-node 0--><!--lit-part 94tjhjhkEYE=--><span><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"#blank-1\\"
+                   title=\\"n3-0\\"><!--lit-node 0--><!--lit-part--><!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></span><!--/lit-part--></div><!--/lit-part-->
+            <div class=\\"rows\\">
+                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part LU+8SsiHQy4=-->
+      <ul>
+          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
+              <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"c\\"
+                   title=\\"c\\"><!--lit-node 0--><!--lit-part--><!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"d\\"
+                   title=\\"d\\"><!--lit-node 0--><!--lit-part--><!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--/lit-part-->
+            </div>
+        </div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--/lit-part-->
+            </div>
+        </div><!--/lit-part--><!--/lit-part-->
+      </div>
+  <!--/lit-part-->",
+]
+`;
+
+exports[`ResourceDescription HTML does not repeat 1`] = `
+Array [
+  "
+<a> <b> <c> ;
+    <b> <c> .
+",
+  NamedNode {
+    "value": "a",
+  },
+  "<!--lit-part 300Caz5OpOA=-->
+      <div class=\\"entities\\">
+          <!--lit-part--><!--lit-part m9y/MSli8Iw=-->
+        <div
+                id=\\"a\\"
+                class=\\"entity entity-root\\"><!--lit-node 0-->
+            <!--lit-part CwfZQ+5yJQA=-->
+      <div class=\\"main-header\\"><!--lit-part gVAMBy6Ncnw=--><h2></h2><!--/lit-part--><!--lit-part f8TKvenZ2ig=--><a
+          href=\\"a\\"
+          title=\\"a\\"><!--lit-node 0--><!--lit-part-->a<!--/lit-part--></a><!--/lit-part--></div>
+  <!--/lit-part-->
+            <div class=\\"rows\\">
+                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part LU+8SsiHQy4=-->
+      <ul>
+          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
+              <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"b\\"
+                   title=\\"b\\"><!--lit-node 0--><!--lit-part--><!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"c\\"
+                   title=\\"c\\"><!--lit-node 0--><!--lit-part--><!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--/lit-part-->
+            </div>
+        </div><!--/lit-part--><!--/lit-part-->
+      </div>
+  <!--/lit-part-->",
+]
+`;
+
+exports[`ResourceDescription HTML foaf image 1`] = `
+Array [
+  "
+<a> <http://xmlns.com/foaf/0.1/img> <little-cat> .
+",
+  NamedNode {
+    "value": "a",
+  },
+  "<!--lit-part 300Caz5OpOA=-->
+      <div class=\\"entities\\">
+          <!--lit-part--><!--lit-part m9y/MSli8Iw=-->
+        <div
+                id=\\"a\\"
+                class=\\"entity entity-root\\"><!--lit-node 0-->
+            <!--lit-part CwfZQ+5yJQA=-->
+      <div class=\\"main-header\\"><!--lit-part gVAMBy6Ncnw=--><h2></h2><!--/lit-part--><!--lit-part f8TKvenZ2ig=--><a
+          href=\\"a\\"
+          title=\\"a\\"><!--lit-node 0--><!--lit-part-->a<!--/lit-part--></a><!--/lit-part--></div>
+  <!--/lit-part-->
+            <div class=\\"rows\\">
+                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part LU+8SsiHQy4=-->
+      <ul>
+          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
+              <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"http://xmlns.com/foaf/0.1/img\\"
+                   title=\\"http://xmlns.com/foaf/0.1/img\\"><!--lit-node 0--><!--lit-part--><!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"little-cat\\"
+                   title=\\"little-cat\\"><!--lit-node 0--><!--lit-part--><!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--/lit-part-->
+            </div>
+        </div><!--/lit-part--><!--/lit-part-->
+      </div>
+  <!--/lit-part-->",
+]
+`;
+
+exports[`ResourceDescription HTML groups attributes 1`] = `
+Array [
+  "
+<a> <b> <c> ;
+    <b> <d> .
+",
+  NamedNode {
+    "value": "a",
+  },
+  "<!--lit-part 300Caz5OpOA=-->
+      <div class=\\"entities\\">
+          <!--lit-part--><!--lit-part m9y/MSli8Iw=-->
+        <div
+                id=\\"a\\"
+                class=\\"entity entity-root\\"><!--lit-node 0-->
+            <!--lit-part CwfZQ+5yJQA=-->
+      <div class=\\"main-header\\"><!--lit-part gVAMBy6Ncnw=--><h2></h2><!--/lit-part--><!--lit-part f8TKvenZ2ig=--><a
+          href=\\"a\\"
+          title=\\"a\\"><!--lit-node 0--><!--lit-part-->a<!--/lit-part--></a><!--/lit-part--></div>
+  <!--/lit-part-->
+            <div class=\\"rows\\">
+                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part LU+8SsiHQy4=-->
+      <ul>
+          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
+              <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"b\\"
+                   title=\\"b\\"><!--lit-node 0--><!--lit-part--><!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"c\\"
+                   title=\\"c\\"><!--lit-node 0--><!--lit-part--><!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"d\\"
+                   title=\\"d\\"><!--lit-node 0--><!--lit-part--><!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--/lit-part-->
+            </div>
+        </div><!--/lit-part--><!--/lit-part-->
+      </div>
+  <!--/lit-part-->",
+]
+`;
+
+exports[`ResourceDescription HTML groups by value 1`] = `
+Array [
+  "
+<a> <b> <d> ;
+    <c> <d> .
+",
+  NamedNode {
+    "value": "a",
+  },
+  "<!--lit-part 300Caz5OpOA=-->
+      <div class=\\"entities\\">
+          <!--lit-part--><!--lit-part m9y/MSli8Iw=-->
+        <div
+                id=\\"a\\"
+                class=\\"entity entity-root\\"><!--lit-node 0-->
+            <!--lit-part CwfZQ+5yJQA=-->
+      <div class=\\"main-header\\"><!--lit-part gVAMBy6Ncnw=--><h2></h2><!--/lit-part--><!--lit-part f8TKvenZ2ig=--><a
+          href=\\"a\\"
+          title=\\"a\\"><!--lit-node 0--><!--lit-part-->a<!--/lit-part--></a><!--/lit-part--></div>
+  <!--/lit-part-->
+            <div class=\\"rows\\">
+                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part LU+8SsiHQy4=-->
+      <ul>
+          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
+              <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"b\\"
+                   title=\\"b\\"><!--lit-node 0--><!--lit-part--><!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--lit-part 83vL2TZWgro=-->
+              <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"c\\"
+                   title=\\"c\\"><!--lit-node 0--><!--lit-part--><!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"d\\"
+                   title=\\"d\\"><!--lit-node 0--><!--lit-part--><!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--/lit-part-->
+            </div>
+        </div><!--/lit-part--><!--/lit-part-->
+      </div>
+  <!--/lit-part-->",
+]
+`;
+
+exports[`ResourceDescription HTML languages 1`] = `
+Array [
+  "
+<a> <b> <c> .
+<a> <http://www.w3.org/2004/02/skos/core#prefLabel> \\"skos a\\" .
+<a> <http://www.w3.org/2004/02/skos/core#prefLabel> \\"prefered\\"@en .
+",
+  NamedNode {
+    "value": "a",
+  },
+  "<!--lit-part 300Caz5OpOA=-->
+      <div class=\\"entities\\">
+          <!--lit-part--><!--lit-part m9y/MSli8Iw=-->
+        <div
+                id=\\"a\\"
+                class=\\"entity entity-root\\"><!--lit-node 0-->
+            <!--lit-part CwfZQ+5yJQA=-->
+      <div class=\\"main-header\\"><!--lit-part q1mnU+7T3cs=--><h2>
+      <!--lit-part--><!--/lit-part--></h2><!--/lit-part--><!--lit-part f8TKvenZ2ig=--><a
+          href=\\"a\\"
+          title=\\"a\\"><!--lit-node 0--><!--lit-part-->a<!--/lit-part--></a><!--/lit-part--></div>
+  <!--/lit-part-->
+            <div class=\\"rows\\">
+                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part LU+8SsiHQy4=-->
+      <ul>
+          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
+              <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"b\\"
+                   title=\\"b\\"><!--lit-node 0--><!--lit-part--><!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"c\\"
+                   title=\\"c\\"><!--lit-node 0--><!--lit-part--><!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part LU+8SsiHQy4=-->
+      <ul>
+          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
+              <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"http://www.w3.org/2004/02/skos/core#prefLabel\\"
+                   title=\\"http://www.w3.org/2004/02/skos/core#prefLabel\\"><!--lit-node 0--><!--lit-part--><!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part BRUAAAUVAAA=--><!--lit-part--><!--/lit-part--><?><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part BRUAAAUVAAA=--><!--lit-part--><!--/lit-part--><?><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--/lit-part-->
+            </div>
+        </div><!--/lit-part--><!--/lit-part-->
+      </div>
+  <!--/lit-part-->",
+]
+`;
+
+exports[`ResourceDescription HTML languagesMultiple 1`] = `
+Array [
+  "
+<a> <http://www.w3.org/2004/02/skos/core#prefLabel> \\"first\\" .
+<a> <http://www.w3.org/2004/02/skos/core#prefLabel> \\"second\\" .
+",
+  NamedNode {
+    "value": "a",
+  },
+  "<!--lit-part 300Caz5OpOA=-->
+      <div class=\\"entities\\">
+          <!--lit-part--><!--lit-part m9y/MSli8Iw=-->
+        <div
+                id=\\"a\\"
+                class=\\"entity entity-root\\"><!--lit-node 0-->
+            <!--lit-part CwfZQ+5yJQA=-->
+      <div class=\\"main-header\\"><!--lit-part q1mnU+7T3cs=--><h2>
+      <!--lit-part--><!--/lit-part--></h2><!--/lit-part--><!--lit-part f8TKvenZ2ig=--><a
+          href=\\"a\\"
+          title=\\"a\\"><!--lit-node 0--><!--lit-part-->a<!--/lit-part--></a><!--/lit-part--></div>
+  <!--/lit-part-->
+            <div class=\\"rows\\">
+                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part LU+8SsiHQy4=-->
+      <ul>
+          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
+              <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"http://www.w3.org/2004/02/skos/core#prefLabel\\"
+                   title=\\"http://www.w3.org/2004/02/skos/core#prefLabel\\"><!--lit-node 0--><!--lit-part--><!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part BRUAAAUVAAA=--><!--lit-part--><!--/lit-part--><?><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part BRUAAAUVAAA=--><!--lit-part--><!--/lit-part--><?><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--/lit-part-->
+            </div>
+        </div><!--/lit-part--><!--/lit-part-->
+      </div>
+  <!--/lit-part-->",
+]
+`;
+
+exports[`ResourceDescription HTML list 1`] = `
+Array [
+  "
+<a> <b> ( <c> <d> ) .
+",
+  NamedNode {
+    "value": "a",
+  },
+  "<!--lit-part 300Caz5OpOA=-->
+      <div class=\\"entities\\">
+          <!--lit-part--><!--lit-part m9y/MSli8Iw=-->
+        <div
+                id=\\"a\\"
+                class=\\"entity entity-root\\"><!--lit-node 0-->
+            <!--lit-part CwfZQ+5yJQA=-->
+      <div class=\\"main-header\\"><!--lit-part gVAMBy6Ncnw=--><h2></h2><!--/lit-part--><!--lit-part f8TKvenZ2ig=--><a
+          href=\\"a\\"
+          title=\\"a\\"><!--lit-node 0--><!--lit-part-->a<!--/lit-part--></a><!--/lit-part--></div>
+  <!--/lit-part-->
+            <div class=\\"rows\\">
+                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part LU+8SsiHQy4=-->
+      <ul>
+          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
+              <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"b\\"
+                   title=\\"b\\"><!--lit-node 0--><!--lit-part--><!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part l6pZEPgNQTo=-->
+      <ol><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"c\\"
+                   title=\\"c\\"><!--lit-node 0--><!--lit-part--><!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"d\\"
+                   title=\\"d\\"><!--lit-node 0--><!--lit-part--><!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ol><!--/lit-part-->
+      </div><!--/lit-part--><!--/lit-part-->
+            </div>
+        </div><!--/lit-part--><!--/lit-part-->
+      </div>
+  <!--/lit-part-->",
+]
+`;
+
+exports[`ResourceDescription HTML literal 1`] = `
+Array [
+  "
+<a> <b> \\"c\\" .
+",
+  NamedNode {
+    "value": "a",
+  },
+  "<!--lit-part 300Caz5OpOA=-->
+      <div class=\\"entities\\">
+          <!--lit-part--><!--lit-part m9y/MSli8Iw=-->
+        <div
+                id=\\"a\\"
+                class=\\"entity entity-root\\"><!--lit-node 0-->
+            <!--lit-part CwfZQ+5yJQA=-->
+      <div class=\\"main-header\\"><!--lit-part gVAMBy6Ncnw=--><h2></h2><!--/lit-part--><!--lit-part f8TKvenZ2ig=--><a
+          href=\\"a\\"
+          title=\\"a\\"><!--lit-node 0--><!--lit-part-->a<!--/lit-part--></a><!--/lit-part--></div>
+  <!--/lit-part-->
+            <div class=\\"rows\\">
+                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part LU+8SsiHQy4=-->
+      <ul>
+          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
+              <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"b\\"
+                   title=\\"b\\"><!--lit-node 0--><!--lit-part--><!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part BRUAAAUVAAA=--><!--lit-part--><!--/lit-part--><?><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--/lit-part-->
+            </div>
+        </div><!--/lit-part--><!--/lit-part-->
+      </div>
+  <!--/lit-part-->",
+]
+`;
+
+exports[`ResourceDescription HTML object label foaf 1`] = `
+Array [
+  "
+<a> <b> <c> .
+<c> <http://xmlns.com/foaf/0.1/name> \\"foaf c\\" .
+",
+  NamedNode {
+    "value": "a",
+  },
+  "<!--lit-part 300Caz5OpOA=-->
+      <div class=\\"entities\\">
+          <!--lit-part--><!--lit-part m9y/MSli8Iw=-->
+        <div
+                id=\\"a\\"
+                class=\\"entity entity-root\\"><!--lit-node 0-->
+            <!--lit-part CwfZQ+5yJQA=-->
+      <div class=\\"main-header\\"><!--lit-part gVAMBy6Ncnw=--><h2></h2><!--/lit-part--><!--lit-part f8TKvenZ2ig=--><a
+          href=\\"a\\"
+          title=\\"a\\"><!--lit-node 0--><!--lit-part-->a<!--/lit-part--></a><!--/lit-part--></div>
+  <!--/lit-part-->
+            <div class=\\"rows\\">
+                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part LU+8SsiHQy4=-->
+      <ul>
+          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
+              <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"b\\"
+                   title=\\"b\\"><!--lit-node 0--><!--lit-part--><!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"#c\\"
+                   title=\\"c\\"><!--lit-node 0--><!--lit-part--><!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--/lit-part-->
+            </div>
+        </div><!--/lit-part--><!--lit-part m9y/MSli8Iw=-->
+        <div
+                id=\\"c\\"
+                class=\\"entity entity-root\\"><!--lit-node 0-->
+            <!--lit-part CwfZQ+5yJQA=-->
+      <div class=\\"main-header\\"><!--lit-part q1mnU+7T3cs=--><h2>
+      <!--lit-part--><!--/lit-part--></h2><!--/lit-part--><!--lit-part f8TKvenZ2ig=--><a
+          href=\\"c\\"
+          title=\\"c\\"><!--lit-node 0--><!--lit-part-->c<!--/lit-part--></a><!--/lit-part--></div>
+  <!--/lit-part-->
+            <div class=\\"rows\\">
+                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part LU+8SsiHQy4=-->
+      <ul>
+          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
+              <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"http://xmlns.com/foaf/0.1/name\\"
+                   title=\\"http://xmlns.com/foaf/0.1/name\\"><!--lit-node 0--><!--lit-part--><!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part BRUAAAUVAAA=--><!--lit-part--><!--/lit-part--><?><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--/lit-part-->
+            </div>
+        </div><!--/lit-part--><!--/lit-part-->
+      </div>
+  <!--/lit-part-->",
+]
+`;
+
+exports[`ResourceDescription HTML object label rdfs 1`] = `
+Array [
+  "
+<a> <b> <c> .
+<c> <http://www.w3.org/2000/01/rdf-schema#label> \\"rdfs c\\" .
+",
+  NamedNode {
+    "value": "a",
+  },
+  "<!--lit-part 300Caz5OpOA=-->
+      <div class=\\"entities\\">
+          <!--lit-part--><!--lit-part m9y/MSli8Iw=-->
+        <div
+                id=\\"a\\"
+                class=\\"entity entity-root\\"><!--lit-node 0-->
+            <!--lit-part CwfZQ+5yJQA=-->
+      <div class=\\"main-header\\"><!--lit-part gVAMBy6Ncnw=--><h2></h2><!--/lit-part--><!--lit-part f8TKvenZ2ig=--><a
+          href=\\"a\\"
+          title=\\"a\\"><!--lit-node 0--><!--lit-part-->a<!--/lit-part--></a><!--/lit-part--></div>
+  <!--/lit-part-->
+            <div class=\\"rows\\">
+                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part LU+8SsiHQy4=-->
+      <ul>
+          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
+              <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"b\\"
+                   title=\\"b\\"><!--lit-node 0--><!--lit-part--><!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"#c\\"
+                   title=\\"c\\"><!--lit-node 0--><!--lit-part--><!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--/lit-part-->
+            </div>
+        </div><!--/lit-part--><!--lit-part m9y/MSli8Iw=-->
+        <div
+                id=\\"c\\"
+                class=\\"entity entity-root\\"><!--lit-node 0-->
+            <!--lit-part CwfZQ+5yJQA=-->
+      <div class=\\"main-header\\"><!--lit-part q1mnU+7T3cs=--><h2>
+      <!--lit-part--><!--/lit-part--></h2><!--/lit-part--><!--lit-part f8TKvenZ2ig=--><a
+          href=\\"c\\"
+          title=\\"c\\"><!--lit-node 0--><!--lit-part-->c<!--/lit-part--></a><!--/lit-part--></div>
+  <!--/lit-part-->
+            <div class=\\"rows\\">
+                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part LU+8SsiHQy4=-->
+      <ul>
+          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
+              <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"http://www.w3.org/2000/01/rdf-schema#label\\"
+                   title=\\"http://www.w3.org/2000/01/rdf-schema#label\\"><!--lit-node 0--><!--lit-part--><!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part BRUAAAUVAAA=--><!--lit-part--><!--/lit-part--><?><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--/lit-part-->
+            </div>
+        </div><!--/lit-part--><!--/lit-part-->
+      </div>
+  <!--/lit-part-->",
+]
+`;
+
+exports[`ResourceDescription HTML object label schema 1`] = `
+Array [
+  "
+<a> <b> <c> .
+<c> <http://schema.org/name> \\"schema c\\" .
+",
+  NamedNode {
+    "value": "a",
+  },
+  "<!--lit-part 300Caz5OpOA=-->
+      <div class=\\"entities\\">
+          <!--lit-part--><!--lit-part m9y/MSli8Iw=-->
+        <div
+                id=\\"a\\"
+                class=\\"entity entity-root\\"><!--lit-node 0-->
+            <!--lit-part CwfZQ+5yJQA=-->
+      <div class=\\"main-header\\"><!--lit-part gVAMBy6Ncnw=--><h2></h2><!--/lit-part--><!--lit-part f8TKvenZ2ig=--><a
+          href=\\"a\\"
+          title=\\"a\\"><!--lit-node 0--><!--lit-part-->a<!--/lit-part--></a><!--/lit-part--></div>
+  <!--/lit-part-->
+            <div class=\\"rows\\">
+                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part LU+8SsiHQy4=-->
+      <ul>
+          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
+              <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"b\\"
+                   title=\\"b\\"><!--lit-node 0--><!--lit-part--><!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"#c\\"
+                   title=\\"c\\"><!--lit-node 0--><!--lit-part--><!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--/lit-part-->
+            </div>
+        </div><!--/lit-part--><!--lit-part m9y/MSli8Iw=-->
+        <div
+                id=\\"c\\"
+                class=\\"entity entity-root\\"><!--lit-node 0-->
+            <!--lit-part CwfZQ+5yJQA=-->
+      <div class=\\"main-header\\"><!--lit-part q1mnU+7T3cs=--><h2>
+      <!--lit-part--><!--/lit-part--></h2><!--/lit-part--><!--lit-part f8TKvenZ2ig=--><a
+          href=\\"c\\"
+          title=\\"c\\"><!--lit-node 0--><!--lit-part-->c<!--/lit-part--></a><!--/lit-part--></div>
+  <!--/lit-part-->
+            <div class=\\"rows\\">
+                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part LU+8SsiHQy4=-->
+      <ul>
+          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
+              <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"http://schema.org/name\\"
+                   title=\\"http://schema.org/name\\"><!--lit-node 0--><!--lit-part--><!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part BRUAAAUVAAA=--><!--lit-part--><!--/lit-part--><?><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--/lit-part-->
+            </div>
+        </div><!--/lit-part--><!--/lit-part-->
+      </div>
+  <!--/lit-part-->",
+]
+`;
+
+exports[`ResourceDescription HTML object label skos 1`] = `
+Array [
+  "
+<a> <b> <c> .
+<c> <http://www.w3.org/2004/02/skos/core#prefLabel> \\"skos c\\" .
+",
+  NamedNode {
+    "value": "a",
+  },
+  "<!--lit-part 300Caz5OpOA=-->
+      <div class=\\"entities\\">
+          <!--lit-part--><!--lit-part m9y/MSli8Iw=-->
+        <div
+                id=\\"a\\"
+                class=\\"entity entity-root\\"><!--lit-node 0-->
+            <!--lit-part CwfZQ+5yJQA=-->
+      <div class=\\"main-header\\"><!--lit-part gVAMBy6Ncnw=--><h2></h2><!--/lit-part--><!--lit-part f8TKvenZ2ig=--><a
+          href=\\"a\\"
+          title=\\"a\\"><!--lit-node 0--><!--lit-part-->a<!--/lit-part--></a><!--/lit-part--></div>
+  <!--/lit-part-->
+            <div class=\\"rows\\">
+                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part LU+8SsiHQy4=-->
+      <ul>
+          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
+              <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"b\\"
+                   title=\\"b\\"><!--lit-node 0--><!--lit-part--><!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"#c\\"
+                   title=\\"c\\"><!--lit-node 0--><!--lit-part--><!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--/lit-part-->
+            </div>
+        </div><!--/lit-part--><!--lit-part m9y/MSli8Iw=-->
+        <div
+                id=\\"c\\"
+                class=\\"entity entity-root\\"><!--lit-node 0-->
+            <!--lit-part CwfZQ+5yJQA=-->
+      <div class=\\"main-header\\"><!--lit-part q1mnU+7T3cs=--><h2>
+      <!--lit-part--><!--/lit-part--></h2><!--/lit-part--><!--lit-part f8TKvenZ2ig=--><a
+          href=\\"c\\"
+          title=\\"c\\"><!--lit-node 0--><!--lit-part-->c<!--/lit-part--></a><!--/lit-part--></div>
+  <!--/lit-part-->
+            <div class=\\"rows\\">
+                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part LU+8SsiHQy4=-->
+      <ul>
+          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
+              <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"http://www.w3.org/2004/02/skos/core#prefLabel\\"
+                   title=\\"http://www.w3.org/2004/02/skos/core#prefLabel\\"><!--lit-node 0--><!--lit-part--><!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part BRUAAAUVAAA=--><!--lit-part--><!--/lit-part--><?><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--/lit-part-->
+            </div>
+        </div><!--/lit-part--><!--/lit-part-->
+      </div>
+  <!--/lit-part-->",
+]
+`;
+
+exports[`ResourceDescription HTML predicate label foaf 1`] = `
+Array [
+  "
+<a> <b> <c> .
+<b> <http://xmlns.com/foaf/0.1/name> \\"foaf b\\" .
+",
+  NamedNode {
+    "value": "a",
+  },
+  "<!--lit-part 300Caz5OpOA=-->
+      <div class=\\"entities\\">
+          <!--lit-part--><!--lit-part m9y/MSli8Iw=-->
+        <div
+                id=\\"a\\"
+                class=\\"entity entity-root\\"><!--lit-node 0-->
+            <!--lit-part CwfZQ+5yJQA=-->
+      <div class=\\"main-header\\"><!--lit-part gVAMBy6Ncnw=--><h2></h2><!--/lit-part--><!--lit-part f8TKvenZ2ig=--><a
+          href=\\"a\\"
+          title=\\"a\\"><!--lit-node 0--><!--lit-part-->a<!--/lit-part--></a><!--/lit-part--></div>
+  <!--/lit-part-->
+            <div class=\\"rows\\">
+                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part LU+8SsiHQy4=-->
+      <ul>
+          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
+              <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"#b\\"
+                   title=\\"b\\"><!--lit-node 0--><!--lit-part--><!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"c\\"
+                   title=\\"c\\"><!--lit-node 0--><!--lit-part--><!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--/lit-part-->
+            </div>
+        </div><!--/lit-part--><!--lit-part m9y/MSli8Iw=-->
+        <div
+                id=\\"b\\"
+                class=\\"entity entity-root\\"><!--lit-node 0-->
+            <!--lit-part CwfZQ+5yJQA=-->
+      <div class=\\"main-header\\"><!--lit-part q1mnU+7T3cs=--><h2>
+      <!--lit-part--><!--/lit-part--></h2><!--/lit-part--><!--lit-part f8TKvenZ2ig=--><a
+          href=\\"b\\"
+          title=\\"b\\"><!--lit-node 0--><!--lit-part-->b<!--/lit-part--></a><!--/lit-part--></div>
+  <!--/lit-part-->
+            <div class=\\"rows\\">
+                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part LU+8SsiHQy4=-->
+      <ul>
+          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
+              <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"http://xmlns.com/foaf/0.1/name\\"
+                   title=\\"http://xmlns.com/foaf/0.1/name\\"><!--lit-node 0--><!--lit-part--><!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part BRUAAAUVAAA=--><!--lit-part--><!--/lit-part--><?><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--/lit-part-->
+            </div>
+        </div><!--/lit-part--><!--/lit-part-->
+      </div>
+  <!--/lit-part-->",
+]
+`;
+
+exports[`ResourceDescription HTML predicate label rdfs 1`] = `
+Array [
+  "
+<a> <b> <c> .
+<b> <http://www.w3.org/2000/01/rdf-schema#label> \\"rdfs b\\" .
+",
+  NamedNode {
+    "value": "a",
+  },
+  "<!--lit-part 300Caz5OpOA=-->
+      <div class=\\"entities\\">
+          <!--lit-part--><!--lit-part m9y/MSli8Iw=-->
+        <div
+                id=\\"a\\"
+                class=\\"entity entity-root\\"><!--lit-node 0-->
+            <!--lit-part CwfZQ+5yJQA=-->
+      <div class=\\"main-header\\"><!--lit-part gVAMBy6Ncnw=--><h2></h2><!--/lit-part--><!--lit-part f8TKvenZ2ig=--><a
+          href=\\"a\\"
+          title=\\"a\\"><!--lit-node 0--><!--lit-part-->a<!--/lit-part--></a><!--/lit-part--></div>
+  <!--/lit-part-->
+            <div class=\\"rows\\">
+                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part LU+8SsiHQy4=-->
+      <ul>
+          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
+              <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"#b\\"
+                   title=\\"b\\"><!--lit-node 0--><!--lit-part--><!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"c\\"
+                   title=\\"c\\"><!--lit-node 0--><!--lit-part--><!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--/lit-part-->
+            </div>
+        </div><!--/lit-part--><!--lit-part m9y/MSli8Iw=-->
+        <div
+                id=\\"b\\"
+                class=\\"entity entity-root\\"><!--lit-node 0-->
+            <!--lit-part CwfZQ+5yJQA=-->
+      <div class=\\"main-header\\"><!--lit-part q1mnU+7T3cs=--><h2>
+      <!--lit-part--><!--/lit-part--></h2><!--/lit-part--><!--lit-part f8TKvenZ2ig=--><a
+          href=\\"b\\"
+          title=\\"b\\"><!--lit-node 0--><!--lit-part-->b<!--/lit-part--></a><!--/lit-part--></div>
+  <!--/lit-part-->
+            <div class=\\"rows\\">
+                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part LU+8SsiHQy4=-->
+      <ul>
+          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
+              <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"http://www.w3.org/2000/01/rdf-schema#label\\"
+                   title=\\"http://www.w3.org/2000/01/rdf-schema#label\\"><!--lit-node 0--><!--lit-part--><!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part BRUAAAUVAAA=--><!--lit-part--><!--/lit-part--><?><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--/lit-part-->
+            </div>
+        </div><!--/lit-part--><!--/lit-part-->
+      </div>
+  <!--/lit-part-->",
+]
+`;
+
+exports[`ResourceDescription HTML predicate label schema 1`] = `
+Array [
+  "
+<a> <b> <c> .
+<b> <http://schema.org/name> \\"schema b\\" .
+",
+  NamedNode {
+    "value": "a",
+  },
+  "<!--lit-part 300Caz5OpOA=-->
+      <div class=\\"entities\\">
+          <!--lit-part--><!--lit-part m9y/MSli8Iw=-->
+        <div
+                id=\\"a\\"
+                class=\\"entity entity-root\\"><!--lit-node 0-->
+            <!--lit-part CwfZQ+5yJQA=-->
+      <div class=\\"main-header\\"><!--lit-part gVAMBy6Ncnw=--><h2></h2><!--/lit-part--><!--lit-part f8TKvenZ2ig=--><a
+          href=\\"a\\"
+          title=\\"a\\"><!--lit-node 0--><!--lit-part-->a<!--/lit-part--></a><!--/lit-part--></div>
+  <!--/lit-part-->
+            <div class=\\"rows\\">
+                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part LU+8SsiHQy4=-->
+      <ul>
+          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
+              <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"#b\\"
+                   title=\\"b\\"><!--lit-node 0--><!--lit-part--><!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"c\\"
+                   title=\\"c\\"><!--lit-node 0--><!--lit-part--><!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--/lit-part-->
+            </div>
+        </div><!--/lit-part--><!--lit-part m9y/MSli8Iw=-->
+        <div
+                id=\\"b\\"
+                class=\\"entity entity-root\\"><!--lit-node 0-->
+            <!--lit-part CwfZQ+5yJQA=-->
+      <div class=\\"main-header\\"><!--lit-part q1mnU+7T3cs=--><h2>
+      <!--lit-part--><!--/lit-part--></h2><!--/lit-part--><!--lit-part f8TKvenZ2ig=--><a
+          href=\\"b\\"
+          title=\\"b\\"><!--lit-node 0--><!--lit-part-->b<!--/lit-part--></a><!--/lit-part--></div>
+  <!--/lit-part-->
+            <div class=\\"rows\\">
+                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part LU+8SsiHQy4=-->
+      <ul>
+          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
+              <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"http://schema.org/name\\"
+                   title=\\"http://schema.org/name\\"><!--lit-node 0--><!--lit-part--><!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part BRUAAAUVAAA=--><!--lit-part--><!--/lit-part--><?><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--/lit-part-->
+            </div>
+        </div><!--/lit-part--><!--/lit-part-->
+      </div>
+  <!--/lit-part-->",
+]
+`;
+
+exports[`ResourceDescription HTML predicate label skos 1`] = `
+Array [
+  "
+<a> <b> <c> .
+<b> <http://www.w3.org/2004/02/skos/core#prefLabel> \\"skos b\\" .
+",
+  NamedNode {
+    "value": "a",
+  },
+  "<!--lit-part 300Caz5OpOA=-->
+      <div class=\\"entities\\">
+          <!--lit-part--><!--lit-part m9y/MSli8Iw=-->
+        <div
+                id=\\"a\\"
+                class=\\"entity entity-root\\"><!--lit-node 0-->
+            <!--lit-part CwfZQ+5yJQA=-->
+      <div class=\\"main-header\\"><!--lit-part gVAMBy6Ncnw=--><h2></h2><!--/lit-part--><!--lit-part f8TKvenZ2ig=--><a
+          href=\\"a\\"
+          title=\\"a\\"><!--lit-node 0--><!--lit-part-->a<!--/lit-part--></a><!--/lit-part--></div>
+  <!--/lit-part-->
+            <div class=\\"rows\\">
+                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part LU+8SsiHQy4=-->
+      <ul>
+          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
+              <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"#b\\"
+                   title=\\"b\\"><!--lit-node 0--><!--lit-part--><!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"c\\"
+                   title=\\"c\\"><!--lit-node 0--><!--lit-part--><!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--/lit-part-->
+            </div>
+        </div><!--/lit-part--><!--lit-part m9y/MSli8Iw=-->
+        <div
+                id=\\"b\\"
+                class=\\"entity entity-root\\"><!--lit-node 0-->
+            <!--lit-part CwfZQ+5yJQA=-->
+      <div class=\\"main-header\\"><!--lit-part q1mnU+7T3cs=--><h2>
+      <!--lit-part--><!--/lit-part--></h2><!--/lit-part--><!--lit-part f8TKvenZ2ig=--><a
+          href=\\"b\\"
+          title=\\"b\\"><!--lit-node 0--><!--lit-part-->b<!--/lit-part--></a><!--/lit-part--></div>
+  <!--/lit-part-->
+            <div class=\\"rows\\">
+                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part LU+8SsiHQy4=-->
+      <ul>
+          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
+              <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"http://www.w3.org/2004/02/skos/core#prefLabel\\"
+                   title=\\"http://www.w3.org/2004/02/skos/core#prefLabel\\"><!--lit-node 0--><!--lit-part--><!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part BRUAAAUVAAA=--><!--lit-part--><!--/lit-part--><?><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--/lit-part-->
+            </div>
+        </div><!--/lit-part--><!--/lit-part-->
+      </div>
+  <!--/lit-part-->",
+]
+`;
+
+exports[`ResourceDescription HTML schema image 1`] = `
+Array [
+  "
+<a> <http://schema.org/image> <little-cat> .
+",
+  NamedNode {
+    "value": "a",
+  },
+  "<!--lit-part 300Caz5OpOA=-->
+      <div class=\\"entities\\">
+          <!--lit-part--><!--lit-part m9y/MSli8Iw=-->
+        <div
+                id=\\"a\\"
+                class=\\"entity entity-root\\"><!--lit-node 0-->
+            <!--lit-part CwfZQ+5yJQA=-->
+      <div class=\\"main-header\\"><!--lit-part gVAMBy6Ncnw=--><h2></h2><!--/lit-part--><!--lit-part f8TKvenZ2ig=--><a
+          href=\\"a\\"
+          title=\\"a\\"><!--lit-node 0--><!--lit-part-->a<!--/lit-part--></a><!--/lit-part--></div>
+  <!--/lit-part-->
+            <div class=\\"rows\\">
+                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part LU+8SsiHQy4=-->
+      <ul>
+          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
+              <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"http://schema.org/image\\"
+                   title=\\"http://schema.org/image\\"><!--lit-node 0--><!--lit-part--><!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"little-cat\\"
+                   title=\\"little-cat\\"><!--lit-node 0--><!--lit-part--><!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--/lit-part-->
+            </div>
+        </div><!--/lit-part--><!--/lit-part-->
+      </div>
+  <!--/lit-part-->",
+]
+`;
+
+exports[`ResourceDescription HTML simple 1`] = `
+Array [
+  "
+<a> <b> <c> .
+",
+  NamedNode {
+    "value": "a",
+  },
+  "<!--lit-part 300Caz5OpOA=-->
+      <div class=\\"entities\\">
+          <!--lit-part--><!--lit-part m9y/MSli8Iw=-->
+        <div
+                id=\\"a\\"
+                class=\\"entity entity-root\\"><!--lit-node 0-->
+            <!--lit-part CwfZQ+5yJQA=-->
+      <div class=\\"main-header\\"><!--lit-part gVAMBy6Ncnw=--><h2></h2><!--/lit-part--><!--lit-part f8TKvenZ2ig=--><a
+          href=\\"a\\"
+          title=\\"a\\"><!--lit-node 0--><!--lit-part-->a<!--/lit-part--></a><!--/lit-part--></div>
+  <!--/lit-part-->
+            <div class=\\"rows\\">
+                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part LU+8SsiHQy4=-->
+      <ul>
+          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
+              <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"b\\"
+                   title=\\"b\\"><!--lit-node 0--><!--lit-part--><!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"c\\"
+                   title=\\"c\\"><!--lit-node 0--><!--lit-part--><!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--/lit-part-->
+            </div>
+        </div><!--/lit-part--><!--/lit-part-->
+      </div>
+  <!--/lit-part-->",
+]
+`;
+
+exports[`ResourceDescription HTML subject label foaf 1`] = `
+Array [
+  "
+<a> <b> <c> .
+<a> <http://xmlns.com/foaf/0.1/name> \\"foaf a\\" .
+",
+  NamedNode {
+    "value": "a",
+  },
+  "<!--lit-part 300Caz5OpOA=-->
+      <div class=\\"entities\\">
+          <!--lit-part--><!--lit-part m9y/MSli8Iw=-->
+        <div
+                id=\\"a\\"
+                class=\\"entity entity-root\\"><!--lit-node 0-->
+            <!--lit-part CwfZQ+5yJQA=-->
+      <div class=\\"main-header\\"><!--lit-part q1mnU+7T3cs=--><h2>
+      <!--lit-part--><!--/lit-part--></h2><!--/lit-part--><!--lit-part f8TKvenZ2ig=--><a
+          href=\\"a\\"
+          title=\\"a\\"><!--lit-node 0--><!--lit-part-->a<!--/lit-part--></a><!--/lit-part--></div>
+  <!--/lit-part-->
+            <div class=\\"rows\\">
+                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part LU+8SsiHQy4=-->
+      <ul>
+          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
+              <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"b\\"
+                   title=\\"b\\"><!--lit-node 0--><!--lit-part--><!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"c\\"
+                   title=\\"c\\"><!--lit-node 0--><!--lit-part--><!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part LU+8SsiHQy4=-->
+      <ul>
+          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
+              <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"http://xmlns.com/foaf/0.1/name\\"
+                   title=\\"http://xmlns.com/foaf/0.1/name\\"><!--lit-node 0--><!--lit-part--><!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part BRUAAAUVAAA=--><!--lit-part--><!--/lit-part--><?><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--/lit-part-->
+            </div>
+        </div><!--/lit-part--><!--/lit-part-->
+      </div>
+  <!--/lit-part-->",
+]
+`;
+
+exports[`ResourceDescription HTML subject label rdfs 1`] = `
+Array [
+  "
+<a> <b> <c> .
+<a> <http://www.w3.org/2000/01/rdf-schema#label> \\"rdfs a\\" .
+",
+  NamedNode {
+    "value": "a",
+  },
+  "<!--lit-part 300Caz5OpOA=-->
+      <div class=\\"entities\\">
+          <!--lit-part--><!--lit-part m9y/MSli8Iw=-->
+        <div
+                id=\\"a\\"
+                class=\\"entity entity-root\\"><!--lit-node 0-->
+            <!--lit-part CwfZQ+5yJQA=-->
+      <div class=\\"main-header\\"><!--lit-part q1mnU+7T3cs=--><h2>
+      <!--lit-part--><!--/lit-part--></h2><!--/lit-part--><!--lit-part f8TKvenZ2ig=--><a
+          href=\\"a\\"
+          title=\\"a\\"><!--lit-node 0--><!--lit-part-->a<!--/lit-part--></a><!--/lit-part--></div>
+  <!--/lit-part-->
+            <div class=\\"rows\\">
+                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part LU+8SsiHQy4=-->
+      <ul>
+          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
+              <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"b\\"
+                   title=\\"b\\"><!--lit-node 0--><!--lit-part--><!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"c\\"
+                   title=\\"c\\"><!--lit-node 0--><!--lit-part--><!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part LU+8SsiHQy4=-->
+      <ul>
+          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
+              <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"http://www.w3.org/2000/01/rdf-schema#label\\"
+                   title=\\"http://www.w3.org/2000/01/rdf-schema#label\\"><!--lit-node 0--><!--lit-part--><!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part BRUAAAUVAAA=--><!--lit-part--><!--/lit-part--><?><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--/lit-part-->
+            </div>
+        </div><!--/lit-part--><!--/lit-part-->
+      </div>
+  <!--/lit-part-->",
+]
+`;
+
+exports[`ResourceDescription HTML subject label schema 1`] = `
+Array [
+  "
+<a> <b> <c> .
+<a> <http://schema.org/name> \\"schema a\\" .
+",
+  NamedNode {
+    "value": "a",
+  },
+  "<!--lit-part 300Caz5OpOA=-->
+      <div class=\\"entities\\">
+          <!--lit-part--><!--lit-part m9y/MSli8Iw=-->
+        <div
+                id=\\"a\\"
+                class=\\"entity entity-root\\"><!--lit-node 0-->
+            <!--lit-part CwfZQ+5yJQA=-->
+      <div class=\\"main-header\\"><!--lit-part q1mnU+7T3cs=--><h2>
+      <!--lit-part--><!--/lit-part--></h2><!--/lit-part--><!--lit-part f8TKvenZ2ig=--><a
+          href=\\"a\\"
+          title=\\"a\\"><!--lit-node 0--><!--lit-part-->a<!--/lit-part--></a><!--/lit-part--></div>
+  <!--/lit-part-->
+            <div class=\\"rows\\">
+                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part LU+8SsiHQy4=-->
+      <ul>
+          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
+              <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"b\\"
+                   title=\\"b\\"><!--lit-node 0--><!--lit-part--><!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"c\\"
+                   title=\\"c\\"><!--lit-node 0--><!--lit-part--><!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part LU+8SsiHQy4=-->
+      <ul>
+          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
+              <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"http://schema.org/name\\"
+                   title=\\"http://schema.org/name\\"><!--lit-node 0--><!--lit-part--><!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part BRUAAAUVAAA=--><!--lit-part--><!--/lit-part--><?><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--/lit-part-->
+            </div>
+        </div><!--/lit-part--><!--/lit-part-->
+      </div>
+  <!--/lit-part-->",
+]
+`;
+
+exports[`ResourceDescription HTML subject label skos 1`] = `
+Array [
+  "
+<a> <b> <c> .
+<a> <http://www.w3.org/2004/02/skos/core#prefLabel> \\"skos a\\" .
+",
+  NamedNode {
+    "value": "a",
+  },
+  "<!--lit-part 300Caz5OpOA=-->
+      <div class=\\"entities\\">
+          <!--lit-part--><!--lit-part m9y/MSli8Iw=-->
+        <div
+                id=\\"a\\"
+                class=\\"entity entity-root\\"><!--lit-node 0-->
+            <!--lit-part CwfZQ+5yJQA=-->
+      <div class=\\"main-header\\"><!--lit-part q1mnU+7T3cs=--><h2>
+      <!--lit-part--><!--/lit-part--></h2><!--/lit-part--><!--lit-part f8TKvenZ2ig=--><a
+          href=\\"a\\"
+          title=\\"a\\"><!--lit-node 0--><!--lit-part-->a<!--/lit-part--></a><!--/lit-part--></div>
+  <!--/lit-part-->
+            <div class=\\"rows\\">
+                <!--lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part LU+8SsiHQy4=-->
+      <ul>
+          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
+              <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"b\\"
+                   title=\\"b\\"><!--lit-node 0--><!--lit-part--><!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"c\\"
+                   title=\\"c\\"><!--lit-node 0--><!--lit-part--><!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--lit-part kfEHKSf/yyE=-->
+      <div class=\\"row\\">
+          <!--lit-part LU+8SsiHQy4=-->
+      <ul>
+          <!--lit-part--><!--lit-part 83vL2TZWgro=-->
+              <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part SlVbKzaJDsw=--><a href=\\"http://www.w3.org/2004/02/skos/core#prefLabel\\"
+                   title=\\"http://www.w3.org/2004/02/skos/core#prefLabel\\"><!--lit-node 0--><!--lit-part--><!--/lit-part--></a><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+          <!--lit-part zRzcmqIQQTo=-->
+      <ul><!--lit-part--><!--lit-part 808gqjblHe4=-->
+          <li><!--lit-part c3yZ93Y7viA=-->
+      <div><!--lit-part--><!--lit-part BRUAAAUVAAA=--><!--lit-part--><!--/lit-part--><?><!--/lit-part--><!--/lit-part--></div><!--/lit-part--></li><!--/lit-part--><!--/lit-part-->
+      </ul><!--/lit-part-->
+      </div><!--/lit-part--><!--/lit-part-->
+            </div>
+        </div><!--/lit-part--><!--/lit-part-->
+      </div>
+  <!--/lit-part-->",
+]
+`;
+
 exports[`default blank node 1`] = `
 Array [
   "
@@ -11,7 +1345,7 @@ Array [
   Object {
     "label": Object {
       "fallbackLabel": true,
-      "string": "a",
+      "value": "a",
     },
     "rows": Array [
       Object {
@@ -19,7 +1353,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "b",
+              "value": "b",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -31,7 +1365,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "n3-5",
+              "value": "n3-8",
             },
             "rows": Array [
               Object {
@@ -39,7 +1373,7 @@ Array [
                   Object {
                     "label": Object {
                       "fallbackLabel": true,
-                      "string": "c",
+                      "value": "c",
                     },
                     "term": Object {
                       "termType": "NamedNode",
@@ -51,7 +1385,7 @@ Array [
                   Object {
                     "label": Object {
                       "fallbackLabel": true,
-                      "string": "d",
+                      "value": "d",
                     },
                     "term": Object {
                       "termType": "NamedNode",
@@ -63,7 +1397,7 @@ Array [
             ],
             "term": Object {
               "termType": "BlankNode",
-              "value": "n3-5",
+              "value": "n3-8",
             },
           },
         ],
@@ -88,7 +1422,7 @@ Array [
   Object {
     "label": Object {
       "fallbackLabel": true,
-      "string": "a",
+      "value": "a",
     },
     "rows": Array [
       Object {
@@ -96,7 +1430,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "b",
+              "value": "b",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -108,7 +1442,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "c",
+              "value": "c",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -136,7 +1470,7 @@ Array [
   Object {
     "label": Object {
       "fallbackLabel": true,
-      "string": "a",
+      "value": "a",
     },
     "rows": Array [
       Object {
@@ -144,7 +1478,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "img",
+              "value": "img",
               "vocab": "foaf",
             },
             "term": Object {
@@ -157,7 +1491,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "little-cat",
+              "value": "little-cat",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -186,7 +1520,7 @@ Array [
   Object {
     "label": Object {
       "fallbackLabel": true,
-      "string": "a",
+      "value": "a",
     },
     "rows": Array [
       Object {
@@ -194,7 +1528,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "b",
+              "value": "b",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -206,7 +1540,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "c",
+              "value": "c",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -216,7 +1550,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "d",
+              "value": "d",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -245,7 +1579,7 @@ Array [
   Object {
     "label": Object {
       "fallbackLabel": true,
-      "string": "a",
+      "value": "a",
     },
     "rows": Array [
       Object {
@@ -253,7 +1587,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "b",
+              "value": "b",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -263,7 +1597,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "c",
+              "value": "c",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -275,7 +1609,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "d",
+              "value": "d",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -305,7 +1639,10 @@ Array [
   Object {
     "label": Object {
       "language": "en",
-      "string": "prefered",
+      "property": NamedNode {
+        "value": "http://www.w3.org/2004/02/skos/core#prefLabel",
+      },
+      "value": "prefered",
     },
     "rows": Array [
       Object {
@@ -313,7 +1650,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "b",
+              "value": "b",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -325,7 +1662,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "c",
+              "value": "c",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -339,7 +1676,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "prefLabel",
+              "value": "prefLabel",
               "vocab": "skos",
             },
             "term": Object {
@@ -352,11 +1689,11 @@ Array [
           Object {
             "label": Object {
               "datatype": Object {
-                "string": "langString",
+                "value": "langString",
                 "vocab": "rdf",
               },
               "language": "en",
-              "string": "prefered",
+              "value": "prefered",
             },
             "term": Object {
               "datatype": Object {
@@ -371,10 +1708,10 @@ Array [
           Object {
             "label": Object {
               "datatype": Object {
-                "string": "string",
+                "value": "string",
                 "vocab": "xsd",
               },
-              "string": "skos a",
+              "value": "skos a",
             },
             "term": Object {
               "datatype": Object {
@@ -407,7 +1744,10 @@ Array [
   },
   Object {
     "label": Object {
-      "string": "first",
+      "property": NamedNode {
+        "value": "http://www.w3.org/2004/02/skos/core#prefLabel",
+      },
+      "value": "first",
     },
     "rows": Array [
       Object {
@@ -415,7 +1755,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "prefLabel",
+              "value": "prefLabel",
               "vocab": "skos",
             },
             "term": Object {
@@ -428,10 +1768,10 @@ Array [
           Object {
             "label": Object {
               "datatype": Object {
-                "string": "string",
+                "value": "string",
                 "vocab": "xsd",
               },
-              "string": "first",
+              "value": "first",
             },
             "term": Object {
               "datatype": Object {
@@ -446,10 +1786,10 @@ Array [
           Object {
             "label": Object {
               "datatype": Object {
-                "string": "string",
+                "value": "string",
                 "vocab": "xsd",
               },
-              "string": "second",
+              "value": "second",
             },
             "term": Object {
               "datatype": Object {
@@ -482,7 +1822,7 @@ Array [
   Object {
     "label": Object {
       "fallbackLabel": true,
-      "string": "a",
+      "value": "a",
     },
     "rows": Array [
       Object {
@@ -490,7 +1830,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "b",
+              "value": "b",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -503,7 +1843,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "c",
+              "value": "c",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -513,7 +1853,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "d",
+              "value": "d",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -541,7 +1881,7 @@ Array [
   Object {
     "label": Object {
       "fallbackLabel": true,
-      "string": "a",
+      "value": "a",
     },
     "rows": Array [
       Object {
@@ -549,7 +1889,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "b",
+              "value": "b",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -561,10 +1901,10 @@ Array [
           Object {
             "label": Object {
               "datatype": Object {
-                "string": "string",
+                "value": "string",
                 "vocab": "xsd",
               },
-              "string": "c",
+              "value": "c",
             },
             "term": Object {
               "datatype": Object {
@@ -598,7 +1938,7 @@ Array [
   Object {
     "label": Object {
       "fallbackLabel": true,
-      "string": "a",
+      "value": "a",
     },
     "rows": Array [
       Object {
@@ -606,7 +1946,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "b",
+              "value": "b",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -617,7 +1957,10 @@ Array [
         "values": Array [
           Object {
             "label": Object {
-              "string": "foaf c",
+              "property": NamedNode {
+                "value": "http://xmlns.com/foaf/0.1/name",
+              },
+              "value": "foaf c",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -646,7 +1989,7 @@ Array [
   Object {
     "label": Object {
       "fallbackLabel": true,
-      "string": "a",
+      "value": "a",
     },
     "rows": Array [
       Object {
@@ -654,7 +1997,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "b",
+              "value": "b",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -665,7 +2008,10 @@ Array [
         "values": Array [
           Object {
             "label": Object {
-              "string": "rdfs c",
+              "property": NamedNode {
+                "value": "http://www.w3.org/2000/01/rdf-schema#label",
+              },
+              "value": "rdfs c",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -694,7 +2040,7 @@ Array [
   Object {
     "label": Object {
       "fallbackLabel": true,
-      "string": "a",
+      "value": "a",
     },
     "rows": Array [
       Object {
@@ -702,7 +2048,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "b",
+              "value": "b",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -713,7 +2059,10 @@ Array [
         "values": Array [
           Object {
             "label": Object {
-              "string": "schema c",
+              "property": NamedNode {
+                "value": "http://schema.org/name",
+              },
+              "value": "schema c",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -742,7 +2091,7 @@ Array [
   Object {
     "label": Object {
       "fallbackLabel": true,
-      "string": "a",
+      "value": "a",
     },
     "rows": Array [
       Object {
@@ -750,7 +2099,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "b",
+              "value": "b",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -761,7 +2110,10 @@ Array [
         "values": Array [
           Object {
             "label": Object {
-              "string": "skos c",
+              "property": NamedNode {
+                "value": "http://www.w3.org/2004/02/skos/core#prefLabel",
+              },
+              "value": "skos c",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -790,14 +2142,17 @@ Array [
   Object {
     "label": Object {
       "fallbackLabel": true,
-      "string": "a",
+      "value": "a",
     },
     "rows": Array [
       Object {
         "properties": Array [
           Object {
             "label": Object {
-              "string": "foaf b",
+              "property": NamedNode {
+                "value": "http://xmlns.com/foaf/0.1/name",
+              },
+              "value": "foaf b",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -809,7 +2164,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "c",
+              "value": "c",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -838,14 +2193,17 @@ Array [
   Object {
     "label": Object {
       "fallbackLabel": true,
-      "string": "a",
+      "value": "a",
     },
     "rows": Array [
       Object {
         "properties": Array [
           Object {
             "label": Object {
-              "string": "rdfs b",
+              "property": NamedNode {
+                "value": "http://www.w3.org/2000/01/rdf-schema#label",
+              },
+              "value": "rdfs b",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -857,7 +2215,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "c",
+              "value": "c",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -886,14 +2244,17 @@ Array [
   Object {
     "label": Object {
       "fallbackLabel": true,
-      "string": "a",
+      "value": "a",
     },
     "rows": Array [
       Object {
         "properties": Array [
           Object {
             "label": Object {
-              "string": "schema b",
+              "property": NamedNode {
+                "value": "http://schema.org/name",
+              },
+              "value": "schema b",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -905,7 +2266,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "c",
+              "value": "c",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -934,14 +2295,17 @@ Array [
   Object {
     "label": Object {
       "fallbackLabel": true,
-      "string": "a",
+      "value": "a",
     },
     "rows": Array [
       Object {
         "properties": Array [
           Object {
             "label": Object {
-              "string": "skos b",
+              "property": NamedNode {
+                "value": "http://www.w3.org/2004/02/skos/core#prefLabel",
+              },
+              "value": "skos b",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -953,7 +2317,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "c",
+              "value": "c",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -981,7 +2345,7 @@ Array [
   Object {
     "label": Object {
       "fallbackLabel": true,
-      "string": "a",
+      "value": "a",
     },
     "rows": Array [
       Object {
@@ -989,7 +2353,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "image",
+              "value": "image",
               "vocab": "schema",
             },
             "term": Object {
@@ -1002,7 +2366,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "little-cat",
+              "value": "little-cat",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -1030,7 +2394,7 @@ Array [
   Object {
     "label": Object {
       "fallbackLabel": true,
-      "string": "a",
+      "value": "a",
     },
     "rows": Array [
       Object {
@@ -1038,7 +2402,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "b",
+              "value": "b",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -1050,7 +2414,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "c",
+              "value": "c",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -1078,7 +2442,10 @@ Array [
   },
   Object {
     "label": Object {
-      "string": "foaf a",
+      "property": NamedNode {
+        "value": "http://xmlns.com/foaf/0.1/name",
+      },
+      "value": "foaf a",
     },
     "rows": Array [
       Object {
@@ -1086,7 +2453,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "b",
+              "value": "b",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -1098,7 +2465,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "c",
+              "value": "c",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -1112,7 +2479,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "name",
+              "value": "name",
               "vocab": "foaf",
             },
             "term": Object {
@@ -1125,10 +2492,10 @@ Array [
           Object {
             "label": Object {
               "datatype": Object {
-                "string": "string",
+                "value": "string",
                 "vocab": "xsd",
               },
-              "string": "foaf a",
+              "value": "foaf a",
             },
             "term": Object {
               "datatype": Object {
@@ -1161,7 +2528,10 @@ Array [
   },
   Object {
     "label": Object {
-      "string": "rdfs a",
+      "property": NamedNode {
+        "value": "http://www.w3.org/2000/01/rdf-schema#label",
+      },
+      "value": "rdfs a",
     },
     "rows": Array [
       Object {
@@ -1169,7 +2539,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "b",
+              "value": "b",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -1181,7 +2551,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "c",
+              "value": "c",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -1195,7 +2565,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "label",
+              "value": "label",
               "vocab": "rdfs",
             },
             "term": Object {
@@ -1208,10 +2578,10 @@ Array [
           Object {
             "label": Object {
               "datatype": Object {
-                "string": "string",
+                "value": "string",
                 "vocab": "xsd",
               },
-              "string": "rdfs a",
+              "value": "rdfs a",
             },
             "term": Object {
               "datatype": Object {
@@ -1244,7 +2614,10 @@ Array [
   },
   Object {
     "label": Object {
-      "string": "schema a",
+      "property": NamedNode {
+        "value": "http://schema.org/name",
+      },
+      "value": "schema a",
     },
     "rows": Array [
       Object {
@@ -1252,7 +2625,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "b",
+              "value": "b",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -1264,7 +2637,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "c",
+              "value": "c",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -1278,7 +2651,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "name",
+              "value": "name",
               "vocab": "schema",
             },
             "term": Object {
@@ -1291,10 +2664,10 @@ Array [
           Object {
             "label": Object {
               "datatype": Object {
-                "string": "string",
+                "value": "string",
                 "vocab": "xsd",
               },
-              "string": "schema a",
+              "value": "schema a",
             },
             "term": Object {
               "datatype": Object {
@@ -1327,7 +2700,10 @@ Array [
   },
   Object {
     "label": Object {
-      "string": "skos a",
+      "property": NamedNode {
+        "value": "http://www.w3.org/2004/02/skos/core#prefLabel",
+      },
+      "value": "skos a",
     },
     "rows": Array [
       Object {
@@ -1335,7 +2711,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "b",
+              "value": "b",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -1347,7 +2723,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "c",
+              "value": "c",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -1361,7 +2737,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "prefLabel",
+              "value": "prefLabel",
               "vocab": "skos",
             },
             "term": Object {
@@ -1374,10 +2750,10 @@ Array [
           Object {
             "label": Object {
               "datatype": Object {
-                "string": "string",
+                "value": "string",
                 "vocab": "xsd",
               },
-              "string": "skos a",
+              "value": "skos a",
             },
             "term": Object {
               "datatype": Object {
@@ -1403,7 +2779,7 @@ exports[`do not repeat with compactMode false 1`] = `
 Object {
   "label": Object {
     "fallbackLabel": true,
-    "string": "a",
+    "value": "a",
   },
   "rows": Array [
     Object {
@@ -1411,7 +2787,7 @@ Object {
         Object {
           "label": Object {
             "fallbackLabel": true,
-            "string": "d",
+            "value": "d",
           },
           "term": Object {
             "termType": "NamedNode",
@@ -1423,7 +2799,7 @@ Object {
         Object {
           "label": Object {
             "fallbackLabel": true,
-            "string": "e",
+            "value": "e",
           },
           "rows": Array [
             Object {
@@ -1431,7 +2807,7 @@ Object {
                 Object {
                   "label": Object {
                     "fallbackLabel": true,
-                    "string": "b",
+                    "value": "b",
                   },
                   "term": Object {
                     "termType": "NamedNode",
@@ -1443,7 +2819,7 @@ Object {
                 Object {
                   "label": Object {
                     "fallbackLabel": true,
-                    "string": "c",
+                    "value": "c",
                   },
                   "term": Object {
                     "termType": "NamedNode",
@@ -1471,7 +2847,7 @@ exports[`do not repeat with compactMode true 1`] = `
 Object {
   "label": Object {
     "fallbackLabel": true,
-    "string": "a",
+    "value": "a",
   },
   "rows": Array [
     Object {
@@ -1479,7 +2855,7 @@ Object {
         Object {
           "label": Object {
             "fallbackLabel": true,
-            "string": "d",
+            "value": "d",
           },
           "term": Object {
             "termType": "NamedNode",
@@ -1491,7 +2867,7 @@ Object {
         Object {
           "label": Object {
             "fallbackLabel": true,
-            "string": "e",
+            "value": "e",
           },
           "rows": Array [
             Object {
@@ -1499,7 +2875,7 @@ Object {
                 Object {
                   "label": Object {
                     "fallbackLabel": true,
-                    "string": "b",
+                    "value": "b",
                   },
                   "term": Object {
                     "termType": "NamedNode",
@@ -1511,7 +2887,7 @@ Object {
                 Object {
                   "label": Object {
                     "fallbackLabel": true,
-                    "string": "c",
+                    "value": "c",
                   },
                   "term": Object {
                     "termType": "NamedNode",
@@ -1539,7 +2915,10 @@ exports[`fetch languages 1`] = `
 Object {
   "label": Object {
     "language": "de",
-    "string": "Me",
+    "property": NamedNode {
+      "value": "http://schema.org/name",
+    },
+    "value": "Me",
   },
   "rows": Array [
     Object {
@@ -1547,7 +2926,7 @@ Object {
         Object {
           "label": Object {
             "fallbackLabel": true,
-            "string": "name",
+            "value": "name",
             "vocab": "schema",
           },
           "term": Object {
@@ -1560,11 +2939,11 @@ Object {
         Object {
           "label": Object {
             "datatype": Object {
-              "string": "langString",
+              "value": "langString",
               "vocab": "rdf",
             },
             "language": "de",
-            "string": "Me",
+            "value": "Me",
           },
           "term": Object {
             "datatype": Object {
@@ -1579,10 +2958,10 @@ Object {
         Object {
           "label": Object {
             "datatype": Object {
-              "string": "string",
+              "value": "string",
               "vocab": "xsd",
             },
-            "string": "Or me",
+            "value": "Or me",
           },
           "term": Object {
             "datatype": Object {
@@ -1614,7 +2993,7 @@ Array [
   Object {
     "label": Object {
       "fallbackLabel": true,
-      "string": "a",
+      "value": "a",
     },
     "rows": Array [
       Object {
@@ -1622,7 +3001,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "b",
+              "value": "b",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -1634,7 +3013,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "n3-8",
+              "value": "n3-11",
             },
             "rows": Array [
               Object {
@@ -1642,7 +3021,7 @@ Array [
                   Object {
                     "label": Object {
                       "fallbackLabel": true,
-                      "string": "c",
+                      "value": "c",
                     },
                     "term": Object {
                       "termType": "NamedNode",
@@ -1654,7 +3033,7 @@ Array [
                   Object {
                     "label": Object {
                       "fallbackLabel": true,
-                      "string": "d",
+                      "value": "d",
                     },
                     "term": Object {
                       "termType": "NamedNode",
@@ -1666,7 +3045,7 @@ Array [
             ],
             "term": Object {
               "termType": "BlankNode",
-              "value": "n3-8",
+              "value": "n3-11",
             },
           },
         ],
@@ -1691,7 +3070,7 @@ Array [
   Object {
     "label": Object {
       "fallbackLabel": true,
-      "string": "a",
+      "value": "a",
     },
     "rows": Array [
       Object {
@@ -1699,7 +3078,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "b",
+              "value": "b",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -1711,7 +3090,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "c",
+              "value": "c",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -1739,7 +3118,7 @@ Array [
   Object {
     "label": Object {
       "fallbackLabel": true,
-      "string": "a",
+      "value": "a",
     },
     "rows": Array [
       Object {
@@ -1747,7 +3126,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "img",
+              "value": "img",
               "vocab": "foaf",
             },
             "term": Object {
@@ -1760,7 +3139,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "little-cat",
+              "value": "little-cat",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -1789,7 +3168,7 @@ Array [
   Object {
     "label": Object {
       "fallbackLabel": true,
-      "string": "a",
+      "value": "a",
     },
     "rows": Array [
       Object {
@@ -1797,7 +3176,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "b",
+              "value": "b",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -1809,7 +3188,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "c",
+              "value": "c",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -1819,7 +3198,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "d",
+              "value": "d",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -1848,7 +3227,7 @@ Array [
   Object {
     "label": Object {
       "fallbackLabel": true,
-      "string": "a",
+      "value": "a",
     },
     "rows": Array [
       Object {
@@ -1856,7 +3235,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "b",
+              "value": "b",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -1866,7 +3245,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "c",
+              "value": "c",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -1878,7 +3257,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "d",
+              "value": "d",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -1908,7 +3287,10 @@ Array [
   Object {
     "label": Object {
       "language": "en",
-      "string": "prefered",
+      "property": NamedNode {
+        "value": "http://www.w3.org/2004/02/skos/core#prefLabel",
+      },
+      "value": "prefered",
     },
     "rows": Array [
       Object {
@@ -1916,7 +3298,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "b",
+              "value": "b",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -1928,7 +3310,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "c",
+              "value": "c",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -1942,7 +3324,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "prefLabel",
+              "value": "prefLabel",
               "vocab": "skos",
             },
             "term": Object {
@@ -1955,11 +3337,11 @@ Array [
           Object {
             "label": Object {
               "datatype": Object {
-                "string": "langString",
+                "value": "langString",
                 "vocab": "rdf",
               },
               "language": "en",
-              "string": "prefered",
+              "value": "prefered",
             },
             "term": Object {
               "datatype": Object {
@@ -1974,10 +3356,10 @@ Array [
           Object {
             "label": Object {
               "datatype": Object {
-                "string": "string",
+                "value": "string",
                 "vocab": "xsd",
               },
-              "string": "skos a",
+              "value": "skos a",
             },
             "term": Object {
               "datatype": Object {
@@ -2010,7 +3392,10 @@ Array [
   },
   Object {
     "label": Object {
-      "string": "first",
+      "property": NamedNode {
+        "value": "http://www.w3.org/2004/02/skos/core#prefLabel",
+      },
+      "value": "first",
     },
     "rows": Array [
       Object {
@@ -2018,7 +3403,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "prefLabel",
+              "value": "prefLabel",
               "vocab": "skos",
             },
             "term": Object {
@@ -2031,10 +3416,10 @@ Array [
           Object {
             "label": Object {
               "datatype": Object {
-                "string": "string",
+                "value": "string",
                 "vocab": "xsd",
               },
-              "string": "first",
+              "value": "first",
             },
             "term": Object {
               "datatype": Object {
@@ -2049,10 +3434,10 @@ Array [
           Object {
             "label": Object {
               "datatype": Object {
-                "string": "string",
+                "value": "string",
                 "vocab": "xsd",
               },
-              "string": "second",
+              "value": "second",
             },
             "term": Object {
               "datatype": Object {
@@ -2085,7 +3470,7 @@ Array [
   Object {
     "label": Object {
       "fallbackLabel": true,
-      "string": "a",
+      "value": "a",
     },
     "rows": Array [
       Object {
@@ -2093,7 +3478,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "b",
+              "value": "b",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -2106,7 +3491,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "c",
+              "value": "c",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -2116,7 +3501,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "d",
+              "value": "d",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -2144,7 +3529,7 @@ Array [
   Object {
     "label": Object {
       "fallbackLabel": true,
-      "string": "a",
+      "value": "a",
     },
     "rows": Array [
       Object {
@@ -2152,7 +3537,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "b",
+              "value": "b",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -2164,10 +3549,10 @@ Array [
           Object {
             "label": Object {
               "datatype": Object {
-                "string": "string",
+                "value": "string",
                 "vocab": "xsd",
               },
-              "string": "c",
+              "value": "c",
             },
             "term": Object {
               "datatype": Object {
@@ -2201,7 +3586,7 @@ Array [
   Object {
     "label": Object {
       "fallbackLabel": true,
-      "string": "a",
+      "value": "a",
     },
     "rows": Array [
       Object {
@@ -2209,7 +3594,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "b",
+              "value": "b",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -2220,7 +3605,10 @@ Array [
         "values": Array [
           Object {
             "label": Object {
-              "string": "foaf c",
+              "property": NamedNode {
+                "value": "http://xmlns.com/foaf/0.1/name",
+              },
+              "value": "foaf c",
             },
             "rows": Array [
               Object {
@@ -2228,7 +3616,7 @@ Array [
                   Object {
                     "label": Object {
                       "fallbackLabel": true,
-                      "string": "name",
+                      "value": "name",
                       "vocab": "foaf",
                     },
                     "term": Object {
@@ -2241,10 +3629,10 @@ Array [
                   Object {
                     "label": Object {
                       "datatype": Object {
-                        "string": "string",
+                        "value": "string",
                         "vocab": "xsd",
                       },
-                      "string": "foaf c",
+                      "value": "foaf c",
                     },
                     "term": Object {
                       "datatype": Object {
@@ -2286,7 +3674,7 @@ Array [
   Object {
     "label": Object {
       "fallbackLabel": true,
-      "string": "a",
+      "value": "a",
     },
     "rows": Array [
       Object {
@@ -2294,7 +3682,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "b",
+              "value": "b",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -2305,7 +3693,10 @@ Array [
         "values": Array [
           Object {
             "label": Object {
-              "string": "rdfs c",
+              "property": NamedNode {
+                "value": "http://www.w3.org/2000/01/rdf-schema#label",
+              },
+              "value": "rdfs c",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -2334,7 +3725,7 @@ Array [
   Object {
     "label": Object {
       "fallbackLabel": true,
-      "string": "a",
+      "value": "a",
     },
     "rows": Array [
       Object {
@@ -2342,7 +3733,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "b",
+              "value": "b",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -2353,7 +3744,10 @@ Array [
         "values": Array [
           Object {
             "label": Object {
-              "string": "schema c",
+              "property": NamedNode {
+                "value": "http://schema.org/name",
+              },
+              "value": "schema c",
             },
             "rows": Array [
               Object {
@@ -2361,7 +3755,7 @@ Array [
                   Object {
                     "label": Object {
                       "fallbackLabel": true,
-                      "string": "name",
+                      "value": "name",
                       "vocab": "schema",
                     },
                     "term": Object {
@@ -2374,10 +3768,10 @@ Array [
                   Object {
                     "label": Object {
                       "datatype": Object {
-                        "string": "string",
+                        "value": "string",
                         "vocab": "xsd",
                       },
-                      "string": "schema c",
+                      "value": "schema c",
                     },
                     "term": Object {
                       "datatype": Object {
@@ -2419,7 +3813,7 @@ Array [
   Object {
     "label": Object {
       "fallbackLabel": true,
-      "string": "a",
+      "value": "a",
     },
     "rows": Array [
       Object {
@@ -2427,7 +3821,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "b",
+              "value": "b",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -2438,7 +3832,10 @@ Array [
         "values": Array [
           Object {
             "label": Object {
-              "string": "skos c",
+              "property": NamedNode {
+                "value": "http://www.w3.org/2004/02/skos/core#prefLabel",
+              },
+              "value": "skos c",
             },
             "rows": Array [
               Object {
@@ -2446,7 +3843,7 @@ Array [
                   Object {
                     "label": Object {
                       "fallbackLabel": true,
-                      "string": "prefLabel",
+                      "value": "prefLabel",
                       "vocab": "skos",
                     },
                     "term": Object {
@@ -2459,10 +3856,10 @@ Array [
                   Object {
                     "label": Object {
                       "datatype": Object {
-                        "string": "string",
+                        "value": "string",
                         "vocab": "xsd",
                       },
-                      "string": "skos c",
+                      "value": "skos c",
                     },
                     "term": Object {
                       "datatype": Object {
@@ -2504,14 +3901,17 @@ Array [
   Object {
     "label": Object {
       "fallbackLabel": true,
-      "string": "a",
+      "value": "a",
     },
     "rows": Array [
       Object {
         "properties": Array [
           Object {
             "label": Object {
-              "string": "foaf b",
+              "property": NamedNode {
+                "value": "http://xmlns.com/foaf/0.1/name",
+              },
+              "value": "foaf b",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -2523,7 +3923,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "c",
+              "value": "c",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -2552,14 +3952,17 @@ Array [
   Object {
     "label": Object {
       "fallbackLabel": true,
-      "string": "a",
+      "value": "a",
     },
     "rows": Array [
       Object {
         "properties": Array [
           Object {
             "label": Object {
-              "string": "rdfs b",
+              "property": NamedNode {
+                "value": "http://www.w3.org/2000/01/rdf-schema#label",
+              },
+              "value": "rdfs b",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -2571,7 +3974,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "c",
+              "value": "c",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -2600,14 +4003,17 @@ Array [
   Object {
     "label": Object {
       "fallbackLabel": true,
-      "string": "a",
+      "value": "a",
     },
     "rows": Array [
       Object {
         "properties": Array [
           Object {
             "label": Object {
-              "string": "schema b",
+              "property": NamedNode {
+                "value": "http://schema.org/name",
+              },
+              "value": "schema b",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -2619,7 +4025,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "c",
+              "value": "c",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -2648,14 +4054,17 @@ Array [
   Object {
     "label": Object {
       "fallbackLabel": true,
-      "string": "a",
+      "value": "a",
     },
     "rows": Array [
       Object {
         "properties": Array [
           Object {
             "label": Object {
-              "string": "skos b",
+              "property": NamedNode {
+                "value": "http://www.w3.org/2004/02/skos/core#prefLabel",
+              },
+              "value": "skos b",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -2667,7 +4076,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "c",
+              "value": "c",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -2695,7 +4104,7 @@ Array [
   Object {
     "label": Object {
       "fallbackLabel": true,
-      "string": "a",
+      "value": "a",
     },
     "rows": Array [
       Object {
@@ -2703,7 +4112,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "image",
+              "value": "image",
               "vocab": "schema",
             },
             "term": Object {
@@ -2716,7 +4125,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "little-cat",
+              "value": "little-cat",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -2744,7 +4153,7 @@ Array [
   Object {
     "label": Object {
       "fallbackLabel": true,
-      "string": "a",
+      "value": "a",
     },
     "rows": Array [
       Object {
@@ -2752,7 +4161,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "b",
+              "value": "b",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -2764,7 +4173,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "c",
+              "value": "c",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -2792,7 +4201,10 @@ Array [
   },
   Object {
     "label": Object {
-      "string": "foaf a",
+      "property": NamedNode {
+        "value": "http://xmlns.com/foaf/0.1/name",
+      },
+      "value": "foaf a",
     },
     "rows": Array [
       Object {
@@ -2800,7 +4212,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "b",
+              "value": "b",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -2812,7 +4224,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "c",
+              "value": "c",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -2826,7 +4238,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "name",
+              "value": "name",
               "vocab": "foaf",
             },
             "term": Object {
@@ -2839,10 +4251,10 @@ Array [
           Object {
             "label": Object {
               "datatype": Object {
-                "string": "string",
+                "value": "string",
                 "vocab": "xsd",
               },
-              "string": "foaf a",
+              "value": "foaf a",
             },
             "term": Object {
               "datatype": Object {
@@ -2875,7 +4287,10 @@ Array [
   },
   Object {
     "label": Object {
-      "string": "rdfs a",
+      "property": NamedNode {
+        "value": "http://www.w3.org/2000/01/rdf-schema#label",
+      },
+      "value": "rdfs a",
     },
     "rows": Array [
       Object {
@@ -2883,7 +4298,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "b",
+              "value": "b",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -2895,7 +4310,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "c",
+              "value": "c",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -2923,7 +4338,10 @@ Array [
   },
   Object {
     "label": Object {
-      "string": "schema a",
+      "property": NamedNode {
+        "value": "http://schema.org/name",
+      },
+      "value": "schema a",
     },
     "rows": Array [
       Object {
@@ -2931,7 +4349,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "b",
+              "value": "b",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -2943,7 +4361,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "c",
+              "value": "c",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -2957,7 +4375,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "name",
+              "value": "name",
               "vocab": "schema",
             },
             "term": Object {
@@ -2970,10 +4388,10 @@ Array [
           Object {
             "label": Object {
               "datatype": Object {
-                "string": "string",
+                "value": "string",
                 "vocab": "xsd",
               },
-              "string": "schema a",
+              "value": "schema a",
             },
             "term": Object {
               "datatype": Object {
@@ -3006,7 +4424,10 @@ Array [
   },
   Object {
     "label": Object {
-      "string": "skos a",
+      "property": NamedNode {
+        "value": "http://www.w3.org/2004/02/skos/core#prefLabel",
+      },
+      "value": "skos a",
     },
     "rows": Array [
       Object {
@@ -3014,7 +4435,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "b",
+              "value": "b",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -3026,7 +4447,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "c",
+              "value": "c",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -3040,7 +4461,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "prefLabel",
+              "value": "prefLabel",
               "vocab": "skos",
             },
             "term": Object {
@@ -3053,10 +4474,10 @@ Array [
           Object {
             "label": Object {
               "datatype": Object {
-                "string": "string",
+                "value": "string",
                 "vocab": "xsd",
               },
-              "string": "skos a",
+              "value": "skos a",
             },
             "term": Object {
               "datatype": Object {
@@ -3089,7 +4510,7 @@ Array [
   Object {
     "label": Object {
       "fallbackLabel": true,
-      "string": "a",
+      "value": "a",
     },
     "rows": Array [
       Object {
@@ -3097,7 +4518,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "b",
+              "value": "b",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -3109,7 +4530,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "n3-11",
+              "value": "n3-14",
             },
             "rows": Array [
               Object {
@@ -3117,7 +4538,7 @@ Array [
                   Object {
                     "label": Object {
                       "fallbackLabel": true,
-                      "string": "c",
+                      "value": "c",
                     },
                     "term": Object {
                       "termType": "NamedNode",
@@ -3129,7 +4550,7 @@ Array [
                   Object {
                     "label": Object {
                       "fallbackLabel": true,
-                      "string": "d",
+                      "value": "d",
                     },
                     "term": Object {
                       "termType": "NamedNode",
@@ -3141,7 +4562,7 @@ Array [
             ],
             "term": Object {
               "termType": "BlankNode",
-              "value": "n3-11",
+              "value": "n3-14",
             },
           },
         ],
@@ -3166,7 +4587,7 @@ Array [
   Object {
     "label": Object {
       "fallbackLabel": true,
-      "string": "a",
+      "value": "a",
     },
     "rows": Array [
       Object {
@@ -3174,7 +4595,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "b",
+              "value": "b",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -3186,7 +4607,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "c",
+              "value": "c",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -3214,7 +4635,7 @@ Array [
   Object {
     "label": Object {
       "fallbackLabel": true,
-      "string": "a",
+      "value": "a",
     },
     "rows": Array [
       Object {
@@ -3222,7 +4643,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "img",
+              "value": "img",
               "vocab": "foaf",
             },
             "term": Object {
@@ -3235,7 +4656,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "little-cat",
+              "value": "little-cat",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -3264,7 +4685,7 @@ Array [
   Object {
     "label": Object {
       "fallbackLabel": true,
-      "string": "a",
+      "value": "a",
     },
     "rows": Array [
       Object {
@@ -3272,7 +4693,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "b",
+              "value": "b",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -3284,7 +4705,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "c",
+              "value": "c",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -3298,7 +4719,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "b",
+              "value": "b",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -3310,7 +4731,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "d",
+              "value": "d",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -3339,7 +4760,7 @@ Array [
   Object {
     "label": Object {
       "fallbackLabel": true,
-      "string": "a",
+      "value": "a",
     },
     "rows": Array [
       Object {
@@ -3347,7 +4768,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "b",
+              "value": "b",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -3359,7 +4780,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "d",
+              "value": "d",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -3373,7 +4794,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "c",
+              "value": "c",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -3385,7 +4806,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "d",
+              "value": "d",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -3415,7 +4836,10 @@ Array [
   Object {
     "label": Object {
       "language": "en",
-      "string": "prefered",
+      "property": NamedNode {
+        "value": "http://www.w3.org/2004/02/skos/core#prefLabel",
+      },
+      "value": "prefered",
     },
     "rows": Array [
       Object {
@@ -3423,7 +4847,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "b",
+              "value": "b",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -3435,7 +4859,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "c",
+              "value": "c",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -3449,7 +4873,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "prefLabel",
+              "value": "prefLabel",
               "vocab": "skos",
             },
             "term": Object {
@@ -3462,10 +4886,10 @@ Array [
           Object {
             "label": Object {
               "datatype": Object {
-                "string": "string",
+                "value": "string",
                 "vocab": "xsd",
               },
-              "string": "skos a",
+              "value": "skos a",
             },
             "term": Object {
               "datatype": Object {
@@ -3484,7 +4908,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "prefLabel",
+              "value": "prefLabel",
               "vocab": "skos",
             },
             "term": Object {
@@ -3497,11 +4921,11 @@ Array [
           Object {
             "label": Object {
               "datatype": Object {
-                "string": "langString",
+                "value": "langString",
                 "vocab": "rdf",
               },
               "language": "en",
-              "string": "prefered",
+              "value": "prefered",
             },
             "term": Object {
               "datatype": Object {
@@ -3534,7 +4958,10 @@ Array [
   },
   Object {
     "label": Object {
-      "string": "first",
+      "property": NamedNode {
+        "value": "http://www.w3.org/2004/02/skos/core#prefLabel",
+      },
+      "value": "first",
     },
     "rows": Array [
       Object {
@@ -3542,7 +4969,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "prefLabel",
+              "value": "prefLabel",
               "vocab": "skos",
             },
             "term": Object {
@@ -3555,10 +4982,10 @@ Array [
           Object {
             "label": Object {
               "datatype": Object {
-                "string": "string",
+                "value": "string",
                 "vocab": "xsd",
               },
-              "string": "first",
+              "value": "first",
             },
             "term": Object {
               "datatype": Object {
@@ -3577,7 +5004,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "prefLabel",
+              "value": "prefLabel",
               "vocab": "skos",
             },
             "term": Object {
@@ -3590,10 +5017,10 @@ Array [
           Object {
             "label": Object {
               "datatype": Object {
-                "string": "string",
+                "value": "string",
                 "vocab": "xsd",
               },
-              "string": "second",
+              "value": "second",
             },
             "term": Object {
               "datatype": Object {
@@ -3626,7 +5053,7 @@ Array [
   Object {
     "label": Object {
       "fallbackLabel": true,
-      "string": "a",
+      "value": "a",
     },
     "rows": Array [
       Object {
@@ -3634,7 +5061,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "b",
+              "value": "b",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -3646,7 +5073,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "c",
+              "value": "c",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -3660,7 +5087,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "b",
+              "value": "b",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -3672,7 +5099,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "d",
+              "value": "d",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -3700,7 +5127,7 @@ Array [
   Object {
     "label": Object {
       "fallbackLabel": true,
-      "string": "a",
+      "value": "a",
     },
     "rows": Array [
       Object {
@@ -3708,7 +5135,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "b",
+              "value": "b",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -3720,10 +5147,10 @@ Array [
           Object {
             "label": Object {
               "datatype": Object {
-                "string": "string",
+                "value": "string",
                 "vocab": "xsd",
               },
-              "string": "c",
+              "value": "c",
             },
             "term": Object {
               "datatype": Object {
@@ -3757,7 +5184,7 @@ Array [
   Object {
     "label": Object {
       "fallbackLabel": true,
-      "string": "a",
+      "value": "a",
     },
     "rows": Array [
       Object {
@@ -3765,7 +5192,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "b",
+              "value": "b",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -3776,7 +5203,10 @@ Array [
         "values": Array [
           Object {
             "label": Object {
-              "string": "foaf c",
+              "property": NamedNode {
+                "value": "http://xmlns.com/foaf/0.1/name",
+              },
+              "value": "foaf c",
             },
             "rows": Array [
               Object {
@@ -3784,7 +5214,7 @@ Array [
                   Object {
                     "label": Object {
                       "fallbackLabel": true,
-                      "string": "name",
+                      "value": "name",
                       "vocab": "foaf",
                     },
                     "term": Object {
@@ -3797,10 +5227,10 @@ Array [
                   Object {
                     "label": Object {
                       "datatype": Object {
-                        "string": "string",
+                        "value": "string",
                         "vocab": "xsd",
                       },
-                      "string": "foaf c",
+                      "value": "foaf c",
                     },
                     "term": Object {
                       "datatype": Object {
@@ -3842,7 +5272,7 @@ Array [
   Object {
     "label": Object {
       "fallbackLabel": true,
-      "string": "a",
+      "value": "a",
     },
     "rows": Array [
       Object {
@@ -3850,7 +5280,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "b",
+              "value": "b",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -3861,7 +5291,10 @@ Array [
         "values": Array [
           Object {
             "label": Object {
-              "string": "rdfs c",
+              "property": NamedNode {
+                "value": "http://www.w3.org/2000/01/rdf-schema#label",
+              },
+              "value": "rdfs c",
             },
             "rows": Array [
               Object {
@@ -3869,7 +5302,7 @@ Array [
                   Object {
                     "label": Object {
                       "fallbackLabel": true,
-                      "string": "label",
+                      "value": "label",
                       "vocab": "rdfs",
                     },
                     "term": Object {
@@ -3882,10 +5315,10 @@ Array [
                   Object {
                     "label": Object {
                       "datatype": Object {
-                        "string": "string",
+                        "value": "string",
                         "vocab": "xsd",
                       },
-                      "string": "rdfs c",
+                      "value": "rdfs c",
                     },
                     "term": Object {
                       "datatype": Object {
@@ -3927,7 +5360,7 @@ Array [
   Object {
     "label": Object {
       "fallbackLabel": true,
-      "string": "a",
+      "value": "a",
     },
     "rows": Array [
       Object {
@@ -3935,7 +5368,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "b",
+              "value": "b",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -3946,7 +5379,10 @@ Array [
         "values": Array [
           Object {
             "label": Object {
-              "string": "schema c",
+              "property": NamedNode {
+                "value": "http://schema.org/name",
+              },
+              "value": "schema c",
             },
             "rows": Array [
               Object {
@@ -3954,7 +5390,7 @@ Array [
                   Object {
                     "label": Object {
                       "fallbackLabel": true,
-                      "string": "name",
+                      "value": "name",
                       "vocab": "schema",
                     },
                     "term": Object {
@@ -3967,10 +5403,10 @@ Array [
                   Object {
                     "label": Object {
                       "datatype": Object {
-                        "string": "string",
+                        "value": "string",
                         "vocab": "xsd",
                       },
-                      "string": "schema c",
+                      "value": "schema c",
                     },
                     "term": Object {
                       "datatype": Object {
@@ -4012,7 +5448,7 @@ Array [
   Object {
     "label": Object {
       "fallbackLabel": true,
-      "string": "a",
+      "value": "a",
     },
     "rows": Array [
       Object {
@@ -4020,7 +5456,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "b",
+              "value": "b",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -4031,7 +5467,10 @@ Array [
         "values": Array [
           Object {
             "label": Object {
-              "string": "skos c",
+              "property": NamedNode {
+                "value": "http://www.w3.org/2004/02/skos/core#prefLabel",
+              },
+              "value": "skos c",
             },
             "rows": Array [
               Object {
@@ -4039,7 +5478,7 @@ Array [
                   Object {
                     "label": Object {
                       "fallbackLabel": true,
-                      "string": "prefLabel",
+                      "value": "prefLabel",
                       "vocab": "skos",
                     },
                     "term": Object {
@@ -4052,10 +5491,10 @@ Array [
                   Object {
                     "label": Object {
                       "datatype": Object {
-                        "string": "string",
+                        "value": "string",
                         "vocab": "xsd",
                       },
-                      "string": "skos c",
+                      "value": "skos c",
                     },
                     "term": Object {
                       "datatype": Object {
@@ -4097,14 +5536,17 @@ Array [
   Object {
     "label": Object {
       "fallbackLabel": true,
-      "string": "a",
+      "value": "a",
     },
     "rows": Array [
       Object {
         "properties": Array [
           Object {
             "label": Object {
-              "string": "foaf b",
+              "property": NamedNode {
+                "value": "http://xmlns.com/foaf/0.1/name",
+              },
+              "value": "foaf b",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -4116,7 +5558,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "c",
+              "value": "c",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -4145,14 +5587,17 @@ Array [
   Object {
     "label": Object {
       "fallbackLabel": true,
-      "string": "a",
+      "value": "a",
     },
     "rows": Array [
       Object {
         "properties": Array [
           Object {
             "label": Object {
-              "string": "rdfs b",
+              "property": NamedNode {
+                "value": "http://www.w3.org/2000/01/rdf-schema#label",
+              },
+              "value": "rdfs b",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -4164,7 +5609,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "c",
+              "value": "c",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -4193,14 +5638,17 @@ Array [
   Object {
     "label": Object {
       "fallbackLabel": true,
-      "string": "a",
+      "value": "a",
     },
     "rows": Array [
       Object {
         "properties": Array [
           Object {
             "label": Object {
-              "string": "schema b",
+              "property": NamedNode {
+                "value": "http://schema.org/name",
+              },
+              "value": "schema b",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -4212,7 +5660,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "c",
+              "value": "c",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -4241,14 +5689,17 @@ Array [
   Object {
     "label": Object {
       "fallbackLabel": true,
-      "string": "a",
+      "value": "a",
     },
     "rows": Array [
       Object {
         "properties": Array [
           Object {
             "label": Object {
-              "string": "skos b",
+              "property": NamedNode {
+                "value": "http://www.w3.org/2004/02/skos/core#prefLabel",
+              },
+              "value": "skos b",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -4260,7 +5711,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "c",
+              "value": "c",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -4288,7 +5739,7 @@ Array [
   Object {
     "label": Object {
       "fallbackLabel": true,
-      "string": "a",
+      "value": "a",
     },
     "rows": Array [
       Object {
@@ -4296,7 +5747,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "image",
+              "value": "image",
               "vocab": "schema",
             },
             "term": Object {
@@ -4309,7 +5760,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "little-cat",
+              "value": "little-cat",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -4337,7 +5788,7 @@ Array [
   Object {
     "label": Object {
       "fallbackLabel": true,
-      "string": "a",
+      "value": "a",
     },
     "rows": Array [
       Object {
@@ -4345,7 +5796,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "b",
+              "value": "b",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -4357,7 +5808,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "c",
+              "value": "c",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -4385,7 +5836,10 @@ Array [
   },
   Object {
     "label": Object {
-      "string": "foaf a",
+      "property": NamedNode {
+        "value": "http://xmlns.com/foaf/0.1/name",
+      },
+      "value": "foaf a",
     },
     "rows": Array [
       Object {
@@ -4393,7 +5847,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "b",
+              "value": "b",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -4405,7 +5859,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "c",
+              "value": "c",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -4419,7 +5873,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "name",
+              "value": "name",
               "vocab": "foaf",
             },
             "term": Object {
@@ -4432,10 +5886,10 @@ Array [
           Object {
             "label": Object {
               "datatype": Object {
-                "string": "string",
+                "value": "string",
                 "vocab": "xsd",
               },
-              "string": "foaf a",
+              "value": "foaf a",
             },
             "term": Object {
               "datatype": Object {
@@ -4468,7 +5922,10 @@ Array [
   },
   Object {
     "label": Object {
-      "string": "rdfs a",
+      "property": NamedNode {
+        "value": "http://www.w3.org/2000/01/rdf-schema#label",
+      },
+      "value": "rdfs a",
     },
     "rows": Array [
       Object {
@@ -4476,7 +5933,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "b",
+              "value": "b",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -4488,7 +5945,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "c",
+              "value": "c",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -4502,7 +5959,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "label",
+              "value": "label",
               "vocab": "rdfs",
             },
             "term": Object {
@@ -4515,10 +5972,10 @@ Array [
           Object {
             "label": Object {
               "datatype": Object {
-                "string": "string",
+                "value": "string",
                 "vocab": "xsd",
               },
-              "string": "rdfs a",
+              "value": "rdfs a",
             },
             "term": Object {
               "datatype": Object {
@@ -4551,7 +6008,10 @@ Array [
   },
   Object {
     "label": Object {
-      "string": "schema a",
+      "property": NamedNode {
+        "value": "http://schema.org/name",
+      },
+      "value": "schema a",
     },
     "rows": Array [
       Object {
@@ -4559,7 +6019,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "b",
+              "value": "b",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -4571,7 +6031,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "c",
+              "value": "c",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -4585,7 +6045,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "name",
+              "value": "name",
               "vocab": "schema",
             },
             "term": Object {
@@ -4598,10 +6058,10 @@ Array [
           Object {
             "label": Object {
               "datatype": Object {
-                "string": "string",
+                "value": "string",
                 "vocab": "xsd",
               },
-              "string": "schema a",
+              "value": "schema a",
             },
             "term": Object {
               "datatype": Object {
@@ -4634,7 +6094,10 @@ Array [
   },
   Object {
     "label": Object {
-      "string": "skos a",
+      "property": NamedNode {
+        "value": "http://www.w3.org/2004/02/skos/core#prefLabel",
+      },
+      "value": "skos a",
     },
     "rows": Array [
       Object {
@@ -4642,7 +6105,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "b",
+              "value": "b",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -4654,7 +6117,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "c",
+              "value": "c",
             },
             "term": Object {
               "termType": "NamedNode",
@@ -4668,7 +6131,7 @@ Array [
           Object {
             "label": Object {
               "fallbackLabel": true,
-              "string": "prefLabel",
+              "value": "prefLabel",
               "vocab": "skos",
             },
             "term": Object {
@@ -4681,10 +6144,10 @@ Array [
           Object {
             "label": Object {
               "datatype": Object {
-                "string": "string",
+                "value": "string",
                 "vocab": "xsd",
               },
-              "string": "skos a",
+              "value": "skos a",
             },
             "term": Object {
               "datatype": Object {
@@ -4710,7 +6173,7 @@ exports[`show images foaf 1`] = `
 Object {
   "label": Object {
     "fallbackLabel": true,
-    "string": "dog",
+    "value": "dog",
   },
   "rows": Array [
     Object {
@@ -4718,7 +6181,7 @@ Object {
         Object {
           "label": Object {
             "fallbackLabel": true,
-            "string": "img",
+            "value": "img",
             "vocab": "foaf",
           },
           "term": Object {
@@ -4731,7 +6194,7 @@ Object {
         Object {
           "label": Object {
             "fallbackLabel": true,
-            "string": "dogImg",
+            "value": "dogImg",
           },
           "renderAs": "Image",
           "term": Object {
@@ -4752,7 +6215,7 @@ exports[`show images schema 1`] = `
 Object {
   "label": Object {
     "fallbackLabel": true,
-    "string": "cat",
+    "value": "cat",
   },
   "rows": Array [
     Object {
@@ -4760,7 +6223,7 @@ Object {
         Object {
           "label": Object {
             "fallbackLabel": true,
-            "string": "image",
+            "value": "image",
             "vocab": "schema",
           },
           "term": Object {
@@ -4773,7 +6236,7 @@ Object {
         Object {
           "label": Object {
             "fallbackLabel": true,
-            "string": "catImg",
+            "value": "catImg",
           },
           "renderAs": "Image",
           "term": Object {

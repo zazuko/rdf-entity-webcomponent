@@ -24,10 +24,13 @@ const entitySchema = {
     },
     label: {
       type: 'object',
-      required: ['string'],
+      required: ['value'],
       properties: {
-        string: {
+        value: {
           type: 'string'
+        },
+        property: {
+          type: 'object'
         },
         vocab: {
           type: 'string'

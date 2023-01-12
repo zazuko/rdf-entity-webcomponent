@@ -1,14 +1,19 @@
 import { splitIfVocab } from './utils.js'
 
 function getWithLang (cf, options) {
-  const terms = cf.out(options.labelProperties,
-    { language: [...(options.preferredLanguages ?? []), '*'] }).terms
-  if (terms.length) {
-    const language = terms[0].language
-    return {
-      ...(language && { language }), string: terms[0].value
+  for (const property of options.labelProperties) {
+    const terms = cf.out(property,
+      { language: [...(options.preferredLanguages ?? []), '*'] }).terms
+    if (terms.length) {
+      const language = terms[0].language
+      return {
+        property,
+        ...(language && { language }),
+        value: terms[0].value
+      }
     }
   }
+
   return undefined
 }
 
@@ -23,7 +28,7 @@ function getLabel (cf, options) {
     return {
       ...(language && { language }),
       ...(datatype && { datatype }),
-      string: term.value
+      value: term.value
     }
   }
 

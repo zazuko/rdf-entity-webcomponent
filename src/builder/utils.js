@@ -21,14 +21,14 @@ function splitIfVocab (iri) {
     const found = candidates[0]
 
     return {
-      string: iri.replace(new RegExp(`^${found[1]().value}`), ''),
+      value: iri.replace(new RegExp(`^${found[1]().value}`), ''),
       vocab: found[0]
     }
   }
 
   const lastSegment = iri.split('/').pop()
   return {
-    string: lastSegment
+    value: lastSegment
   }
 }
 
