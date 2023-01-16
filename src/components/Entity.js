@@ -1,10 +1,8 @@
 import { html } from 'lit'
 
 function Entity (entity, options, context, renderedAsRoot) {
-  const header = options.simplifiedMode
-    ? SimplifiedHeader(entity, options,
-      context)
-    : html``
+  const header = EntityHeader(entity, options,
+    context, options.simplifiedMode)
   const rows = entity.rows
     ? entity.rows.map(row => Row(row, options, context))
     : []
@@ -13,7 +11,6 @@ function Entity (entity, options, context, renderedAsRoot) {
     return html`
         <div id="${context.anchorFor.get(entity.term)}"
              class="entity ${renderedAsRoot ? 'entity-root' : ''}">
-
             <div class="rows">
                 ${header}
                 ${rows}
@@ -24,11 +21,14 @@ function Entity (entity, options, context, renderedAsRoot) {
   }
 }
 
-function SimplifiedHeader (entity, options, context) {
-  const types = html`
+function EntityHeader (entity, options, context, includeTypes) {
+  const types = includeTypes
+    ? html`
       <ul>${(entity.types ?? []).map(value => html`
           <li>${Entity(value, options, context)}</li>`)}
       </ul>`
+    : html`
+      <ul></ul>`
   return html`
       <div class="row">
           <ul>
