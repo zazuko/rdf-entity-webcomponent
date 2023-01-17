@@ -29,10 +29,12 @@ export class RdfEntity extends LitElement {
       flex-direction: column;
     }
 
+    /* Alternate highlighting */
     .rows > :nth-child(1n) {
       border-top: 1px solid var(--border);
     }
 
+    /* Alternate highlighting */
     .rows > :nth-child(2n) {
       border-top: 1px solid var(--border);
       background: rgba(0, 0, 0, 0.01);
@@ -43,10 +45,8 @@ export class RdfEntity extends LitElement {
       flex-direction: row;
       justify-content: space-around;
     }
-
-    /* Properties */
-
-    .row > :nth-child(1) {
+    
+    .row > .property {
       align-self: flex-start;
       width: 35%;
       word-break: break-all;
@@ -57,8 +57,7 @@ export class RdfEntity extends LitElement {
     }
 
     /* Values */
-
-    .row > :nth-child(2) {
+    .row > .value {
       wrap-option: wrap;
       width: 65%;
       word-break: break-all;
@@ -85,7 +84,7 @@ export class RdfEntity extends LitElement {
       padding-left: 5px;
     }
 
-    div .bringDown {
+    div .bring-down {
       color: var(--metadata);
     }
 
@@ -108,18 +107,6 @@ export class RdfEntity extends LitElement {
       color: var(--metadata);
       font-size: 0.5rem;
       margin-left: 4px;
-    }
-
-    .BlankNode {
-      //font-size: 10px;
-    }
-
-    .BlankNode a {
-      color: var(--metadata);
-      overflow: hidden;
-      display: -webkit-box;
-      -webkit-line-clamp: 1;
-      -webkit-box-orient: vertical;
     }
 
     .img-container {

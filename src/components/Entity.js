@@ -24,14 +24,14 @@ function Entity (entity, options, context, renderedAsRoot) {
 function EntityHeader (entity, options, context, includeTypes) {
   const types = includeTypes
     ? html`
-      <ul>${(entity.types ?? []).map(value => html`
-          <li>${Entity(value, options, context)}</li>`)}
-      </ul>`
+              <ul class="value">${(entity.types ?? []).map(value => html`
+                  <li>${Entity(value, options, context)}</li>`)}
+              </ul>`
     : html`
-      <ul></ul>`
+              <ul class="value"></ul>`
   return html`
-      <div class="row">
-          <ul>
+      <div class="row entity-header">
+          <ul class="property">
               <li>
                   ${TermWithCues(entity, options, context)}
               </li>
@@ -42,18 +42,18 @@ function EntityHeader (entity, options, context, includeTypes) {
 
 function Row (row, options, context) {
   const predicatesList = html`
-      <ul>
+      <ul class="property">
           ${row.properties.map(property => html`
               <li>${Entity(property, options, context)}</li>`)}
       </ul>`
 
   const valuesList = row.renderAs === 'List'
     ? html`
-              <ol>${row.values.map(value => html`
+              <ol class="value">${row.values.map(value => html`
                   <li>${Entity(value, options, context)}</li>`)}
               </ol>`
     : html`
-              <ul>${row.values.map(value => html`
+              <ul class="value">${row.values.map(value => html`
                   <li>${Entity(value, options, context)}</li>`)}
               </ul>`
 
@@ -85,7 +85,7 @@ function TermWithCues (entity, options, context) {
       ? html`
                 <div>${spans}</div>`
       : html`
-                <div class="bringDown">${spans}</div>`
+                <div class="bring-down">${spans}</div>`
   }
 
   return html`
