@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`utils splitIfVocab https://example.org/people 1`] = `
+Object {
+  "value": "people",
+}
+`;
+
+exports[`utils splitIfVocab https://example.org/people/ 1`] = `
+Object {
+  "value": "people",
+}
+`;

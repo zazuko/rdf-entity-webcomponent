@@ -12,6 +12,7 @@ function predicates (cf) {
 function quads (cf) {
   return [...cf.dataset.match(cf.term, null, null, null, null)]
 }
+
 function splitIfVocab (iri) {
   const candidates = Array.from(Object.entries(ns)).filter(([_, value]) => {
     return iri.startsWith(value().value)
@@ -25,8 +26,9 @@ function splitIfVocab (iri) {
       vocab: found[0]
     }
   }
-
-  const lastSegment = iri.split('/').pop()
+  const lastSegment = iri.endsWith('/')
+    ? iri.slice(0, -1).split('/').pop()
+    : iri.split('/').pop()
   return {
     value: lastSegment
   }
