@@ -7,6 +7,7 @@ expect.extend({ toMatchSnapshot })
 
 const entities = [
   'https://example.org/people/',
+  'http://www.w3.org/2001/XMLSchema#string',
   'https://example.org/people']
 
 describe('utils', () => {

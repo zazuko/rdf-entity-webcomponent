@@ -76,7 +76,7 @@ function TermWithCues (entity, options, context) {
   }
   if (entity.label.datatype && options?.technicalCues) {
     spans.push(html`<span class="datatype">${entity.label.datatype.vocab}
-        :${entity.label.datatype.string}</span>`)
+        :${entity.label.datatype.value}</span>`)
   }
 
   if (options?.highlightLanguage && entity.label.language) {

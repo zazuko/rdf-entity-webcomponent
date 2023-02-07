@@ -1,5 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`utils splitIfVocab http://www.w3.org/2001/XMLSchema#string 1`] = `
+Object {
+  "value": "string",
+  "vocab": "xsd",
+}
+`;
+
 exports[`utils splitIfVocab https://example.org/people 1`] = `
 Object {
   "value": "people",
