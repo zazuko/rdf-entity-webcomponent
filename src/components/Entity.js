@@ -22,21 +22,25 @@ function Entity (entity, options, context, renderedAsRoot) {
 }
 
 function EntityHeader (entity, options, context, includeTypes) {
-  const types = includeTypes
-    ? html`
-              <ul class="value">${(entity.types ?? []).map(value => html`
-                  <li>${Entity(value, options, context)}</li>`)}
-              </ul>`
-    : html`
-              <ul class="value"></ul>`
-  return html`
-      <div class="row entity-header">
+  if (includeTypes) {
+    return html`
+      <div class="row">
           <ul class="property">
               <li>
                   ${TermWithCues(entity, options, context)}
               </li>
           </ul>
-          ${types}
+          <ul class="value">${(entity.types ?? []).map(value => html`
+              <li>${Entity(value, options, context)}</li>`)}
+          </ul>
+      </div>`
+  }
+
+  return html`
+      <div class="entity-header">
+          <div>
+            ${TermWithCues(entity, options, context)}
+          </div>
       </div>`
 }
 
