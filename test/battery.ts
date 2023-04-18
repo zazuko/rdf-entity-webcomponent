@@ -1,6 +1,11 @@
-import rdf from '../src/rdf-ext.js'
+import { rdf } from '../src/rdf-ext'
+import { Term } from "rdf-js";
 
-const battery = {
+type Tests = {
+  [key: string]: [string, Term];
+}
+
+const battery:Tests = {
 
   simple: [
     `

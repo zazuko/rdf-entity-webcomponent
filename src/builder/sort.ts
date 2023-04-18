@@ -1,6 +1,8 @@
-import { ns } from '../namespaces.js'
+import { ns } from '../namespaces'
+import {Entity, Options, Row} from "../types";
+import {Term} from "rdf-js";
 
-function sortRows (rows, options) {
+function sortRows (rows:Row[], options:Options) {
   const { sortRows } = options
   if (sortRows) {
     rows.sort(_sortRows)
@@ -11,17 +13,17 @@ function sortRows (rows, options) {
   }
 }
 
-const sortStrings = (a, b) => a.toUpperCase().localeCompare(b.toUpperCase())
-const sortNamed = (a, b) => sortStrings(a.value, b.value)
+const sortStrings = (a:string, b:string) => a.toUpperCase().localeCompare(b.toUpperCase())
+const sortNamed = (a:Term, b:Term) => sortStrings(a.value, b.value)
 
-function _sortItem (a, b) {
+function _sortItem (a:Entity, b:Entity) {
   if (a.label && b.label) {
     return a.label.value.localeCompare(b.label.value)
   }
-  return sortNamed(a, b)
+  return sortNamed(a.term, b.term)
 }
 
-function _sortRows (a, b) {
+function _sortRows (a:Row, b:Row) {
   if (!b.properties) {
     return 0
   }
@@ -39,7 +41,7 @@ function _sortRows (a, b) {
     return sortNamed(a.properties[0].term, b.properties[0].term)
   }
 
-  return b.properties.length < a.properties.length
+  return b.properties.length - a.properties.length;
 }
 
 export { sortRows }

@@ -1,19 +1,14 @@
-import {customElement} from 'lit/decorators/custom-element.js';
-import {property} from 'lit/decorators/property.js';
-import {html, css, LitElement} from 'lit';
-// @ts-ignore
-import rdf from '../src/rdf-ext.js'
-// @ts-ignore
-import {EntityList} from './components/EntityList.js'
+import {parse, rdf} from './rdf-ext'
+import {EntityList} from './components/EntityList'
 import DatasetExt from "rdf-ext/lib/Dataset";
-// @ts-ignore
 import {DEFAULT_LABEL_PROPERTIES} from './builder/entityBuilder'
-// @ts-ignore
 import {ns} from "./namespaces";
+import {Options} from "./types";
+import {LitElement, html, css} from 'lit';
+import {customElement, property} from 'lit/decorators.js';
 
 @customElement('rdf-entity')
 export class RdfEntity extends LitElement {
-    private _name: string = '';
 
     static styles = css`
       :host {
@@ -145,13 +140,11 @@ export class RdfEntity extends LitElement {
     @property({type: Boolean, attribute: 'technical-cues'}) public technicalCues: boolean = false;
 
     @property({
-        type: Boolean,
-        attribute: 'preferred-languages'
+        type: Boolean, attribute: 'preferred-languages'
     }) public preferredLanguages: string[] = ['en', 'fr', 'de', 'it'];
 
     @property({
-        type: Boolean,
-        attribute: 'highlight-language'
+        type: Boolean, attribute: 'highlight-language'
     }) public highlightLanguage: string | undefined = this.preferredLanguages.length > 0 ? this.preferredLanguages[0] : undefined
 
     @property({type: Boolean, attribute: 'embed-lists'}) public embedLists: boolean = false;
@@ -168,20 +161,23 @@ export class RdfEntity extends LitElement {
 
     @property({type: Boolean, attribute: 'compact-mode'}) public compactMode: boolean = false;
 
-    @property({type: DatasetExt}) public dataset: any = '';
+    @property({type: DatasetExt}) public dataset: any = undefined;
 
-    @property({type: String, attribute: 'term'}) public term: String = '';
+    @property({type: String, attribute: 'term'}) public term: string = '';
 
-    @property({type: Object}) public terms: any = '';
+    @property({type: Object}) public terms: any = undefined;
 
+    @property({attribute: 'sort-rows', type: Boolean})
+    sortRows = false;
 
-    getOptions() {
+    getOptions():Options {
         const preferredLanguages = this.preferredLanguages ?? ['en', 'fr', 'de', 'it']
         const highlightLanguage = preferredLanguages.length > 0 ? preferredLanguages[0] : undefined
         return {
             technicalCues: this.technicalCues,
             preferredLanguages,
             highlightLanguage,
+            sortRows: this.sortRows,
             embedLists: this.embedLists,
             embedNamedNodes: this.embedNamedNodes,
             embedBlankNodes: this.embedBlankNodes,
@@ -194,14 +190,13 @@ export class RdfEntity extends LitElement {
         }
     }
 
-
     render() {
         const options = this.getOptions()
         const terms = this.terms ? this.terms : this.term ? [rdf.namedNode(this.term)] : undefined
 
         if (this.textContent && this.textContent.trim().length > 0) {
             try {
-                const dataset = rdf.parse(this.textContent)
+                const dataset = parse(this.textContent)
                 return EntityList({
                     dataset, terms
                 }, options)

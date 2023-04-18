@@ -1,6 +1,8 @@
-import { splitIfVocab } from './utils.js'
+import { splitIfVocab } from './utils'
+import {ExtendedOptions, Label} from "../types";
+import {GraphPointer} from "clownface";
 
-function getWithLang (cf, options) {
+function getWithLang (cf:GraphPointer, options:ExtendedOptions) {
   for (const property of options.labelProperties) {
     const terms = cf.out(property,
       { language: [...(options.preferredLanguages ?? []), '*'] }).terms
@@ -17,19 +19,26 @@ function getWithLang (cf, options) {
   return undefined
 }
 
-function getLabel (cf, options) {
+function getLabel (cf:GraphPointer, options:ExtendedOptions):Label {
   const term = cf.term
 
   if (term.termType === 'Literal') {
-    const language = term.language
-    const datatype = term.datatype
-      ? splitIfVocab(term.datatype.value)
-      : undefined
-    return {
-      ...(language && { language }),
-      ...(datatype && { datatype }),
+
+    const label: Label  = {
       value: term.value
     }
+    if (term.language) {
+      label.language = term.language
+    }
+    if (term.datatype) {
+      const {vocab,value } = splitIfVocab(term.datatype.value)
+      label.datatype = {
+        vocab,
+        value
+      }
+    }
+
+    return label
   }
 
   const datasetLabel = getWithLang(cf, options)
@@ -52,7 +61,15 @@ function getLabel (cf, options) {
     }
   }
 
-  return { ...splitIfVocab(term.value), fallbackLabel: true }
+  const {vocab, value} = splitIfVocab(term.value)
+  const result:Label = {
+    value,
+    fallbackLabel:true
+  }
+  if (vocab){
+    result.vocab = vocab
+  }
+  return result
 }
 
 export { getLabel }

@@ -1,37 +1,42 @@
-import { html } from 'lit'
+import { html, TemplateResult } from 'lit'
+import {Entity, Row, Options} from "../types";
 
-function Entity (entity, options, context, renderedAsRoot) {
-  const header = EntityHeader(entity, options,
+type Context = {
+  anchorFor: any;
+}
+
+function renderEntity (entity:Entity, options:Options, context:Context):TemplateResult {
+  const header = renderEntityHeader(entity, options,
     context, options.simplifiedMode)
   const rows = entity.rows
-    ? entity.rows.map(row => Row(row, options, context))
+    ? entity.rows.map(row => renderRow(row, options, context))
     : []
 
   if (entity.rows) {
     return html`
         <div id="${context.anchorFor.get(entity.term)}"
-             class="entity ${renderedAsRoot ? 'entity-root' : ''}">
+             class="entity">
             <div class="rows">
                 ${header}
                 ${rows}
             </div>
         </div>`
   } else {
-    return TermWithCues(entity, options, context)
+    return renderTermWithCues(entity, options, context)
   }
 }
 
-function EntityHeader (entity, options, context, includeTypes) {
+function renderEntityHeader (entity:Entity, options:Options, context:Context, includeTypes:boolean):TemplateResult {
   if (includeTypes) {
     return html`
       <div class="row">
           <ul class="property">
               <li>
-                  ${TermWithCues(entity, options, context)}
+                  ${renderTermWithCues(entity, options, context)}
               </li>
           </ul>
           <ul class="value">${(entity.types ?? []).map(value => html`
-              <li>${Entity(value, options, context)}</li>`)}
+              <li>${renderEntity(value, options, context)}</li>`)}
           </ul>
       </div>`
   }
@@ -39,26 +44,26 @@ function EntityHeader (entity, options, context, includeTypes) {
   return html`
       <div class="entity-header">
           <div>
-            ${TermWithCues(entity, options, context)}
+            ${renderTermWithCues(entity, options, context)}
           </div>
       </div>`
 }
 
-function Row (row, options, context) {
-  const predicatesList = html`
+function renderRow (row:Row, options:Options, context:Context):TemplateResult {
+  const predicatesList:TemplateResult = html`
       <ul class="property">
           ${row.properties.map(property => html`
-              <li>${Entity(property, options, context)}</li>`)}
+              <li>${renderEntity(property, options, context)}</li>`)}
       </ul>`
 
   const valuesList = row.renderAs === 'List'
     ? html`
               <ol class="value">${row.values.map(value => html`
-                  <li>${Entity(value, options, context)}</li>`)}
+                  <li>${renderEntity(value, options, context)}</li>`)}
               </ol>`
     : html`
               <ul class="value">${row.values.map(value => html`
-                  <li>${Entity(value, options, context)}</li>`)}
+                  <li>${renderEntity(value, options, context)}</li>`)}
               </ul>`
 
   return html`
@@ -68,12 +73,12 @@ function Row (row, options, context) {
       </div>`
 }
 
-function TermWithCues (entity, options, context) {
+function renderTermWithCues (entity:Entity, options:Options, context:Context):TemplateResult {
   const spans = []
   if (entity.label.vocab && options?.technicalCues) {
     spans.push(html`<span class="vocab">${entity.label.vocab}</span>`)
   }
-  spans.push(Term(entity, options, context))
+  spans.push(renderTerm(entity, options, context))
 
   if (entity.label.language && options?.technicalCues) {
     spans.push(html`<span class="language">${entity.label.language}</span>`)
@@ -96,7 +101,7 @@ function TermWithCues (entity, options, context) {
       <div>${spans}</div>`
 }
 
-function Term (entity, options, context) {
+function renderTerm (entity:Entity, options:Options, context:Context):TemplateResult {
   if (entity.renderAs === 'Image') {
     return html`
         <div class="img-container"><img alt="${entity.term.value}"
@@ -115,7 +120,6 @@ function Term (entity, options, context) {
     }
     return undefined
   }
-
   const link = maybeLink()
   if (link) {
     return html`<a href="${link}"
@@ -125,4 +129,4 @@ function Term (entity, options, context) {
   }
 }
 
-export { Entity }
+export { renderEntity }

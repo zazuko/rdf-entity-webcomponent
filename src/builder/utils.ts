@@ -1,22 +1,25 @@
-import { ns } from '../namespaces.js'
-import rdf from '../rdf-ext.js'
+import { ns } from '../namespaces'
+import {rdf} from '../rdf-ext'
+import {GraphPointer} from "clownface";
 
-function subjects (cf) {
+function subjects (cf:GraphPointer) {
   return [...rdf.termSet(quads(cf).map(quad => quad.subject))]
 }
 
-function predicates (cf) {
+function predicates (cf:GraphPointer) {
   return [...rdf.termSet(quads(cf).map(quad => quad.predicate))]
 }
 
-function quads (cf) {
-  return [...cf.dataset.match(cf.term, null, null, null, null)]
+function quads (cf:GraphPointer) {
+  return [...cf.dataset.match(cf.term, null, null, null)]
 }
 
-function splitIfVocab (iri) {
+function splitIfVocab (iri:string) {
+
   const candidates = Array.from(Object.entries(ns)).filter(([_, value]) => {
     return iri.startsWith(value().value)
   })
+
   if (candidates.length) {
     candidates.sort(([, iri1], [, iri2]) => iri2.length - iri1.length)
     const found = candidates[0]
