@@ -5,12 +5,12 @@ import {renderEntity} from './Entity'
 import {EntityData, Options} from "../types";
 
 function EntityList({dataset, terms}:EntityData, options:Options) {
-    const subjects = rdf.termSet()
+    const subjects = rdf.termSet([])
     for (const quad of [...dataset]) {
         subjects.add(quad.subject)
     }
 
-    const anchorFor = rdf.termMap()
+    const anchorFor = rdf.termMap([])
     let blankCount = 0
     for (const term of subjects) {
         if (term.termType === 'BlankNode') {

@@ -10,7 +10,10 @@ function toQuads (str:string) {
 }
 
 function toString (quads:Quad[]) {
-  const dataset = rdf.dataset().addAll(quads)
+  const dataset = rdf.dataset()
+  for (const quad of quads){
+    dataset.add(quad)
+  }
   return dataset.toString()
 }
 

@@ -88,7 +88,7 @@ const entitySchema = {
 
  const context:EntityContext = {
   level: 0,
-  visited: rdf.termSet(),
+  visited: rdf.termSet([]),
   remainingEntities: [],
   incomingProperty: undefined
 }
@@ -102,7 +102,6 @@ describe('entityBuilder', () => {
     const data = '<a> <b> <c>.'
     const cf = toClownface(data, rdf.namedNode('a'))
     const result = createEntity(cf, defaultOptions, context)
-    console.log('RESULT',result)
     assert.jsonSchema(result, entitySchema)
   })
 
