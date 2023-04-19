@@ -1,13 +1,13 @@
 import { ns } from '../namespaces'
-import rdf from 'rdf-ext'
+import { rdf } from '../rdf-ext'
 import { getLabel } from './labels'
 import { groupRows } from './group'
 import { sortRows } from './sort'
 import { getTypes } from './types'
 import { predicates } from './utils'
-import {GraphPointer} from "clownface";
-import {Entity, ExtendedOptions, Options, Row} from "../types";
-import {Term} from 'rdf-js'
+import { GraphPointer } from "clownface";
+import { Entity, ExtendedOptions, Options, Row } from "../types";
+import { Term } from 'rdf-js'
 import NamedNodeExt from "rdf-ext/lib/NamedNode";
 
 const DEFAULT_LABEL_PROPERTIES = [
