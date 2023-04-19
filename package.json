@@ -34,7 +34,8 @@
     "@tpluscode/rdf-ns-builders": "^3.0.3",
     "clownface": "^1.5.1",
     "lit": "^2.7.2",
-    "n3": "^1.16.4"
+    "n3": "^1.16.4",
+    "rdf-ext": "^2.2.0"
   },
   "files": [
     "dist",
