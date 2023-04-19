@@ -2,7 +2,7 @@ import { splitIfVocab } from './utils'
 import {ExtendedOptions, Label} from "../types";
 import {GraphPointer} from "clownface";
 
-function getWithLang (cf:GraphPointer, options:ExtendedOptions) {
+function getWithLang (cf:GraphPointer, options:ExtendedOptions):Label {
   for (const property of options.labelProperties) {
     const terms = cf.out(property,
       { language: [...(options.preferredLanguages ?? []), '*'] }).terms
@@ -23,7 +23,6 @@ function getLabel (cf:GraphPointer, options:ExtendedOptions):Label {
   const term = cf.term
 
   if (term.termType === 'Literal') {
-
     const label: Label  = {
       value: term.value
     }
@@ -31,19 +30,14 @@ function getLabel (cf:GraphPointer, options:ExtendedOptions):Label {
       label.language = term.language
     }
     if (term.datatype) {
-      const {vocab,value } = splitIfVocab(term.datatype.value)
-      label.datatype = {
-        vocab,
-        value
-      }
+      label.datatype = splitIfVocab(term.datatype.value)
     }
-
     return label
   }
 
-  const datasetLabel = getWithLang(cf, options)
-  if (datasetLabel) {
-    return datasetLabel
+  const withLang = getWithLang(cf, options)
+  if (withLang) {
+    return withLang
   }
 
   if (options.externalLabels) {
@@ -54,22 +48,16 @@ function getLabel (cf:GraphPointer, options:ExtendedOptions):Label {
     if (externalLabelLang) {
       return externalLabelLang
     }
-    const externalLabel = getWithLang(options.externalLabels.node(term),
-      options)
+    const externalLabel = getWithLang(options.externalLabels.node(term), options)
     if (externalLabel) {
       return externalLabel
     }
   }
 
-  const {vocab, value} = splitIfVocab(term.value)
-  const result:Label = {
-    value,
+  return {
+    ...splitIfVocab(term.value),
     fallbackLabel:true
   }
-  if (vocab){
-    result.vocab = vocab
-  }
-  return result
 }
 
 export { getLabel }

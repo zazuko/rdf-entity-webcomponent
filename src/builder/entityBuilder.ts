@@ -62,10 +62,6 @@ function createEntity (cf:GraphPointer, options:Options, context:EntityContext):
 
 function createEntityWithContext (cf:GraphPointer, options:Options, context:EntityContext) {
 
-  if (!cf) {
-    throw Error('Requires pointer')
-  }
-
   if (cf.datasets.length !== 1) {
     throw Error('Single pointer required')
   }

@@ -3,7 +3,7 @@ import { Term } from 'rdf-js';
 import {rdf} from '../rdf-ext'
 import {ExtendedOptions, Row} from "../types";
 
-function groupRows(rows: Row[], options: ExtendedOptions) {
+function groupRows(rows: Row[], options: ExtendedOptions):Row[] {
     // Already grouped by property. If groupValuesByProperty is false, expand.
     const byProperty = options.groupValuesByProperty ? rows : rows.map(row => row.values.map(value => {
         return {
@@ -13,7 +13,7 @@ function groupRows(rows: Row[], options: ExtendedOptions) {
     return options.groupPropertiesByValue ? _groupByValue(byProperty) : byProperty
 }
 
-function _groupByValue(rows: Row[]) {
+function _groupByValue(rows: Row[]):Row[] {
     const rowsByObject = new Map()
     const eqSet = (a: rdfjs__termSet<Term>, b: { size: any; has: (arg0: any) => unknown; }) => a.size === b.size && [...a].every(value => b.has(value))
 

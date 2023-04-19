@@ -1,10 +1,7 @@
 import { ns } from '../namespaces'
 import {rdf} from '../rdf-ext'
 import {GraphPointer} from "clownface";
-
-function subjects (cf:GraphPointer) {
-  return [...rdf.termSet(quads(cf).map(quad => quad.subject))]
-}
+import {VocabValue} from "../types";
 
 function predicates (cf:GraphPointer) {
   return [...rdf.termSet(quads(cf).map(quad => quad.predicate))]
@@ -14,8 +11,7 @@ function quads (cf:GraphPointer) {
   return [...cf.dataset.match(cf.term, null, null, null)]
 }
 
-function splitIfVocab (iri:string) {
-
+function splitIfVocab (iri:string):VocabValue {
   const candidates = Array.from(Object.entries(ns)).filter(([_, value]) => {
     return iri.startsWith(value().value)
   })
@@ -37,4 +33,4 @@ function splitIfVocab (iri:string) {
   }
 }
 
-export { subjects, predicates, quads, splitIfVocab }
+export { predicates, quads, splitIfVocab }
