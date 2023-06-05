@@ -1,5 +1,5 @@
 ---
-"rdf-entity-webcomponent": patch
+"@zazuko/rdf-entity-webcomponent": patch
 ---
 
 Remove duplicate values
