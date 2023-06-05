@@ -1,5 +1,5 @@
 {
-  "name": "rdf-entity-webcomponent",
+  "name": "@zazuko/rdf-entity-webcomponent",
   "version": "0.7.5",
   "description": "A Web component that displays a Graph Pointer (clownface)",
   "type": "module",
