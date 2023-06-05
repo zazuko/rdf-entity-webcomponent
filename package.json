@@ -41,7 +41,6 @@
     "src"
   ],
   "devDependencies": {
-    "html": "^1.0.0",
     "@changesets/cli": "^2.26.1",
     "@custom-elements-manifest/analyzer": "^0.8.3",
     "@lit-labs/ssr": "^3.1.3",
