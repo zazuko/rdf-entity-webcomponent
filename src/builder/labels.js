@@ -1,9 +1,14 @@
 import { splitIfVocab } from './utils.js'
 
 function getWithLang (cf, options) {
+  let highlightLanguage = options.highlightLanguage ? [options.highlightLanguage] : undefined
+  if (!highlightLanguage) {
+    highlightLanguage = options.preferredLanguages ?? []
+  }
+
   for (const property of options.labelProperties) {
     const terms = cf.out(property,
-      { language: [...(options.preferredLanguages ?? []), '*'] }).terms
+      { language: [...highlightLanguage, '*'] }).terms
     if (terms.length) {
       const language = terms[0].language
       return {
